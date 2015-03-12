@@ -29,7 +29,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gl-Ig-Czt" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="wbn-jO-EVl">
                     <connections>
-                        <segue destination="LAk-IY-Nnz" kind="modal" modalTransitionStyle="crossDissolve" id="OKv-Nk-wV9"/>
+                        <segue destination="LAk-IY-Nnz" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="OKv-Nk-wV9"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -54,7 +54,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="VG2-S6-5Rg" kind="modal" modalTransitionStyle="crossDissolve" id="RMb-xM-ze8"/>
+                                    <segue destination="VG2-S6-5Rg" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="RMb-xM-ze8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XYG-g0-1ZP">
@@ -64,7 +64,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="AyR-rw-icg" kind="modal" modalTransitionStyle="crossDissolve" id="HHB-sJ-gB3"/>
+                                    <segue destination="AyR-rw-icg" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="HHB-sJ-gB3"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="aZo-I7-vRY">
@@ -105,7 +105,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUk-cR-eiL" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="aQy-Fl-Rhb">
                     <connections>
-                        <segue destination="CPp-2M-D2b" kind="modal" modalTransitionStyle="crossDissolve" id="6vE-c2-luG"/>
+                        <segue destination="CPp-2M-D2b" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="6vE-c2-luG"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -135,7 +135,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKu-iH-Aeg" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="XmU-1y-bDV">
                     <connections>
-                        <segue destination="evM-rp-acb" kind="modal" modalTransitionStyle="crossDissolve" id="iyA-bM-AVN"/>
+                        <segue destination="evM-rp-acb" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="iyA-bM-AVN"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -165,7 +165,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RyJ-e8-5dp" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="HxY-Cw-qFp">
                     <connections>
-                        <segue destination="7JB-DK-4md" kind="modal" modalTransitionStyle="crossDissolve" id="myq-Bm-Dfh"/>
+                        <segue destination="7JB-DK-4md" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="myq-Bm-Dfh"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -195,7 +195,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q1C-uw-bcA" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="hrr-kw-mgH">
                     <connections>
-                        <segue destination="fHC-eP-1hG" kind="modal" modalTransitionStyle="crossDissolve" id="yNC-gc-Yb0"/>
+                        <segue destination="fHC-eP-1hG" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="yNC-gc-Yb0"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -225,7 +225,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFe-Sa-bMp" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="YbO-D1-tyO">
                     <connections>
-                        <segue destination="LAk-IY-Nnz" kind="modal" modalTransitionStyle="crossDissolve" id="hDJ-Ck-ZD4"/>
+                        <segue destination="LAk-IY-Nnz" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="hDJ-Ck-ZD4"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -250,7 +250,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LAk-IY-Nnz" kind="modal" modalTransitionStyle="crossDissolve" id="4JS-f0-qJy"/>
+                                    <segue destination="LAk-IY-Nnz" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="4JS-f0-qJy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Fi-TQ-eVf" userLabel="next to Back side">
@@ -260,7 +260,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4Rz-gP-yFb" kind="modal" modalTransitionStyle="crossDissolve" id="CdC-JY-wIr"/>
+                                    <segue destination="4Rz-gP-yFb" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="CdC-JY-wIr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BNe-IP-c5a" userLabel="template">
@@ -270,7 +270,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zwL-JE-pHb" kind="modal" modalTransitionStyle="crossDissolve" id="vi0-mU-V0j"/>
+                                    <segue destination="zwL-JE-pHb" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="vi0-mU-V0j"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hPg-P2-sF5" userLabel="shape">
@@ -280,7 +280,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3g0-F7-XzJ" kind="modal" modalTransitionStyle="crossDissolve" id="HLh-wb-SPv"/>
+                                    <segue destination="3g0-F7-XzJ" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="HLh-wb-SPv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vQk-l4-GXP" userLabel="text">
@@ -290,7 +290,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xS0-2d-7Fz" kind="modal" modalTransitionStyle="crossDissolve" id="eKh-Lm-CLe"/>
+                                    <segue destination="xS0-2d-7Fz" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="eKh-Lm-CLe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="b7n-Y4-duT" userLabel="swipe to see back">
@@ -300,7 +300,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4Rz-gP-yFb" kind="modal" modalTransitionStyle="crossDissolve" id="v1p-5A-rnq"/>
+                                    <segue destination="4Rz-gP-yFb" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="v1p-5A-rnq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -335,7 +335,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3g0-F7-XzJ" kind="modal" modalTransitionStyle="crossDissolve" id="HpV-1X-0Gw"/>
+                                    <segue destination="3g0-F7-XzJ" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="HpV-1X-0Gw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="c4y-e5-USM" userLabel="text">
@@ -360,7 +360,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1051" y="1733"/>
+            <point key="canvasLocation" x="1437" y="1643"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="M7u-hK-BBI">
@@ -385,7 +385,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xS0-2d-7Fz" kind="modal" modalTransitionStyle="crossDissolve" id="U2S-CB-oT3"/>
+                                    <segue destination="xS0-2d-7Fz" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="U2S-CB-oT3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vy8-2X-adc" userLabel="template">
@@ -395,7 +395,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zwL-JE-pHb" kind="modal" modalTransitionStyle="crossDissolve" id="nzg-oM-K2a"/>
+                                    <segue destination="zwL-JE-pHb" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="nzg-oM-K2a"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -406,7 +406,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJc-cM-BwG" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Efy-yi-Jdx">
                     <connections>
-                        <segue destination="Wm5-uR-dmq" kind="modal" modalTransitionStyle="crossDissolve" id="odK-YF-vn0"/>
+                        <segue destination="Wm5-uR-dmq" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="odK-YF-vn0"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -436,7 +436,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aVu-6q-PLd" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="BXx-zU-RUv">
                     <connections>
-                        <segue destination="CPp-2M-D2b" kind="modal" modalTransitionStyle="crossDissolve" id="f37-7d-Bx6"/>
+                        <segue destination="CPp-2M-D2b" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="f37-7d-Bx6"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -465,7 +465,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3g0-F7-XzJ" kind="modal" modalTransitionStyle="crossDissolve" id="vQ3-N3-yO9"/>
+                                    <segue destination="3g0-F7-XzJ" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="vQ3-N3-yO9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bim-mu-dKC" userLabel="template">
@@ -475,7 +475,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zwL-JE-pHb" kind="modal" modalTransitionStyle="crossDissolve" id="ggg-Pc-bdZ"/>
+                                    <segue destination="zwL-JE-pHb" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="ggg-Pc-bdZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -486,7 +486,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thj-az-JkW" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="vvS-J1-fx5">
                     <connections>
-                        <segue destination="bBU-Vt-xMx" kind="modal" modalTransitionStyle="crossDissolve" id="TAA-2c-80y"/>
+                        <segue destination="bBU-Vt-xMx" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="TAA-2c-80y"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -516,7 +516,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FX8-7c-JJi" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="g3J-fS-tJg">
                     <connections>
-                        <segue destination="UCg-FT-W4N" kind="modal" modalTransitionStyle="crossDissolve" id="yxz-pv-Pv9"/>
+                        <segue destination="UCg-FT-W4N" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="yxz-pv-Pv9"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -546,7 +546,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H48-hY-gkv" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="sF1-IY-hpn">
                     <connections>
-                        <segue destination="CPp-2M-D2b" kind="modal" modalTransitionStyle="crossDissolve" id="bJF-wz-fhc"/>
+                        <segue destination="CPp-2M-D2b" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="bJF-wz-fhc"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -571,7 +571,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="QFq-qs-U5y" kind="modal" modalTransitionStyle="crossDissolve" id="zsc-Nu-xz2"/>
+                                    <segue destination="QFq-qs-U5y" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="zsc-Nu-xz2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oGa-Sm-6TP" userLabel="stamp">
@@ -581,7 +581,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WNR-Pe-OI1" kind="modal" modalTransitionStyle="crossDissolve" id="5Wm-rW-H83"/>
+                                    <segue destination="WNR-Pe-OI1" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="5Wm-rW-H83"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wbf-bD-OS6" userLabel="address">
@@ -591,7 +591,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tzK-Lf-sqx" kind="modal" modalTransitionStyle="crossDissolve" id="ZMC-gW-yV2"/>
+                                    <segue destination="tzK-Lf-sqx" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="ZMC-gW-yV2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UbZ-em-N0r" userLabel="back to last photo edit">
@@ -601,7 +601,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="CPp-2M-D2b" kind="modal" modalTransitionStyle="crossDissolve" id="Uzb-69-h7N"/>
+                                    <segue destination="CPp-2M-D2b" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="Uzb-69-h7N"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -637,7 +637,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m52-6P-vTm" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="9Sj-qw-Hzh">
                     <connections>
-                        <segue destination="4Rz-gP-yFb" kind="modal" modalTransitionStyle="crossDissolve" id="IgB-tM-Zjl"/>
+                        <segue destination="4Rz-gP-yFb" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="IgB-tM-Zjl"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -667,7 +667,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lbv-jT-0ex" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="mQI-PQ-N9v">
                     <connections>
-                        <segue destination="4Rz-gP-yFb" kind="modal" modalTransitionStyle="crossDissolve" id="are-ID-QWC"/>
+                        <segue destination="4Rz-gP-yFb" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="are-ID-QWC"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -697,7 +697,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iVf-VN-w5b" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="DTw-Qg-gCb">
                     <connections>
-                        <segue destination="qjW-Bs-rQU" kind="modal" modalTransitionStyle="crossDissolve" id="B6d-vp-s6u"/>
+                        <segue destination="qjW-Bs-rQU" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="B6d-vp-s6u"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -722,7 +722,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LAk-IY-Nnz" kind="modal" modalTransitionStyle="crossDissolve" id="WEg-iH-xhH"/>
+                                    <segue destination="LAk-IY-Nnz" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="WEg-iH-xhH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wST-6d-ftL" userLabel="next">
@@ -732,7 +732,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="SsW-gL-MBA" kind="modal" modalTransitionStyle="crossDissolve" id="bFx-xr-iyU"/>
+                                    <segue destination="SsW-gL-MBA" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="bFx-xr-iyU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dHu-vs-ApW" userLabel="flip">
@@ -775,7 +775,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="33V-RF-v0Y" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="7pq-3i-nzK">
                     <connections>
-                        <segue destination="sia-YU-Pmh" kind="modal" modalTransitionStyle="crossDissolve" id="Bbh-Lg-Ply"/>
+                        <segue destination="sia-YU-Pmh" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="Bbh-Lg-Ply"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -805,7 +805,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkH-TQ-36L" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="IGS-6v-FFe">
                     <connections>
-                        <segue destination="LAk-IY-Nnz" kind="modal" modalTransitionStyle="crossDissolve" id="Hu2-Um-K3g"/>
+                        <segue destination="LAk-IY-Nnz" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="Hu2-Um-K3g"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -841,11 +841,11 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="HLh-wb-SPv"/>
+        <segue reference="are-ID-QWC"/>
         <segue reference="Uzb-69-h7N"/>
-        <segue reference="v1p-5A-rnq"/>
-        <segue reference="vi0-mU-V0j"/>
-        <segue reference="eKh-Lm-CLe"/>
-        <segue reference="WEg-iH-xhH"/>
+        <segue reference="ggg-Pc-bdZ"/>
+        <segue reference="U2S-CB-oT3"/>
+        <segue reference="vQ3-N3-yO9"/>
+        <segue reference="Hu2-Um-K3g"/>
     </inferredMetricsTieBreakers>
 </document>
