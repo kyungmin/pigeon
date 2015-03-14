@@ -43,37 +43,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front" id="Ee2-E7-OGu">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2xF-sa-Ln4">
-                                <rect key="frame" x="-66" y="20" width="140" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title=" ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="VG2-S6-5Rg" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="RMb-xM-ze8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XYG-g0-1ZP">
-                                <rect key="frame" x="8" y="189" width="304" height="190"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title=" ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="AyR-rw-icg" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="HHB-sJ-gB3"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" id="aZo-I7-vRY">
                                 <rect key="frame" x="269" y="20" width="51" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front_background" id="wAG-Ya-jZf">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front_background" id="oeH-hG-bt4">
+                                <rect key="frame" x="0.0" y="55" width="320" height="513"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="swipe_icon" id="oJR-Fz-ktl">
+                                <rect key="frame" x="112" y="428" width="67" height="43"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="empty_front" id="lM2-oA-nN5">
+                                <rect key="frame" x="35" y="203" width="251" height="161"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
@@ -821,8 +805,8 @@
         <image name="back edit (address)" width="320" height="568"/>
         <image name="back edit (message)" width="320" height="568"/>
         <image name="back edit (stamp)" width="320" height="568"/>
+        <image name="empty_front" width="251" height="161"/>
         <image name="finish" width="320" height="568"/>
-        <image name="front" width="320" height="568"/>
         <image name="front edit" width="320" height="568"/>
         <image name="front edit (photo)" width="320" height="568"/>
         <image name="front edit (shape color)" width="320" height="568"/>
@@ -831,7 +815,7 @@
         <image name="front edit (text color)" width="320" height="568"/>
         <image name="front edit (text edit)" width="320" height="568"/>
         <image name="front edit (text)" width="320" height="558"/>
-        <image name="front_background" width="640" height="1026"/>
+        <image name="front_background" width="320" height="513"/>
         <image name="launch screen 1" width="320" height="568"/>
         <image name="launch screen 2" width="320" height="568"/>
         <image name="launch screen 3" width="320" height="568"/>
@@ -839,6 +823,7 @@
         <image name="menu" width="320" height="568"/>
         <image name="payment" width="320" height="568"/>
         <image name="preview" width="320" height="568"/>
+        <image name="swipe_icon" width="67" height="43"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
