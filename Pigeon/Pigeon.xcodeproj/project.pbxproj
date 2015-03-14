@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BC3CE801AB4DEC9001C4477 /* Styleguide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */; };
 		CD089CD51AB4CDC80050760F /* FontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD41AB4CDC80050760F /* FontViewController.swift */; };
 		CD089CD71AB4CDE10050760F /* StickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD61AB4CDE10050760F /* StickerViewController.swift */; };
 		CD089CD91AB4CE260050760F /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD81AB4CE260050760F /* TemplateViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styleguide.swift; sourceTree = "<group>"; };
 		CD089CD41AB4CDC80050760F /* FontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontViewController.swift; sourceTree = "<group>"; };
 		CD089CD61AB4CDE10050760F /* StickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerViewController.swift; sourceTree = "<group>"; };
 		CD089CD81AB4CE260050760F /* TemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				CD12CA0E1AAEA5250039B27D /* AppDelegate.swift */,
 				CD12CA101AAEA5250039B27D /* ViewController.swift */,
 				CD12CA121AAEA5250039B27D /* Main.storyboard */,
+				4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */,
 				CD12CA151AAEA5250039B27D /* Images.xcassets */,
 				CD12CA171AAEA5250039B27D /* LaunchScreen.xib */,
 				CD12CA0C1AAEA5250039B27D /* Supporting Files */,
@@ -266,6 +269,7 @@
 				CD089CDD1AB4CE980050760F /* BackAddressViewController.swift in Sources */,
 				CD089CE11AB4CEF50050760F /* ConfirmationViewController.swift in Sources */,
 				CD089CD91AB4CE260050760F /* TemplateViewController.swift in Sources */,
+				4BC3CE801AB4DEC9001C4477 /* Styleguide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
