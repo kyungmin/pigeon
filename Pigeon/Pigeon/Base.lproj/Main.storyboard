@@ -72,6 +72,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front_background" id="wAG-Ya-jZf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -827,6 +831,7 @@
         <image name="front edit (text color)" width="320" height="568"/>
         <image name="front edit (text edit)" width="320" height="568"/>
         <image name="front edit (text)" width="320" height="558"/>
+        <image name="front_background" width="640" height="1026"/>
         <image name="launch screen 1" width="320" height="568"/>
         <image name="launch screen 2" width="320" height="568"/>
         <image name="launch screen 3" width="320" height="568"/>
