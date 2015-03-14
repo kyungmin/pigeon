@@ -16,7 +16,7 @@ class HeaderTitle: UILabel {
     }
     
     private func commonInit() {
-        self.font = UIFont(name: "Mont.ttf", size: 13)
+        self.font = UIFont(name: "Helvetica.ttf", size: 13)
     }
     
     override func prepareForInterfaceBuilder() {
