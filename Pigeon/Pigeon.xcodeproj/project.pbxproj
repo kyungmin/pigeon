@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD089CD51AB4CDC80050760F /* FontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD41AB4CDC80050760F /* FontViewController.swift */; };
+		CD089CD71AB4CDE10050760F /* StickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD61AB4CDE10050760F /* StickerViewController.swift */; };
+		CD089CD91AB4CE260050760F /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD81AB4CE260050760F /* TemplateViewController.swift */; };
+		CD089CDB1AB4CE870050760F /* BackMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CDA1AB4CE870050760F /* BackMessageViewController.swift */; };
+		CD089CDD1AB4CE980050760F /* BackAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CDC1AB4CE980050760F /* BackAddressViewController.swift */; };
+		CD089CDF1AB4CEDF0050760F /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CDE1AB4CEDF0050760F /* PaymentViewController.swift */; };
+		CD089CE11AB4CEF50050760F /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CE01AB4CEF50050760F /* ConfirmationViewController.swift */; };
+		CD0C235F1AB4CAB000B6EC13 /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C235E1AB4CAB000B6EC13 /* FrontViewController.swift */; };
+		CD0C23611AB4CAF000B6EC13 /* BackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C23601AB4CAF000B6EC13 /* BackViewController.swift */; };
+		CD0C23631AB4CB2800B6EC13 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C23621AB4CB2800B6EC13 /* MenuViewController.swift */; };
+		CD0C23651AB4CB4E00B6EC13 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C23641AB4CB4E00B6EC13 /* IntroViewController.swift */; };
 		CD12CA0F1AAEA5250039B27D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12CA0E1AAEA5250039B27D /* AppDelegate.swift */; };
 		CD12CA111AAEA5250039B27D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12CA101AAEA5250039B27D /* ViewController.swift */; };
 		CD12CA141AAEA5250039B27D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD12CA121AAEA5250039B27D /* Main.storyboard */; };
@@ -26,6 +37,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD089CD41AB4CDC80050760F /* FontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontViewController.swift; sourceTree = "<group>"; };
+		CD089CD61AB4CDE10050760F /* StickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerViewController.swift; sourceTree = "<group>"; };
+		CD089CD81AB4CE260050760F /* TemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
+		CD089CDA1AB4CE870050760F /* BackMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackMessageViewController.swift; sourceTree = "<group>"; };
+		CD089CDC1AB4CE980050760F /* BackAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackAddressViewController.swift; sourceTree = "<group>"; };
+		CD089CDE1AB4CEDF0050760F /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		CD089CE01AB4CEF50050760F /* ConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		CD0C235E1AB4CAB000B6EC13 /* FrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
+		CD0C23601AB4CAF000B6EC13 /* BackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackViewController.swift; sourceTree = "<group>"; };
+		CD0C23621AB4CB2800B6EC13 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CD0C23641AB4CB4E00B6EC13 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		CD12CA091AAEA5250039B27D /* Pigeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pigeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD12CA0D1AAEA5250039B27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD12CA0E1AAEA5250039B27D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +78,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD0C235D1AB4CA7800B6EC13 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD0C235E1AB4CAB000B6EC13 /* FrontViewController.swift */,
+				CD0C23601AB4CAF000B6EC13 /* BackViewController.swift */,
+				CD0C23621AB4CB2800B6EC13 /* MenuViewController.swift */,
+				CD0C23641AB4CB4E00B6EC13 /* IntroViewController.swift */,
+				CD089CD41AB4CDC80050760F /* FontViewController.swift */,
+				CD089CD61AB4CDE10050760F /* StickerViewController.swift */,
+				CD089CD81AB4CE260050760F /* TemplateViewController.swift */,
+				CD089CDA1AB4CE870050760F /* BackMessageViewController.swift */,
+				CD089CDC1AB4CE980050760F /* BackAddressViewController.swift */,
+				CD089CDE1AB4CEDF0050760F /* PaymentViewController.swift */,
+				CD089CE01AB4CEF50050760F /* ConfirmationViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		CD12CA001AAEA5250039B27D = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +117,7 @@
 		CD12CA0B1AAEA5250039B27D /* Pigeon */ = {
 			isa = PBXGroup;
 			children = (
+				CD0C235D1AB4CA7800B6EC13 /* ViewControllers */,
 				CD12CA0E1AAEA5250039B27D /* AppDelegate.swift */,
 				CD12CA101AAEA5250039B27D /* ViewController.swift */,
 				CD12CA121AAEA5250039B27D /* Main.storyboard */,
@@ -212,8 +253,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0C235F1AB4CAB000B6EC13 /* FrontViewController.swift in Sources */,
+				CD089CDB1AB4CE870050760F /* BackMessageViewController.swift in Sources */,
+				CD089CD51AB4CDC80050760F /* FontViewController.swift in Sources */,
+				CD089CD71AB4CDE10050760F /* StickerViewController.swift in Sources */,
+				CD0C23631AB4CB2800B6EC13 /* MenuViewController.swift in Sources */,
 				CD12CA111AAEA5250039B27D /* ViewController.swift in Sources */,
+				CD0C23651AB4CB4E00B6EC13 /* IntroViewController.swift in Sources */,
+				CD089CDF1AB4CEDF0050760F /* PaymentViewController.swift in Sources */,
 				CD12CA0F1AAEA5250039B27D /* AppDelegate.swift in Sources */,
+				CD0C23611AB4CAF000B6EC13 /* BackViewController.swift in Sources */,
+				CD089CDD1AB4CE980050760F /* BackAddressViewController.swift in Sources */,
+				CD089CE11AB4CEF50050760F /* ConfirmationViewController.swift in Sources */,
+				CD089CD91AB4CE260050760F /* TemplateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

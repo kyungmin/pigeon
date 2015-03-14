@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="emu-bp-dAO">
             <objects>
-                <viewController id="VG2-S6-5Rg" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VG2-S6-5Rg" customClass="MenuViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G68-qF-KC9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -35,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="171" y="1017"/>
         </scene>
-        <!--View Controller-->
+        <!--Front View Controller-->
         <scene sceneID="HUN-Ws-4CN">
             <objects>
-                <viewController id="LAk-IY-Nnz" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LAk-IY-Nnz" customClass="FrontViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YCD-4R-VmC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -312,10 +312,10 @@
             </objects>
             <point key="canvasLocation" x="614" y="1733"/>
         </scene>
-        <!--View Controller-->
+        <!--Template View Controller-->
         <scene sceneID="dU2-hh-iya">
             <objects>
-                <viewController id="zwL-JE-pHb" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zwL-JE-pHb" customClass="TemplateViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sLt-zu-Rm9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -362,10 +362,10 @@
             </objects>
             <point key="canvasLocation" x="1437" y="1643"/>
         </scene>
-        <!--View Controller-->
+        <!--Sticker View Controller-->
         <scene sceneID="M7u-hK-BBI">
             <objects>
-                <viewController id="3g0-F7-XzJ" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3g0-F7-XzJ" customClass="StickerViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cUB-7A-9yA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -410,7 +410,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1051" y="2477"/>
+            <point key="canvasLocation" x="901" y="2477"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="f9p-ZT-Amx">
@@ -442,10 +442,10 @@
             </objects>
             <point key="canvasLocation" x="1498" y="2477"/>
         </scene>
-        <!--View Controller-->
+        <!--Font View Controller-->
         <scene sceneID="fHe-HO-nv8">
             <objects>
-                <viewController id="xS0-2d-7Fz" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xS0-2d-7Fz" customClass="FontViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wyW-Tl-Vry">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -552,10 +552,10 @@
             </objects>
             <point key="canvasLocation" x="1961" y="3203"/>
         </scene>
-        <!--View Controller-->
+        <!--Back View Controller-->
         <scene sceneID="dgP-xN-FWW">
             <objects>
-                <viewController id="4Rz-gP-yFb" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4Rz-gP-yFb" customClass="BackViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cgW-Iw-2fh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -613,10 +613,10 @@
             </objects>
             <point key="canvasLocation" x="171" y="3969"/>
         </scene>
-        <!--View Controller-->
+        <!--Back Message View Controller-->
         <scene sceneID="GKx-0K-sYT">
             <objects>
-                <viewController id="QFq-qs-U5y" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QFq-qs-U5y" customClass="BackMessageViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zud-Bh-Knc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -643,10 +643,10 @@
             </objects>
             <point key="canvasLocation" x="614" y="3969"/>
         </scene>
-        <!--View Controller-->
+        <!--Back Address View Controller-->
         <scene sceneID="ANc-Lt-nD7">
             <objects>
-                <viewController id="tzK-Lf-sqx" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tzK-Lf-sqx" customClass="BackAddressViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pAg-MX-ic9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -751,10 +751,10 @@
             </objects>
             <point key="canvasLocation" x="171" y="4711"/>
         </scene>
-        <!--View Controller-->
+        <!--Payment View Controller-->
         <scene sceneID="9oY-98-LP9">
             <objects>
-                <viewController id="SsW-gL-MBA" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SsW-gL-MBA" customClass="PaymentViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NtZ-Sp-HvQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -781,10 +781,10 @@
             </objects>
             <point key="canvasLocation" x="614" y="4711"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirmation View Controller-->
         <scene sceneID="J70-Wn-Kqw">
             <objects>
-                <viewController id="sia-YU-Pmh" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sia-YU-Pmh" customClass="ConfirmationViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M4s-uv-Eh3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -841,11 +841,11 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="Hu2-Um-K3g"/>
         <segue reference="are-ID-QWC"/>
         <segue reference="Uzb-69-h7N"/>
-        <segue reference="ggg-Pc-bdZ"/>
-        <segue reference="U2S-CB-oT3"/>
-        <segue reference="vQ3-N3-yO9"/>
-        <segue reference="Hu2-Um-K3g"/>
+        <segue reference="HpV-1X-0Gw"/>
+        <segue reference="nzg-oM-K2a"/>
+        <segue reference="WOY-aY-e1K"/>
     </inferredMetricsTieBreakers>
 </document>
