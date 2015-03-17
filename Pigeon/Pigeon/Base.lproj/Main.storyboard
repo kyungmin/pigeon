@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< Updated upstream
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4Rz-gP-yFb">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="LAk-IY-Nnz">
+>>>>>>> Stashed changes
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -51,29 +55,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="aZo-I7-vRY">
-                                <rect key="frame" x="269" y="20" width="51" height="43"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hamburger_menu" id="NoK-DG-6lM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="l71-fQ-abk" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="PwI-Iv-TM3" userLabel="Nav View">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="nav_bar_menu_pigeon" id="Zi3-tE-Hyl">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="X5K-Wv-NGC" userLabel="Menu Button">
+                                                <rect key="frame" x="4" y="19" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="menuButtonDidPress:" destination="LAk-IY-Nnz" eventType="touchUpInside" id="Wua-KV-qg2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="front_background" id="oeH-hG-bt4">
+                                        <rect key="frame" x="0.0" y="55" width="320" height="513"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="swipe_icon" id="oJR-Fz-ktl">
+                                        <rect key="frame" x="126" y="400" width="67" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="empty_front" id="lM2-oA-nN5">
+                                        <rect key="frame" x="34" y="204" width="251" height="161"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bAo-oB-aAy">
+                                        <rect key="frame" x="34" y="204" width="251" height="161"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yAr-U5-q2l">
+                                        <rect key="frame" x="34" y="204" width="251" height="161"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="photoButtonDidPress:" destination="LAk-IY-Nnz" eventType="touchUpInside" id="bIK-Ln-TVp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4Z5-BE-E8u" appends="YES" id="wml-eq-xsN"/>
+                                    <outletCollection property="gestureRecognizers" destination="qLs-b8-7ei" appends="YES" id="oiM-Un-xbO"/>
+                                </connections>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front_background" id="oeH-hG-bt4">
-                                <rect key="frame" x="0.0" y="55" width="320" height="513"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="swipe_icon" id="oJR-Fz-ktl">
-                                <rect key="frame" x="112" y="428" width="67" height="43"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="empty_front" id="lM2-oA-nN5">
-                                <rect key="frame" x="35" y="203" width="251" height="161"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="contentView" destination="l71-fQ-abk" id="z5d-G0-1wk"/>
+                        <outlet property="menuButton" destination="X5K-Wv-NGC" id="4xF-rS-20p"/>
+                        <outlet property="navImageView" destination="Zi3-tE-Hyl" id="jgi-vE-aXy"/>
+                        <outlet property="photoButton" destination="yAr-U5-q2l" id="uWH-rn-X0b"/>
+                        <outlet property="photoView" destination="bAo-oB-aAy" id="AhR-Pz-m6J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbB-RB-1TF" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="4Z5-BE-E8u">
+                    <connections>
+                        <action selector="screenEdgeDidPan:" destination="LAk-IY-Nnz" id="cow-4O-ZbK"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="qLs-b8-7ei" userLabel="Content View Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="contentViewDidPan:" destination="LAk-IY-Nnz" id="shM-o2-L5H"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="614" y="1017"/>
         </scene>
@@ -1059,12 +1126,17 @@
         <image name="front edit (text edit)" width="320" height="568"/>
         <image name="front edit (text)" width="320" height="558"/>
         <image name="front_background" width="320" height="513"/>
+        <image name="hamburger_menu" width="320" height="568"/>
         <image name="launch screen 1" width="320" height="568"/>
         <image name="launch screen 2" width="320" height="568"/>
         <image name="launch screen 3" width="320" height="568"/>
         <image name="launch screen 4" width="320" height="568"/>
         <image name="menu" width="320" height="568"/>
+<<<<<<< Updated upstream
         <image name="messageZoom" width="301" height="362"/>
+=======
+        <image name="nav_bar_menu_pigeon" width="320" height="55"/>
+>>>>>>> Stashed changes
         <image name="payment" width="320" height="568"/>
         <image name="preview" width="320" height="568"/>
         <image name="swipe_icon" width="67" height="43"/>
@@ -1075,6 +1147,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+<<<<<<< Updated upstream
         <segue reference="Hu2-Um-K3g"/>
         <segue reference="njk-WK-Xfp"/>
         <segue reference="ZMC-gW-yV2"/>
@@ -1083,5 +1156,13 @@
         <segue reference="WOY-aY-e1K"/>
         <segue reference="nzg-oM-K2a"/>
         <segue reference="HpV-1X-0Gw"/>
+=======
+        <segue reference="HLh-wb-SPv"/>
+        <segue reference="6vE-c2-luG"/>
+        <segue reference="eKh-Lm-CLe"/>
+        <segue reference="v1p-5A-rnq"/>
+        <segue reference="vi0-mU-V0j"/>
+        <segue reference="4JS-f0-qJy"/>
+>>>>>>> Stashed changes
     </inferredMetricsTieBreakers>
 </document>

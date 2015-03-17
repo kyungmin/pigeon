@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		4BC3CE801AB4DEC9001C4477 /* Styleguide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */; };
 		8B73364B1AB7671000A78923 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */; };
-		8B73364D1AB7677400A78923 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B73364C1AB7677400A78923 /* Raleway-Light.ttf */; };
-		8B93379B1AB787EE00E59686 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9337991AB787EE00E59686 /* BaseTransition.swift */; };
+        8B93379B1AB787EE00E59686 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9337991AB787EE00E59686 /* BaseTransition.swift */; };
 		8B93379C1AB787EE00E59686 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93379A1AB787EE00E59686 /* FadeTransition.swift */; };
 		CD089CD51AB4CDC80050760F /* FontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD41AB4CDC80050760F /* FontViewController.swift */; };
 		CD089CD71AB4CDE10050760F /* StickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD61AB4CDE10050760F /* StickerViewController.swift */; };
@@ -138,6 +137,7 @@
 		CD12CA0B1AAEA5250039B27D /* Pigeon */ = {
 			isa = PBXGroup;
 			children = (
+				4BC3CE811AB63160001C4477 /* Montserrat-Regular.ttf */,
 				CD0C235D1AB4CA7800B6EC13 /* ViewControllers */,
 				CD12CA0E1AAEA5250039B27D /* AppDelegate.swift */,
 				CD12CA101AAEA5250039B27D /* ViewController.swift */,
@@ -268,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC3CE831AB63160001C4477 /* Montserrat-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
