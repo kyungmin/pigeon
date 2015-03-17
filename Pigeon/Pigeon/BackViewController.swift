@@ -10,10 +10,18 @@ import UIKit
 
 class BackViewController: UIViewController {
 
+    @IBOutlet weak var messageTextView: UITextView!
+    @IBOutlet weak var addressTextView: UITextView!
+    
+    var inputMessage: String!
+    var inputAddress: String!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        messageTextView.text = inputMessage
+        addressTextView.text = inputAddress
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +30,7 @@ class BackViewController: UIViewController {
     }
     
 
+    
     /*
     // MARK: - Navigation
 
@@ -31,5 +40,8 @@ class BackViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+    
+    
 
 }

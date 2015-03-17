@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4BC3CE801AB4DEC9001C4477 /* Styleguide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */; };
+		8B73364B1AB7671000A78923 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */; };
+		8B73364D1AB7677400A78923 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B73364C1AB7677400A78923 /* Raleway-Light.ttf */; };
+		8B93379B1AB787EE00E59686 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9337991AB787EE00E59686 /* BaseTransition.swift */; };
+		8B93379C1AB787EE00E59686 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93379A1AB787EE00E59686 /* FadeTransition.swift */; };
 		CD089CD51AB4CDC80050760F /* FontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD41AB4CDC80050760F /* FontViewController.swift */; };
 		CD089CD71AB4CDE10050760F /* StickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD61AB4CDE10050760F /* StickerViewController.swift */; };
 		CD089CD91AB4CE260050760F /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD81AB4CE260050760F /* TemplateViewController.swift */; };
@@ -39,6 +43,10 @@
 
 /* Begin PBXFileReference section */
 		4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styleguide.swift; sourceTree = "<group>"; };
+		8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		8B73364C1AB7677400A78923 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		8B9337991AB787EE00E59686 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		8B93379A1AB787EE00E59686 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 		CD089CD41AB4CDC80050760F /* FontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontViewController.swift; sourceTree = "<group>"; };
 		CD089CD61AB4CDE10050760F /* StickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerViewController.swift; sourceTree = "<group>"; };
 		CD089CD81AB4CE260050760F /* TemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
@@ -80,16 +88,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B9337981AB787D400E59686 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				8B9337991AB787EE00E59686 /* BaseTransition.swift */,
+				8B93379A1AB787EE00E59686 /* FadeTransition.swift */,
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
 		CD0C235D1AB4CA7800B6EC13 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				CD0C235E1AB4CAB000B6EC13 /* FrontViewController.swift */,
-				CD0C23601AB4CAF000B6EC13 /* BackViewController.swift */,
 				CD0C23621AB4CB2800B6EC13 /* MenuViewController.swift */,
 				CD0C23641AB4CB4E00B6EC13 /* IntroViewController.swift */,
 				CD089CD41AB4CDC80050760F /* FontViewController.swift */,
 				CD089CD61AB4CDE10050760F /* StickerViewController.swift */,
 				CD089CD81AB4CE260050760F /* TemplateViewController.swift */,
+				CD0C23601AB4CAF000B6EC13 /* BackViewController.swift */,
 				CD089CDA1AB4CE870050760F /* BackMessageViewController.swift */,
 				CD089CDC1AB4CE980050760F /* BackAddressViewController.swift */,
 				CD089CDE1AB4CEDF0050760F /* PaymentViewController.swift */,
@@ -104,6 +121,8 @@
 				CD12CA0B1AAEA5250039B27D /* Pigeon */,
 				CD12CA211AAEA5250039B27D /* PigeonTests */,
 				CD12CA0A1AAEA5250039B27D /* Products */,
+				8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */,
+				8B73364C1AB7677400A78923 /* Raleway-Light.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +143,7 @@
 				CD12CA101AAEA5250039B27D /* ViewController.swift */,
 				CD12CA121AAEA5250039B27D /* Main.storyboard */,
 				4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */,
+				8B9337981AB787D400E59686 /* Transitions */,
 				CD12CA151AAEA5250039B27D /* Images.xcassets */,
 				CD12CA171AAEA5250039B27D /* LaunchScreen.xib */,
 				CD12CA0C1AAEA5250039B27D /* Supporting Files */,
@@ -236,6 +256,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B73364B1AB7671000A78923 /* Montserrat-Regular.ttf in Resources */,
+				8B73364D1AB7677400A78923 /* Raleway-Light.ttf in Resources */,
 				CD12CA141AAEA5250039B27D /* Main.storyboard in Resources */,
 				CD12CA191AAEA5250039B27D /* LaunchScreen.xib in Resources */,
 				CD12CA161AAEA5250039B27D /* Images.xcassets in Resources */,
@@ -257,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD0C235F1AB4CAB000B6EC13 /* FrontViewController.swift in Sources */,
+				8B93379B1AB787EE00E59686 /* BaseTransition.swift in Sources */,
 				CD089CDB1AB4CE870050760F /* BackMessageViewController.swift in Sources */,
 				CD089CD51AB4CDC80050760F /* FontViewController.swift in Sources */,
 				CD089CD71AB4CDE10050760F /* StickerViewController.swift in Sources */,
@@ -265,6 +288,7 @@
 				CD0C23651AB4CB4E00B6EC13 /* IntroViewController.swift in Sources */,
 				CD089CDF1AB4CEDF0050760F /* PaymentViewController.swift in Sources */,
 				CD12CA0F1AAEA5250039B27D /* AppDelegate.swift in Sources */,
+				8B93379C1AB787EE00E59686 /* FadeTransition.swift in Sources */,
 				CD0C23611AB4CAF000B6EC13 /* BackViewController.swift in Sources */,
 				CD089CDD1AB4CE980050760F /* BackAddressViewController.swift in Sources */,
 				CD089CE11AB4CEF50050760F /* ConfirmationViewController.swift in Sources */,
