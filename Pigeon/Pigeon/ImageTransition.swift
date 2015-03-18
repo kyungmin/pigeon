@@ -24,7 +24,10 @@ class ImageTransition: BaseTransition {
         var fromVC = fromViewController as FontViewController
         var toVC = toViewController as FrontEditViewController
 
-        toVC.addFont(fromVC.selectedFont)
+        if fromVC.selectedFont != nil {
+            toVC.addFont(fromVC.selectedFont)
+        }
+        
         fromViewController.view.alpha = 1
 
         UIView.animateWithDuration(duration, animations: {
