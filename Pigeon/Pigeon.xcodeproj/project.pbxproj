@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4BC3CE801AB4DEC9001C4477 /* Styleguide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */; };
 		8B73364B1AB7671000A78923 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */; };
-        8B93379B1AB787EE00E59686 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9337991AB787EE00E59686 /* BaseTransition.swift */; };
+		8B93379B1AB787EE00E59686 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9337991AB787EE00E59686 /* BaseTransition.swift */; };
 		8B93379C1AB787EE00E59686 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93379A1AB787EE00E59686 /* FadeTransition.swift */; };
 		CD089CD51AB4CDC80050760F /* FontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD41AB4CDC80050760F /* FontViewController.swift */; };
 		CD089CD71AB4CDE10050760F /* StickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD61AB4CDE10050760F /* StickerViewController.swift */; };
@@ -28,6 +28,8 @@
 		CD12CA161AAEA5250039B27D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD12CA151AAEA5250039B27D /* Images.xcassets */; };
 		CD12CA191AAEA5250039B27D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD12CA171AAEA5250039B27D /* LaunchScreen.xib */; };
 		CD12CA251AAEA5250039B27D /* PigeonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12CA241AAEA5250039B27D /* PigeonTests.swift */; };
+		CD18578D1AB9301700D2D11E /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18578C1AB9301700D2D11E /* ImageTransition.swift */; };
+		CD8BB0771AB8D3080086B524 /* FrontEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8BB0761AB8D3080086B524 /* FrontEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		CD12CA1E1AAEA5250039B27D /* PigeonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PigeonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD12CA231AAEA5250039B27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD12CA241AAEA5250039B27D /* PigeonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PigeonTests.swift; sourceTree = "<group>"; };
+		CD18578C1AB9301700D2D11E /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
+		CD8BB0761AB8D3080086B524 /* FrontEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 			children = (
 				8B9337991AB787EE00E59686 /* BaseTransition.swift */,
 				8B93379A1AB787EE00E59686 /* FadeTransition.swift */,
+				CD18578C1AB9301700D2D11E /* ImageTransition.swift */,
 			);
 			name = Transitions;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 				CD089CDC1AB4CE980050760F /* BackAddressViewController.swift */,
 				CD089CDE1AB4CEDF0050760F /* PaymentViewController.swift */,
 				CD089CE01AB4CEF50050760F /* ConfirmationViewController.swift */,
+				CD8BB0761AB8D3080086B524 /* FrontEditViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -137,7 +143,6 @@
 		CD12CA0B1AAEA5250039B27D /* Pigeon */ = {
 			isa = PBXGroup;
 			children = (
-				4BC3CE811AB63160001C4477 /* Montserrat-Regular.ttf */,
 				CD0C235D1AB4CA7800B6EC13 /* ViewControllers */,
 				CD12CA0E1AAEA5250039B27D /* AppDelegate.swift */,
 				CD12CA101AAEA5250039B27D /* ViewController.swift */,
@@ -257,7 +262,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B73364B1AB7671000A78923 /* Montserrat-Regular.ttf in Resources */,
-				8B73364D1AB7677400A78923 /* Raleway-Light.ttf in Resources */,
 				CD12CA141AAEA5250039B27D /* Main.storyboard in Resources */,
 				CD12CA191AAEA5250039B27D /* LaunchScreen.xib in Resources */,
 				CD12CA161AAEA5250039B27D /* Images.xcassets in Resources */,
@@ -268,7 +272,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BC3CE831AB63160001C4477 /* Montserrat-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,11 +292,13 @@
 				CD0C23651AB4CB4E00B6EC13 /* IntroViewController.swift in Sources */,
 				CD089CDF1AB4CEDF0050760F /* PaymentViewController.swift in Sources */,
 				CD12CA0F1AAEA5250039B27D /* AppDelegate.swift in Sources */,
+				CD18578D1AB9301700D2D11E /* ImageTransition.swift in Sources */,
 				8B93379C1AB787EE00E59686 /* FadeTransition.swift in Sources */,
 				CD0C23611AB4CAF000B6EC13 /* BackViewController.swift in Sources */,
 				CD089CDD1AB4CE980050760F /* BackAddressViewController.swift in Sources */,
 				CD089CE11AB4CEF50050760F /* ConfirmationViewController.swift in Sources */,
 				CD089CD91AB4CE260050760F /* TemplateViewController.swift in Sources */,
+				CD8BB0771AB8D3080086B524 /* FrontEditViewController.swift in Sources */,
 				4BC3CE801AB4DEC9001C4477 /* Styleguide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

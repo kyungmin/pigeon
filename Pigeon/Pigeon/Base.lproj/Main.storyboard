@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="LAk-IY-Nnz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="CPp-2M-D2b">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -227,86 +227,83 @@
             </objects>
             <point key="canvasLocation" x="1498" y="293"/>
         </scene>
-        <!--View Controller-->
+        <!--Front Edit View Controller-->
         <scene sceneID="qoq-uO-6fx">
             <objects>
-                <viewController id="CPp-2M-D2b" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CPp-2M-D2b" customClass="FrontEditViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cBC-PB-MQW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front edit" id="oqY-Eh-xWP">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front_background" id="oqY-Eh-xWP">
+                                <rect key="frame" x="0.0" y="55" width="320" height="513"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CNR-PA-orY" userLabel="back to select picture">
-                                <rect key="frame" x="-67" y="18" width="140" height="33"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SbJ-I4-iPW">
+                                <rect key="frame" x="0.0" y="469" width="106" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title=" ">
+                                <color key="backgroundColor" red="0.59240166002726025" green="0.85701461382665056" blue="0.88590590533088243" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="font_icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LAk-IY-Nnz" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="4JS-f0-qJy"/>
+                                    <action selector="didPressFontButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="0zP-KS-Zfr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Fi-TQ-eVf" userLabel="next to Back side">
-                                <rect key="frame" x="260" y="20" width="57" height="33"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zc9-Ye-Wlv">
+                                <rect key="frame" x="107" y="469" width="106" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title=" ">
+                                <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="sticker_icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="4Rz-gP-yFb" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="CdC-JY-wIr"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BNe-IP-c5a" userLabel="template">
-                                <rect key="frame" x="220" y="467" width="100" height="100"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PTY-JN-9We">
+                                <rect key="frame" x="214" y="469" width="106" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
+                                <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="template_icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="zwL-JE-pHb" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="vi0-mU-V0j"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hPg-P2-sF5" userLabel="shape">
-                                <rect key="frame" x="110" y="467" width="100" height="100"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="uL0-DU-cxh">
+                                <rect key="frame" x="35" y="203" width="251" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="3g0-F7-XzJ" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="HLh-wb-SPv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vQk-l4-GXP" userLabel="text">
-                                <rect key="frame" x="5" y="467" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="xS0-2d-7Fz" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="eKh-Lm-CLe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="b7n-Y4-duT" userLabel="swipe to see back">
-                                <rect key="frame" x="0.0" y="379" width="310" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="4Rz-gP-yFb" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="v1p-5A-rnq"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sample_image" id="2Z0-8I-hcW">
+                                        <rect key="frame" x="0.0" y="0.0" width="251" height="161"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="5gt-ul-WRy" appends="YES" id="wWj-oI-Q8C"/>
+                                            <outletCollection property="gestureRecognizers" destination="4ak-9L-VtY" appends="YES" id="W88-Jo-QTF"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="2Z0-8I-hcW" id="kTg-VK-gMr"/>
+                        <outlet property="scrollView" destination="uL0-DU-cxh" id="uuf-bZ-qt3"/>
+                        <segue destination="xS0-2d-7Fz" kind="modal" identifier="fontSegue" id="RZq-ou-hNq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTl-KT-fOR" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="5gt-ul-WRy">
+                    <connections>
+                        <action selector="didPanImage:" destination="CPp-2M-D2b" id="hbB-kD-Ehb"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="4ak-9L-VtY">
+                    <connections>
+                        <action selector="didPinchImage:" destination="CPp-2M-D2b" id="dnm-dG-Kb5"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="614" y="1733"/>
+            <point key="canvasLocation" x="614" y="1749"/>
         </scene>
         <!--Template View Controller-->
         <scene sceneID="dU2-hh-iya">
@@ -406,7 +403,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="901" y="2477"/>
+            <point key="canvasLocation" x="1019" y="2437"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="f9p-ZT-Amx">
@@ -446,47 +443,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front edit (text)" id="Fc0-4C-yQE">
-                                <rect key="frame" x="0.0" y="5" width="320" height="568"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front_background" id="IZR-OD-u0s">
+                                <rect key="frame" x="0.0" y="55" width="320" height="513"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="vvS-J1-fx5" appends="YES" id="6vw-KR-Tky"/>
+                                    <outletCollection property="gestureRecognizers" destination="yNg-rK-pEw" appends="YES" id="gUp-4j-Pnp"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yWF-uo-xcf" userLabel="shape">
-                                <rect key="frame" x="110" y="468" width="100" height="100"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bxq-QM-A2p">
+                                <rect key="frame" x="0.0" y="469" width="106" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
+                                <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="font_icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3g0-F7-XzJ" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="vQ3-N3-yO9"/>
+                                    <action selector="didPressFontButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="Gcs-SH-PWR"/>
+                                    <action selector="didTapBackground:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="j0y-Ki-Tf4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bim-mu-dKC" userLabel="template">
-                                <rect key="frame" x="220" y="468" width="100" height="100"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WVm-eI-hGv">
+                                <rect key="frame" x="0.0" y="383" width="320" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
+                                <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="font_icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zwL-JE-pHb" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="ggg-Pc-bdZ"/>
+                                    <action selector="didPressFontButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="qTz-Ur-TEy"/>
+                                    <action selector="didSelectFont:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="451-EY-Ug8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ilW-57-xWS">
+                                <rect key="frame" x="107" y="469" width="106" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="sticker_icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EyY-5K-v5p">
+                                <rect key="frame" x="214" y="469" width="106" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="template_icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="qKI-pJ-OUX">
+                                <rect key="frame" x="35" y="203" width="251" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6oG-ab-MAq">
+                                        <rect key="frame" x="0.0" y="0.0" width="251" height="161"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6fQ-rf-ifU">
+                                <rect key="frame" x="0.0" y="426" width="320" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="font_icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressFontButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="coX-Hu-Dh1"/>
+                                    <action selector="didSelectFont:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="3RC-38-ksF"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="6oG-ab-MAq" id="3KO-Ox-cA3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thj-az-JkW" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="vvS-J1-fx5">
+                <tapGestureRecognizer id="yNg-rK-pEw">
                     <connections>
-                        <segue destination="bBU-Vt-xMx" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="TAA-2c-80y"/>
+                        <action selector="didTapBackground:" destination="xS0-2d-7Fz" id="9jg-Bh-aU0"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1051" y="3211"/>
+            <point key="canvasLocation" x="440" y="2656"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uc4-Jv-nb5">
@@ -1050,14 +1093,13 @@
         <image name="back edit (stamp)" width="320" height="568"/>
         <image name="empty_front" width="251" height="161"/>
         <image name="finish" width="320" height="568"/>
-        <image name="front edit" width="320" height="568"/>
+        <image name="font_icon" width="41" height="26"/>
         <image name="front edit (photo)" width="320" height="568"/>
         <image name="front edit (shape color)" width="320" height="568"/>
         <image name="front edit (shape)" width="320" height="568"/>
         <image name="front edit (template)" width="320" height="568"/>
         <image name="front edit (text color)" width="320" height="568"/>
         <image name="front edit (text edit)" width="320" height="568"/>
-        <image name="front edit (text)" width="320" height="558"/>
         <image name="front_background" width="320" height="513"/>
         <image name="launch screen 1" width="320" height="568"/>
         <image name="launch screen 2" width="320" height="568"/>
@@ -1067,7 +1109,10 @@
         <image name="messageZoom" width="301" height="362"/>
         <image name="payment" width="320" height="568"/>
         <image name="preview" width="320" height="568"/>
+        <image name="sample_image" width="251" height="161"/>
+        <image name="sticker_icon" width="35" height="37"/>
         <image name="swipe_icon" width="67" height="43"/>
+        <image name="template_icon" width="46" height="34"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -1075,13 +1120,11 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Hu2-Um-K3g"/>
-        <segue reference="njk-WK-Xfp"/>
+        <segue reference="qkb-h5-O5f"/>
+        <segue reference="zsc-Nu-xz2"/>
         <segue reference="ZMC-gW-yV2"/>
         <segue reference="Uzb-69-h7N"/>
-        <segue reference="zsc-Nu-xz2"/>
-        <segue reference="WOY-aY-e1K"/>
-        <segue reference="nzg-oM-K2a"/>
-        <segue reference="HpV-1X-0Gw"/>
+        <segue reference="RZq-ou-hNq"/>
+        <segue reference="Hu2-Um-K3g"/>
     </inferredMetricsTieBreakers>
 </document>

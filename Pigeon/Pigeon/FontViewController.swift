@@ -10,12 +10,34 @@ import UIKit
 
 class FontViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    var image: UIImage!
+    var selectedFont: String!
+    var fonts: [String]! = []
+    var onDataAvailable : ((data: String) -> ())?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imageView.image = image
     }
 
+    @IBAction func didSelectFont(sender: AnyObject) {
+        println(sender.tag)
+        selectedFont = "Monstserrat.ttf"
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func didTapBackground(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func sendData(data: String) {
+        // Whenever you want to send data back to viewController1, check
+        // if the closure is implemented and then call it if it is
+        self.onDataAvailable?(data: data)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
