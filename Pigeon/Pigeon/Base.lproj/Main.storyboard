@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="evM-rp-acb">
-
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4Rz-gP-yFb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -712,7 +710,7 @@
                         <segue destination="QFq-qs-U5y" kind="modal" identifier="editMessageSegue" modalPresentationStyle="pageSheet" modalTransitionStyle="crossDissolve" id="cbC-YU-f2r"/>
                         <segue destination="tzK-Lf-sqx" kind="modal" identifier="editAddressSegue" id="TwM-ct-6Xw"/>
                         <segue destination="CPp-2M-D2b" kind="modal" identifier="toFrontSegue" modalTransitionStyle="flipHorizontal" id="GL8-12-mld"/>
-                        <segue destination="SsW-gL-MBA" kind="modal" identifier="toPaymentSegue" modalTransitionStyle="crossDissolve" id="RWh-eZ-UcQ"/>
+                        <segue destination="SsW-gL-MBA" kind="modal" identifier="toPaymentSegue" modalTransitionStyle="coverVertical" animates="NO" id="RWh-eZ-UcQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9H1-VW-lsV" sceneMemberID="firstResponder"/>
@@ -1179,9 +1177,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="IGS-6v-FFe" appends="YES" id="2Yd-Y2-zko"/>
-                                </connections>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav_bar_menu_pigeon" id="Ua4-zu-5wX">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
@@ -1193,7 +1188,6 @@
                     <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkH-TQ-36L" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="IGS-6v-FFe"/>
             </objects>
             <point key="canvasLocation" x="1051" y="4717"/>
         </scene>

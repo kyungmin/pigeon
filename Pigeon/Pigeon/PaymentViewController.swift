@@ -30,28 +30,20 @@ class PaymentViewController: UIViewController, CardIOPaymentViewControllerDelega
     //#6FBCC4, 111 188 196
     
     //UIDynamic
-//    var animator: UIDynamicAnimator!
-//    var gravity: UIGravityBehavior!
-//    var collision: UICollisionBehavior!
+    var animator: UIDynamicAnimator!
+    var gravity: UIGravityBehavior!
+    var collision: UICollisionBehavior!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         CardIOUtilities.preload()
         editButton.hidden = true
         placeorderButton.hidden = true
         cardIOVC = CardIOPaymentViewController(paymentDelegate: self)
         
-        //UIDynamic
-//        animator = UIDynamicAnimator(referenceView: scancardView) //self.view)
-//        gravity = UIGravityBehavior()
-//        gravity.gravityDirection = CGVectorMake(0, 1)
-//        animator.addBehavior(gravity)
-//        
-//        collision = UICollisionBehavior()
-//        animator.addBehavior(collision)
-//        collision.addBoundaryWithIdentifier("ground", fromPoint: CGPointMake(0, self.view.frame.height), toPoint: CGPointMake(self.view.frame.width, self.view.frame.height))
-//        collision.addItem(scancardView)
-//        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -101,11 +93,37 @@ class PaymentViewController: UIViewController, CardIOPaymentViewControllerDelega
         var imageBG = UIImage(named: "nav_bar_cancel_pigeon_finish") as UIImage?
         cardIOVC.navigationBar.setBackgroundImage(imageBG, forBarMetrics: UIBarMetrics.Default)
         
-        presentViewController(cardIOVC, animated: true, completion: nil)
 
-//        delay(1, { () -> () in
-//            self.presentViewController(self.cardIOVC, animated: true, completion: nil)
-//        })
+        //UIDynamic
+        animator = UIDynamicAnimator(referenceView: self.view) //self.view)
+        gravity = UIGravityBehavior()
+        gravity.gravityDirection = CGVectorMake(0, 2)
+        animator.addBehavior(gravity)
+        
+        
+        collision = UICollisionBehavior()
+        animator.addBehavior(collision)
+        collision.addBoundaryWithIdentifier("ground", fromPoint: CGPointMake(0, self.view.frame.height * 2 ), toPoint: CGPointMake(self.view.frame.width, self.view.frame.height * 2))
+
+        
+        gravity.addItem(scancardView)
+        collision.addItem(scancardView)
+
+        delay(0.5, { () -> () in
+            self.presentViewController(self.cardIOVC, animated: true, completion: nil)
+
+        })
+
+        delay(1, { () -> () in
+            self.gravity.gravityDirection = CGVectorMake(0, -1)
+            self.animator.addBehavior(self.gravity)
+            self.gravity.addItem(self.scancardView)
+            
+            self.animator.addBehavior(self.collision)
+            self.collision.addBoundaryWithIdentifier("ground", fromPoint: CGPointMake(0, 60 ), toPoint: CGPointMake(self.view.frame.width, 60))
+            self.collision.addItem(self.scancardView)
+
+        })
 
     }
     
