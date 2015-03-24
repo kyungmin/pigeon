@@ -15,6 +15,7 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
     
     var scale: CGFloat! = 1
     var translation: CGPoint! = CGPoint(x: 0.0, y: 0.0)
+    var location: CGPoint! = CGPoint(x: 0.0, y: 0.0)
     var originalImageFrame: CGRect!
     var originalImageCenter: CGPoint!
     var currentSelection: AnyObject!
@@ -24,8 +25,15 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
     var tabs: [UIViewController]!
     var segues: [String]!
     
+    //create a variable to catch the image passing from the previous view controller
+    var photoImage:UIImage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        //assign selected image to imageView
+        imageView.image = photoImage
+        imageView.contentMode = UIViewContentMode.ScaleAspectFill
         
         originalImageFrame = imageView.frame
         originalImageCenter = imageView.center
@@ -45,6 +53,7 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
             if (target.frame.size.width < originalImageFrame.size.width) {
                 target.transform = CGAffineTransformMakeScale(1, 1)
             }
+            checkImageBoundary()
         }
         sender.scale = 1
     }
@@ -68,12 +77,20 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
     
     @IBAction func didPanImage(sender: UIPanGestureRecognizer) {
         translation = sender.translationInView(view)
+        location = sender.locationInView(view)
+        //println(sender.view)
+        
         
         if (sender.state == UIGestureRecognizerState.Began) {
             originalImageCenter = imageView.center
         } else if (sender.state == UIGestureRecognizerState.Changed) {
             imageView.transform = CGAffineTransformScale(sender.view!.transform, scale, scale)
             imageView.center = CGPoint(x: originalImageCenter.x + translation.x, y: originalImageCenter.y + translation.y)
+            
+            
+        } else if (sender.state == UIGestureRecognizerState.Ended) {
+            checkImageBoundary()
+            
         }
     }
 
@@ -91,6 +108,8 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         } else if (sender.state == UIGestureRecognizerState.Ended) {
             label.textColor = UIColor.whiteColor()
             imageView.userInteractionEnabled = true
+            
+            
         }
     }
 
@@ -115,6 +134,10 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         label.text = textField.text
         label.alpha = 1
         textField.removeFromSuperview()
+    }
+    
+    @IBAction func didPressBackButton(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     func addFont(selectedFont: String) {
@@ -154,6 +177,24 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         var panGesture = UIPanGestureRecognizer(target: self, action: "didPanLabel:")
         panGesture.delegate = self
         target.addGestureRecognizer(panGesture)
+
+    }
+    
+    func checkImageBoundary() {
+        if (imageView.frame.origin.x >= 0) {
+            imageView.frame.origin.x = 0
+        }
+        if (imageView.frame.origin.y >= 0) {
+            imageView.frame.origin.y = 0
+        }
+        
+        if (imageView.frame.origin.x < 0 && imageView.frame.origin.x + imageView.frame.size.width < scrollView.frame.width) {
+            imageView.frame.origin.x = imageView.frame.origin.x + (scrollView.frame.width - (imageView.frame.origin.x + imageView.frame.size.width))
+        }
+        
+        if (imageView.frame.origin.y < 0 && imageView.frame.origin.y + imageView.frame.size.height < scrollView.frame.height) {
+            imageView.frame.origin.y = imageView.frame.origin.y + (scrollView.frame.height - (imageView.frame.origin.y + imageView.frame.size.height))
+        }
 
     }
     

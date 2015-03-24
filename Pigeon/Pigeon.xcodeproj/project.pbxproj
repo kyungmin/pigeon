@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B6206631ABD664300938E13 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6206621ABD664300938E13 /* LaunchViewController.swift */; };
+		4B6377891ABD2DD5002D5AC1 /* FrontContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6377881ABD2DD5002D5AC1 /* FrontContainerViewController.swift */; };
+		4B63778B1ABD31DD002D5AC1 /* FakeFrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B63778A1ABD31DD002D5AC1 /* FakeFrontViewController.swift */; };
 		4BC3CE801AB4DEC9001C4477 /* Styleguide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */; };
 		8B73364B1AB7671000A78923 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */; };
 		8B93379B1AB787EE00E59686 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9337991AB787EE00E59686 /* BaseTransition.swift */; };
@@ -26,7 +29,6 @@
 		CD12CA111AAEA5250039B27D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12CA101AAEA5250039B27D /* ViewController.swift */; };
 		CD12CA141AAEA5250039B27D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD12CA121AAEA5250039B27D /* Main.storyboard */; };
 		CD12CA161AAEA5250039B27D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD12CA151AAEA5250039B27D /* Images.xcassets */; };
-		CD12CA191AAEA5250039B27D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD12CA171AAEA5250039B27D /* LaunchScreen.xib */; };
 		CD12CA251AAEA5250039B27D /* PigeonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12CA241AAEA5250039B27D /* PigeonTests.swift */; };
 		CD18578D1AB9301700D2D11E /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18578C1AB9301700D2D11E /* ImageTransition.swift */; };
 		CD8BB0771AB8D3080086B524 /* FrontEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8BB0761AB8D3080086B524 /* FrontEditViewController.swift */; };
@@ -43,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B6206621ABD664300938E13 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		4B6377881ABD2DD5002D5AC1 /* FrontContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontContainerViewController.swift; sourceTree = "<group>"; };
+		4B63778A1ABD31DD002D5AC1 /* FakeFrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeFrontViewController.swift; sourceTree = "<group>"; };
 		4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styleguide.swift; sourceTree = "<group>"; };
 		8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		8B73364C1AB7677400A78923 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
@@ -65,7 +70,6 @@
 		CD12CA101AAEA5250039B27D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD12CA131AAEA5250039B27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD12CA151AAEA5250039B27D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CD12CA181AAEA5250039B27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CD12CA1E1AAEA5250039B27D /* PigeonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PigeonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD12CA231AAEA5250039B27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD12CA241AAEA5250039B27D /* PigeonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PigeonTests.swift; sourceTree = "<group>"; };
@@ -116,6 +120,9 @@
 				CD089CDE1AB4CEDF0050760F /* PaymentViewController.swift */,
 				CD089CE01AB4CEF50050760F /* ConfirmationViewController.swift */,
 				CD8BB0761AB8D3080086B524 /* FrontEditViewController.swift */,
+				4B63778A1ABD31DD002D5AC1 /* FakeFrontViewController.swift */,
+				4B6377881ABD2DD5002D5AC1 /* FrontContainerViewController.swift */,
+				4B6206621ABD664300938E13 /* LaunchViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -150,7 +157,6 @@
 				4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */,
 				8B9337981AB787D400E59686 /* Transitions */,
 				CD12CA151AAEA5250039B27D /* Images.xcassets */,
-				CD12CA171AAEA5250039B27D /* LaunchScreen.xib */,
 				CD12CA0C1AAEA5250039B27D /* Supporting Files */,
 			);
 			path = Pigeon;
@@ -263,7 +269,6 @@
 			files = (
 				8B73364B1AB7671000A78923 /* Montserrat-Regular.ttf in Resources */,
 				CD12CA141AAEA5250039B27D /* Main.storyboard in Resources */,
-				CD12CA191AAEA5250039B27D /* LaunchScreen.xib in Resources */,
 				CD12CA161AAEA5250039B27D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B6377891ABD2DD5002D5AC1 /* FrontContainerViewController.swift in Sources */,
 				CD0C235F1AB4CAB000B6EC13 /* FrontViewController.swift in Sources */,
 				8B93379B1AB787EE00E59686 /* BaseTransition.swift in Sources */,
 				CD089CDB1AB4CE870050760F /* BackMessageViewController.swift in Sources */,
@@ -292,6 +298,7 @@
 				CD0C23651AB4CB4E00B6EC13 /* IntroViewController.swift in Sources */,
 				CD089CDF1AB4CEDF0050760F /* PaymentViewController.swift in Sources */,
 				CD12CA0F1AAEA5250039B27D /* AppDelegate.swift in Sources */,
+				4B63778B1ABD31DD002D5AC1 /* FakeFrontViewController.swift in Sources */,
 				CD18578D1AB9301700D2D11E /* ImageTransition.swift in Sources */,
 				8B93379C1AB787EE00E59686 /* FadeTransition.swift in Sources */,
 				CD0C23611AB4CAF000B6EC13 /* BackViewController.swift in Sources */,
@@ -299,6 +306,7 @@
 				CD089CE11AB4CEF50050760F /* ConfirmationViewController.swift in Sources */,
 				CD089CD91AB4CE260050760F /* TemplateViewController.swift in Sources */,
 				CD8BB0771AB8D3080086B524 /* FrontEditViewController.swift in Sources */,
+				4B6206631ABD664300938E13 /* LaunchViewController.swift in Sources */,
 				4BC3CE801AB4DEC9001C4477 /* Styleguide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,14 +336,6 @@
 				CD12CA131AAEA5250039B27D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CD12CA171AAEA5250039B27D /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD12CA181AAEA5250039B27D /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
