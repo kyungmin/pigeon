@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B6206631ABD664300938E13 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6206621ABD664300938E13 /* LaunchViewController.swift */; };
-		4B6377891ABD2DD5002D5AC1 /* FrontContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6377881ABD2DD5002D5AC1 /* FrontContainerViewController.swift */; };
-		4B63778B1ABD31DD002D5AC1 /* FakeFrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B63778A1ABD31DD002D5AC1 /* FakeFrontViewController.swift */; };
 		4BC3CE801AB4DEC9001C4477 /* Styleguide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */; };
+		570C3EF21ABA4923004AEB79 /* AddressInputTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C3EF11ABA4923004AEB79 /* AddressInputTransition.swift */; };
+		57E972AC1ABA1B430066F2D5 /* MessageInputTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E972AB1ABA1B430066F2D5 /* MessageInputTransition.swift */; };
+		8B1F46301ABE438E0047C309 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8B1F462F1ABE438E0047C309 /* Podfile */; };
 		8B73364B1AB7671000A78923 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */; };
 		8B93379B1AB787EE00E59686 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9337991AB787EE00E59686 /* BaseTransition.swift */; };
 		8B93379C1AB787EE00E59686 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93379A1AB787EE00E59686 /* FadeTransition.swift */; };
+		8BE7FA261ABB812B0072B195 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7FA251ABB812B0072B195 /* Common.swift */; };
+		8BE7FA281ABBB8E80072B195 /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7FA271ABBB8E80072B195 /* SignatureViewController.swift */; };
+		8BE7FA2A1ABC01020072B195 /* DrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7FA291ABC01020072B195 /* DrawSignatureView.swift */; };
+		8BE7FA2C1ABC0C410072B195 /* SignatureInputTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7FA2B1ABC0C410072B195 /* SignatureInputTransition.swift */; };
+		B86E969BB6DA4656B80F95B4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF9ED541D0E959E6C4A7392 /* libPods.a */; };
 		CD089CD51AB4CDC80050760F /* FontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD41AB4CDC80050760F /* FontViewController.swift */; };
 		CD089CD71AB4CDE10050760F /* StickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD61AB4CDE10050760F /* StickerViewController.swift */; };
 		CD089CD91AB4CE260050760F /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD81AB4CE260050760F /* TemplateViewController.swift */; };
@@ -29,9 +34,8 @@
 		CD12CA111AAEA5250039B27D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12CA101AAEA5250039B27D /* ViewController.swift */; };
 		CD12CA141AAEA5250039B27D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD12CA121AAEA5250039B27D /* Main.storyboard */; };
 		CD12CA161AAEA5250039B27D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD12CA151AAEA5250039B27D /* Images.xcassets */; };
+		CD12CA191AAEA5250039B27D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD12CA171AAEA5250039B27D /* LaunchScreen.xib */; };
 		CD12CA251AAEA5250039B27D /* PigeonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12CA241AAEA5250039B27D /* PigeonTests.swift */; };
-		CD18578D1AB9301700D2D11E /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18578C1AB9301700D2D11E /* ImageTransition.swift */; };
-		CD8BB0771AB8D3080086B524 /* FrontEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8BB0761AB8D3080086B524 /* FrontEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +49,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4B6206621ABD664300938E13 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
-		4B6377881ABD2DD5002D5AC1 /* FrontContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontContainerViewController.swift; sourceTree = "<group>"; };
-		4B63778A1ABD31DD002D5AC1 /* FakeFrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeFrontViewController.swift; sourceTree = "<group>"; };
+		1049AD69414B6C6F7F987462 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styleguide.swift; sourceTree = "<group>"; };
+		570C3EF11ABA4923004AEB79 /* AddressInputTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressInputTransition.swift; sourceTree = "<group>"; };
+		57E972AB1ABA1B430066F2D5 /* MessageInputTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageInputTransition.swift; sourceTree = "<group>"; };
+		5E8BE3CAAC2B925386EAAA6A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8B0D5E651ABE45C400546715 /* Pigeon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pigeon-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B1F462F1ABE438E0047C309 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		8B73364C1AB7677400A78923 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
 		8B9337991AB787EE00E59686 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
 		8B93379A1AB787EE00E59686 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		8BE7FA251ABB812B0072B195 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		8BE7FA271ABBB8E80072B195 /* SignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
+		8BE7FA291ABC01020072B195 /* DrawSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawSignatureView.swift; sourceTree = "<group>"; };
+		8BE7FA2B1ABC0C410072B195 /* SignatureInputTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureInputTransition.swift; sourceTree = "<group>"; };
+		AFF9ED541D0E959E6C4A7392 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD089CD41AB4CDC80050760F /* FontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontViewController.swift; sourceTree = "<group>"; };
 		CD089CD61AB4CDE10050760F /* StickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerViewController.swift; sourceTree = "<group>"; };
 		CD089CD81AB4CE260050760F /* TemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
@@ -70,11 +82,10 @@
 		CD12CA101AAEA5250039B27D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD12CA131AAEA5250039B27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD12CA151AAEA5250039B27D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD12CA181AAEA5250039B27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CD12CA1E1AAEA5250039B27D /* PigeonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PigeonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD12CA231AAEA5250039B27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD12CA241AAEA5250039B27D /* PigeonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PigeonTests.swift; sourceTree = "<group>"; };
-		CD18578C1AB9301700D2D11E /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
-		CD8BB0761AB8D3080086B524 /* FrontEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B86E969BB6DA4656B80F95B4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,12 +107,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076968DFC7D84C694B9C83A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E8BE3CAAC2B925386EAAA6A /* Pods.debug.xcconfig */,
+				1049AD69414B6C6F7F987462 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8B9337981AB787D400E59686 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
+				8BE7FA251ABB812B0072B195 /* Common.swift */,
 				8B9337991AB787EE00E59686 /* BaseTransition.swift */,
 				8B93379A1AB787EE00E59686 /* FadeTransition.swift */,
-				CD18578C1AB9301700D2D11E /* ImageTransition.swift */,
+				57E972AB1ABA1B430066F2D5 /* MessageInputTransition.swift */,
+				570C3EF11ABA4923004AEB79 /* AddressInputTransition.swift */,
+				8BE7FA2B1ABC0C410072B195 /* SignatureInputTransition.swift */,
 			);
 			name = Transitions;
 			sourceTree = "<group>";
@@ -119,10 +143,8 @@
 				CD089CDC1AB4CE980050760F /* BackAddressViewController.swift */,
 				CD089CDE1AB4CEDF0050760F /* PaymentViewController.swift */,
 				CD089CE01AB4CEF50050760F /* ConfirmationViewController.swift */,
-				CD8BB0761AB8D3080086B524 /* FrontEditViewController.swift */,
-				4B63778A1ABD31DD002D5AC1 /* FakeFrontViewController.swift */,
-				4B6377881ABD2DD5002D5AC1 /* FrontContainerViewController.swift */,
-				4B6206621ABD664300938E13 /* LaunchViewController.swift */,
+				8BE7FA271ABBB8E80072B195 /* SignatureViewController.swift */,
+				8BE7FA291ABC01020072B195 /* DrawSignatureView.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -130,11 +152,14 @@
 		CD12CA001AAEA5250039B27D = {
 			isa = PBXGroup;
 			children = (
+				8B1F462F1ABE438E0047C309 /* Podfile */,
 				CD12CA0B1AAEA5250039B27D /* Pigeon */,
 				CD12CA211AAEA5250039B27D /* PigeonTests */,
 				CD12CA0A1AAEA5250039B27D /* Products */,
 				8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */,
 				8B73364C1AB7677400A78923 /* Raleway-Light.ttf */,
+				076968DFC7D84C694B9C83A8 /* Pods */,
+				D61785994A41D907CE5964B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,13 +175,15 @@
 		CD12CA0B1AAEA5250039B27D /* Pigeon */ = {
 			isa = PBXGroup;
 			children = (
-				CD0C235D1AB4CA7800B6EC13 /* ViewControllers */,
+				8B0D5E651ABE45C400546715 /* Pigeon-Bridging-Header.h */,
+				CD12CA121AAEA5250039B27D /* Main.storyboard */,
 				CD12CA0E1AAEA5250039B27D /* AppDelegate.swift */,
 				CD12CA101AAEA5250039B27D /* ViewController.swift */,
-				CD12CA121AAEA5250039B27D /* Main.storyboard */,
+				CD0C235D1AB4CA7800B6EC13 /* ViewControllers */,
 				4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */,
 				8B9337981AB787D400E59686 /* Transitions */,
 				CD12CA151AAEA5250039B27D /* Images.xcassets */,
+				CD12CA171AAEA5250039B27D /* LaunchScreen.xib */,
 				CD12CA0C1AAEA5250039B27D /* Supporting Files */,
 			);
 			path = Pigeon;
@@ -187,6 +214,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D61785994A41D907CE5964B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFF9ED541D0E959E6C4A7392 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD12CA281AAEA5250039B27D /* Build configuration list for PBXNativeTarget "Pigeon" */;
 			buildPhases = (
+				1CAB438719DE124A419A7EDC /* Check Pods Manifest.lock */,
 				CD12CA051AAEA5250039B27D /* Sources */,
 				CD12CA061AAEA5250039B27D /* Frameworks */,
 				CD12CA071AAEA5250039B27D /* Resources */,
+				7C1DB53A12D62383356C7DBB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,8 +304,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1F46301ABE438E0047C309 /* Podfile in Resources */,
 				8B73364B1AB7671000A78923 /* Montserrat-Regular.ttf in Resources */,
 				CD12CA141AAEA5250039B27D /* Main.storyboard in Resources */,
+				CD12CA191AAEA5250039B27D /* LaunchScreen.xib in Resources */,
 				CD12CA161AAEA5250039B27D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,12 +321,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CAB438719DE124A419A7EDC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7C1DB53A12D62383356C7DBB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD12CA051AAEA5250039B27D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B6377891ABD2DD5002D5AC1 /* FrontContainerViewController.swift in Sources */,
 				CD0C235F1AB4CAB000B6EC13 /* FrontViewController.swift in Sources */,
 				8B93379B1AB787EE00E59686 /* BaseTransition.swift in Sources */,
 				CD089CDB1AB4CE870050760F /* BackMessageViewController.swift in Sources */,
@@ -296,18 +367,20 @@
 				CD0C23631AB4CB2800B6EC13 /* MenuViewController.swift in Sources */,
 				CD12CA111AAEA5250039B27D /* ViewController.swift in Sources */,
 				CD0C23651AB4CB4E00B6EC13 /* IntroViewController.swift in Sources */,
+				8BE7FA261ABB812B0072B195 /* Common.swift in Sources */,
 				CD089CDF1AB4CEDF0050760F /* PaymentViewController.swift in Sources */,
 				CD12CA0F1AAEA5250039B27D /* AppDelegate.swift in Sources */,
-				4B63778B1ABD31DD002D5AC1 /* FakeFrontViewController.swift in Sources */,
-				CD18578D1AB9301700D2D11E /* ImageTransition.swift in Sources */,
 				8B93379C1AB787EE00E59686 /* FadeTransition.swift in Sources */,
+				8BE7FA2C1ABC0C410072B195 /* SignatureInputTransition.swift in Sources */,
 				CD0C23611AB4CAF000B6EC13 /* BackViewController.swift in Sources */,
+				570C3EF21ABA4923004AEB79 /* AddressInputTransition.swift in Sources */,
 				CD089CDD1AB4CE980050760F /* BackAddressViewController.swift in Sources */,
 				CD089CE11AB4CEF50050760F /* ConfirmationViewController.swift in Sources */,
+				8BE7FA2A1ABC01020072B195 /* DrawSignatureView.swift in Sources */,
 				CD089CD91AB4CE260050760F /* TemplateViewController.swift in Sources */,
-				CD8BB0771AB8D3080086B524 /* FrontEditViewController.swift in Sources */,
-				4B6206631ABD664300938E13 /* LaunchViewController.swift in Sources */,
+				8BE7FA281ABBB8E80072B195 /* SignatureViewController.swift in Sources */,
 				4BC3CE801AB4DEC9001C4477 /* Styleguide.swift in Sources */,
+				57E972AC1ABA1B430066F2D5 /* MessageInputTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +409,14 @@
 				CD12CA131AAEA5250039B27D /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD12CA171AAEA5250039B27D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD12CA181AAEA5250039B27D /* Base */,
+			);
+			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -420,23 +501,40 @@
 		};
 		CD12CA291AAEA5250039B27D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E8BE3CAAC2B925386EAAA6A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Pigeon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pigeon/CardIO",
+					"$(PROJECT_DIR)/CardIO",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pigeon/Pigeon-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		CD12CA2A1AAEA5250039B27D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1049AD69414B6C6F7F987462 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Pigeon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pigeon/CardIO",
+					"$(PROJECT_DIR)/CardIO",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pigeon/Pigeon-Bridging-Header.h";
 			};
 			name = Release;
 		};

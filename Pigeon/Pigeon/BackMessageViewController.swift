@@ -8,17 +8,23 @@
 
 import UIKit
 
-class BackMessageViewController: UIViewController {
+protocol InputMessageDelegate {
+    func userEnterMessage(info:NSString)
+}
 
+class BackMessageViewController: UIViewController {
+    
+    var delegate: InputMessageDelegate? = nil
+    //var inputTransition: MessageInputTransition!
+    
     @IBOutlet weak var messageEditTextView: UITextView!
+    @IBOutlet weak var containerView: UIView! //not used
+    @IBOutlet weak var doneButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         messageEditTextView.becomeFirstResponder()
         messageEditFormat()
-        
-        //messageEditTextView.contentSize = CGSize(width: 224, height: 300)
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,20 +33,35 @@ class BackMessageViewController: UIViewController {
     }
     
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        var destinationViewController = segue.destinationViewController as BackViewController
-        
-        destinationViewController.inputMessage = messageEditTextView.text
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        
+//        var destinationViewController = segue.destinationViewController as BackViewController
+//        destinationViewController.inputMessage = messageEditTextView.text
+//        println("Back message view controller: \(destinationViewController.inputMessage)")
+//        inputTransition = MessageInputTransition()
+//        inputTransition.duration = 0.3
+//        
+//        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+//        destinationViewController.transitioningDelegate = inputTransition
+//        
+//    }
+    
+    
     @IBAction func onTapDone(sender: AnyObject) {
-        performSegueWithIdentifier("finishMessageEditSegue", sender: nil)
+        //performSegueWithIdentifier("finishMessageEditSegue", sender: nil)
+        //navigationController!.popViewControllerAnimated(true)
         
-        //dismissViewControllerAnimated(true, completion: nil)
+        if delegate != nil {
+            let information: NSString = messageEditTextView.text
+            
+            delegate!.userEnterMessage(information)
+            dismissViewControllerAnimated(true, completion: nil)
+            //self.navigationController?.popViewControllerAnimated(true)
+        }
     }
     
     
-    
+    //FORMATTING
     func messageEditFormat() {
         
         let textColor: UIColor = UIColor(red: 96/256, green: 94/256, blue: 97/256, alpha: 1) //#605E61, 96 94 97
@@ -52,7 +73,6 @@ class BackMessageViewController: UIViewController {
         myMutableString.addAttributes([NSParagraphStyleAttributeName : style],range: NSRange(location:0,length:1))
         
         messageEditTextView.attributedText = myMutableString
-        
     }
 
 }

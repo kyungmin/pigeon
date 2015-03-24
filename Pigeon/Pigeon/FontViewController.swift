@@ -10,24 +10,12 @@ import UIKit
 
 class FontViewController: UIViewController {
 
-    var selectedFont: String!
-    var fonts: [String]! = []
-    var onDataAvailable : ((data: String) -> ())?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
 
-    @IBAction func didSelectFont(sender: AnyObject) {
-        println(sender.tag)
-        selectedFont = "Monstserrat.ttf"
-        dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    @IBAction func didTapBackground(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
