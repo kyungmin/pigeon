@@ -22,8 +22,8 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
     var imageTransition: ImageTransition!
     var textField: UITextField!
     
-    var tabs: [UIViewController]!
-    var segues: [String]!
+    /*var tabs: [UIViewController!]
+    var segues: [String!]*/
     
     //create a variable to catch the image passing from the previous view controller
     var photoImage:UIImage!
@@ -39,8 +39,8 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         originalImageCenter = imageView.center
         scrollView.contentSize = imageView.frame.size
         
-        tabs = [FontViewController, StickerViewController, TemplateViewController]
-        segues = ["fontSegue", "stickerSegue", "templateSegue"]
+        /*tabs = [FontViewController, StickerViewController, TemplateViewController]
+        segues = ["fontSegue", "stickerSegue", "templateSegue"]*/
     }
 
     @IBAction func didPinchImage(sender: UIPinchGestureRecognizer) {
