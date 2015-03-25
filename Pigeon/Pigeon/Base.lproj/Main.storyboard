@@ -218,6 +218,7 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="postcard_image" id="LbF-sW-JvY">
                                 <rect key="frame" x="132" y="410" width="57" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <color key="tintColor" red="0.40425772459999998" green="0.78946789679999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
