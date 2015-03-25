@@ -8,13 +8,21 @@
 
 import UIKit
 
+protocol InputAddressDelegate {
+    func userEnterAddress(info:NSString)
+}
+
 class BackAddressViewController: UIViewController {
 
+    var delegate: InputAddressDelegate? = nil
+    
     @IBOutlet weak var addressEditTextView: UITextView!
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var doneButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         addressEditTextView.becomeFirstResponder()
         addressEditFormat()
         
@@ -26,19 +34,32 @@ class BackAddressViewController: UIViewController {
     }
     
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        var destinationViewController = segue.destinationViewController as BackViewController
-        
-        destinationViewController.inputAddress = addressEditTextView.text
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        
+//        var destinationViewController = segue.destinationViewController as BackViewController
+//        destinationViewController.inputAddress = addressEditTextView.text
+//        
+//        inputTransition = AddressInputTransition()
+//        inputTransition.duration = 0.3
+//        
+//        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+//        destinationViewController.transitioningDelegate = inputTransition
+//    }
     @IBAction func onTapDone(sender: AnyObject) {
-        performSegueWithIdentifier("finishAddressEditSegue", sender: nil)
+        //performSegueWithIdentifier("finishAddressEditSegue", sender: nil)
+        //navigationController!.popViewControllerAnimated(true)
+        if delegate != nil {
+            let information: NSString = addressEditTextView.text
+            
+            delegate!.userEnterAddress(information)
+            dismissViewControllerAnimated(true, completion: nil)
+            //self.navigationController?.popViewControllerAnimated(true)
+        }
     }
 
 
 
-    
+     //FORMATTING
      func addressEditFormat() {
         
         let textColor: UIColor = UIColor(red: 96/256, green: 94/256, blue: 97/256, alpha: 1) //#605E61, 96 94 97
