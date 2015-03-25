@@ -8,22 +8,28 @@
 
 import UIKit
 
-class FrontViewController: UIViewController,UIAlertViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class FrontViewController: UIViewController,UIAlertViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate, UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning {
     
-    @IBOutlet weak var photoView: UIImageView!
+    var isPresenting: Bool = true
+
+    
     @IBOutlet weak var photoButton: UIButton!
-    @IBOutlet weak var navImageView: UIImageView!
-    @IBOutlet weak var menuButton: UIButton!
+    @IBOutlet weak var photoImageView: UIImageView!
+    
 
     var picker:UIImagePickerController?=UIImagePickerController()
-
-    @IBOutlet weak var contentView: UIView!
-    var contentViewStartingPositionX: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        //
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,106 +37,8 @@ class FrontViewController: UIViewController,UIAlertViewDelegate,UIImagePickerCon
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func screenEdgeDidPan(sender: UIScreenEdgePanGestureRecognizer) {
-        var translation = sender.translationInView(view)
-        var velocity = sender.velocityInView(view)
         
-        if (sender.state == UIGestureRecognizerState.Began){
-            
-            contentViewStartingPositionX = contentView.frame.origin.x
-            
-            
-            
-        } else if (sender.state == UIGestureRecognizerState.Changed) {
-            
-            contentView.frame.origin.x = contentViewStartingPositionX + translation.x
-            
-            
-        } else if (sender.state == UIGestureRecognizerState.Ended) {
-            
-            if ( velocity.x > 0) {
-                UIView.animateWithDuration(0.2, animations: { () -> Void in
-                    
-                    self.contentView.frame.origin.x = 270
-                    
-                    }, completion: { (finished:Bool) -> Void in
-                        
-                        var panGesture = UIPanGestureRecognizer(target: self, action: "contentViewDidPan:")
-                        self.contentView.addGestureRecognizer(panGesture)
-                        
-                        
-                })
-                
-                
-                
-            } else {
-                UIView.animateWithDuration(0.2, animations: { () -> Void in
-                    self.contentView.frame.origin.x = 0
-                })
-            }
-            
-        }
-
-    }
-    
-    @IBAction func menuButtonDidPress(sender: AnyObject) {
-        if (contentView.frame.origin.x == 0){
-            UIView.animateWithDuration(0.2, animations: { () -> Void in
-            
-                self.contentView.frame.origin.x = 270
-            
-                }, completion: { (finished:Bool) -> Void in
-                
-                    var panGesture = UIPanGestureRecognizer(target: self, action: "contentViewDidPan:")
-                    self.contentView.addGestureRecognizer(panGesture)
-                
-                
-            })
-        } else {
-            UIView.animateWithDuration(0.2, animations: { () -> Void in
-                self.contentView.frame.origin.x = 0
-            })
-
-        }
         
-    }
-    
-    @IBAction func contentViewDidPan(sender: UIPanGestureRecognizer) {
-        var translation = sender.translationInView(view)
-        var velocity = sender.velocityInView(view)
-        
-        if (sender.state == UIGestureRecognizerState.Began){
-            
-            contentViewStartingPositionX = contentView.frame.origin.x
-            
-            
-            
-        } else if (sender.state == UIGestureRecognizerState.Changed) {
-            
-            contentView.frame.origin.x = contentViewStartingPositionX + translation.x
-            
-        } else if (sender.state == UIGestureRecognizerState.Ended) {
-            
-            if ( velocity.x > 0) {
-                UIView.animateWithDuration(0.2, animations: { () -> Void in
-                    
-                    self.contentView.frame.origin.x = 270
-                    
-                    }, completion: { (finished:Bool) -> Void in
-                        
-                        
-                })
-                
-            } else {
-                UIView.animateWithDuration(0.2, animations: { () -> Void in
-                    self.contentView.frame.origin.x = 0
-                })
-            }
-            
-        }
-
-    }
-    
     @IBAction func photoButtonDidPress(sender: AnyObject) {
         var alert:UIAlertController=UIAlertController(title: "Choose Image", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
         
@@ -182,26 +90,30 @@ class FrontViewController: UIViewController,UIAlertViewDelegate,UIImagePickerCon
     
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]!)
     {
-
+        //performSegueWithIdentifier("frontEditSegue", sender: self)
         let selectedImage : UIImage = info[UIImagePickerControllerOriginalImage] as UIImage
-        photoView.image = selectedImage
- 
+
+        photoImageView.image = selectedImage
         
-        picker .dismissViewControllerAnimated(true, completion: nil)
+        //println("perform Segue")
+        
+       // picker.dismissViewControllerAnimated(false, completion: nil)
+        picker.dismissViewControllerAnimated(false, completion: { () -> Void in
+            self.performSegueWithIdentifier("frontEditSegue", sender: self)
+            self.photoImageView.image = nil
+        })
+        
         //sets the selected image to image view
         //photoView.image=info[UIImagePickerControllerOriginalImage] as? UIImage
         
         
-        photoButton.hidden = true
-        menuButton.hidden = true
-        navImageView.image = UIImage(named:"nav_bar_back_pigeon_next")
         
         //remove ScreenEdgePanGesture
-        if let recognizers = contentView.gestureRecognizers {
-            for recognizer in recognizers {
-                contentView.removeGestureRecognizer(recognizer as UIGestureRecognizer)
-            }
-        }
+//        if let recognizers = contentView.gestureRecognizers {
+//            for recognizer in recognizers {
+//                contentView.removeGestureRecognizer(recognizer as UIGestureRecognizer)
+//            }
+//        }
         
         
     }
@@ -210,6 +122,54 @@ class FrontViewController: UIViewController,UIAlertViewDelegate,UIImagePickerCon
     {
         println("picker cancel.")
         picker .dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var destinationViewController = segue.destinationViewController as FrontEditViewController
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        destinationViewController.transitioningDelegate = self
+        
+        //passing image
+        destinationViewController.photoImage = photoImageView.image
+
+    }
+    
+    func animationControllerForPresentedController(presented: UIViewController!, presentingController presenting: UIViewController!, sourceController source: UIViewController!) -> UIViewControllerAnimatedTransitioning! {
+        isPresenting = true
+        return self
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController!) -> UIViewControllerAnimatedTransitioning! {
+        isPresenting = false
+        return self
+    }
+    
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+        // The value here should be the duration of the animations scheduled in the animationTransition method
+        return 0.3
+    }
+    
+    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+        var containerView = transitionContext.containerView()
+        var toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
+        var fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
+        
+        if (isPresenting) {
+            containerView.addSubview(toViewController.view)
+            toViewController.view.alpha = 0
+            UIView.animateWithDuration(0.3, animations: { () -> Void in
+                toViewController.view.alpha = 1
+                }) { (finished: Bool) -> Void in
+                    transitionContext.completeTransition(true)
+            }
+        } else {
+            UIView.animateWithDuration(0.3, animations: { () -> Void in
+                fromViewController.view.alpha = 0
+                }) { (finished: Bool) -> Void in
+                    transitionContext.completeTransition(true)
+                    fromViewController.view.removeFromSuperview()
+            }
+        }
     }
     
     
