@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DAA5D35C78F70BF9B639B20 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4387744B029DE73E7DDE0061 /* libPods.a */; };
 		4B6206631ABD664300938E13 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6206621ABD664300938E13 /* LaunchViewController.swift */; };
 		4B6377891ABD2DD5002D5AC1 /* FrontContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6377881ABD2DD5002D5AC1 /* FrontContainerViewController.swift */; };
 		4B63778B1ABD31DD002D5AC1 /* FakeFrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B63778A1ABD31DD002D5AC1 /* FakeFrontViewController.swift */; };
 		4BC3CE801AB4DEC9001C4477 /* Styleguide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */; };
+		574F53271AC2732200E243A1 /* SignatureInputTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F53261AC2732200E243A1 /* SignatureInputTransition.swift */; };
+		574F53291AC2733300E243A1 /* AddressInputTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F53281AC2733300E243A1 /* AddressInputTransition.swift */; };
+		574F532B1AC2733B00E243A1 /* MessageInputTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F532A1AC2733B00E243A1 /* MessageInputTransition.swift */; };
+		57C5E5221AC2743D003BF518 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C5E5211AC2743D003BF518 /* Common.swift */; };
+		57C5E5251AC2745B003BF518 /* DrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C5E5231AC2745B003BF518 /* DrawSignatureView.swift */; };
+		57C5E5261AC2745B003BF518 /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C5E5241AC2745B003BF518 /* SignatureViewController.swift */; };
 		8B73364B1AB7671000A78923 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */; };
 		8B93379B1AB787EE00E59686 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9337991AB787EE00E59686 /* BaseTransition.swift */; };
 		8B93379C1AB787EE00E59686 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93379A1AB787EE00E59686 /* FadeTransition.swift */; };
@@ -45,11 +52,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		330BE825E346522E0873A75D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		40DFC55B4B2792DF351724D1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4387744B029DE73E7DDE0061 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6206621ABD664300938E13 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		4B6377881ABD2DD5002D5AC1 /* FrontContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontContainerViewController.swift; sourceTree = "<group>"; };
 		4B63778A1ABD31DD002D5AC1 /* FakeFrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeFrontViewController.swift; sourceTree = "<group>"; };
 		4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styleguide.swift; sourceTree = "<group>"; };
 		574F53231AC270C200E243A1 /* Pigeon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pigeon-Bridging-Header.h"; sourceTree = "<group>"; };
+		574F53261AC2732200E243A1 /* SignatureInputTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureInputTransition.swift; sourceTree = "<group>"; };
+		574F53281AC2733300E243A1 /* AddressInputTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressInputTransition.swift; sourceTree = "<group>"; };
+		574F532A1AC2733B00E243A1 /* MessageInputTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageInputTransition.swift; sourceTree = "<group>"; };
+		57C5E5211AC2743D003BF518 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		57C5E5231AC2745B003BF518 /* DrawSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawSignatureView.swift; sourceTree = "<group>"; };
+		57C5E5241AC2745B003BF518 /* SignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
 		8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		8B73364C1AB7677400A78923 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
 		8B9337991AB787EE00E59686 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
@@ -83,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DAA5D35C78F70BF9B639B20 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +116,10 @@
 		8B9337981AB787D400E59686 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
+				57C5E5211AC2743D003BF518 /* Common.swift */,
+				574F532A1AC2733B00E243A1 /* MessageInputTransition.swift */,
+				574F53281AC2733300E243A1 /* AddressInputTransition.swift */,
+				574F53261AC2732200E243A1 /* SignatureInputTransition.swift */,
 				8B9337991AB787EE00E59686 /* BaseTransition.swift */,
 				8B93379A1AB787EE00E59686 /* FadeTransition.swift */,
 				CD18578C1AB9301700D2D11E /* ImageTransition.swift */,
@@ -106,9 +127,28 @@
 			name = Transitions;
 			sourceTree = "<group>";
 		};
+		90580BDC6442415BB7F816C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				330BE825E346522E0873A75D /* Pods.debug.xcconfig */,
+				40DFC55B4B2792DF351724D1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9A3068CB4AA4E4272AFA7BD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4387744B029DE73E7DDE0061 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD0C235D1AB4CA7800B6EC13 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				57C5E5231AC2745B003BF518 /* DrawSignatureView.swift */,
+				57C5E5241AC2745B003BF518 /* SignatureViewController.swift */,
 				CD0C235E1AB4CAB000B6EC13 /* FrontViewController.swift */,
 				CD0C23621AB4CB2800B6EC13 /* MenuViewController.swift */,
 				CD0C23641AB4CB4E00B6EC13 /* IntroViewController.swift */,
@@ -136,6 +176,8 @@
 				CD12CA0A1AAEA5250039B27D /* Products */,
 				8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */,
 				8B73364C1AB7677400A78923 /* Raleway-Light.ttf */,
+				90580BDC6442415BB7F816C2 /* Pods */,
+				9A3068CB4AA4E4272AFA7BD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD12CA281AAEA5250039B27D /* Build configuration list for PBXNativeTarget "Pigeon" */;
 			buildPhases = (
+				7B1D02E3401D8A19F6B330B7 /* Check Pods Manifest.lock */,
 				CD12CA051AAEA5250039B27D /* Sources */,
 				CD12CA061AAEA5250039B27D /* Frameworks */,
 				CD12CA071AAEA5250039B27D /* Resources */,
+				6CB0F24D8DF408357F4F66AC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,6 +328,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6CB0F24D8DF408357F4F66AC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B1D02E3401D8A19F6B330B7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD12CA051AAEA5250039B27D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -292,16 +369,22 @@
 				4B6377891ABD2DD5002D5AC1 /* FrontContainerViewController.swift in Sources */,
 				CD0C235F1AB4CAB000B6EC13 /* FrontViewController.swift in Sources */,
 				8B93379B1AB787EE00E59686 /* BaseTransition.swift in Sources */,
+				57C5E5261AC2745B003BF518 /* SignatureViewController.swift in Sources */,
 				CD089CDB1AB4CE870050760F /* BackMessageViewController.swift in Sources */,
 				CD089CD51AB4CDC80050760F /* FontViewController.swift in Sources */,
 				CD089CD71AB4CDE10050760F /* StickerViewController.swift in Sources */,
 				CD0C23631AB4CB2800B6EC13 /* MenuViewController.swift in Sources */,
+				57C5E5251AC2745B003BF518 /* DrawSignatureView.swift in Sources */,
+				574F53291AC2733300E243A1 /* AddressInputTransition.swift in Sources */,
 				CD12CA111AAEA5250039B27D /* ViewController.swift in Sources */,
 				CD0C23651AB4CB4E00B6EC13 /* IntroViewController.swift in Sources */,
 				CD089CDF1AB4CEDF0050760F /* PaymentViewController.swift in Sources */,
+				574F53271AC2732200E243A1 /* SignatureInputTransition.swift in Sources */,
 				CD12CA0F1AAEA5250039B27D /* AppDelegate.swift in Sources */,
+				57C5E5221AC2743D003BF518 /* Common.swift in Sources */,
 				4B63778B1ABD31DD002D5AC1 /* FakeFrontViewController.swift in Sources */,
 				CD18578D1AB9301700D2D11E /* ImageTransition.swift in Sources */,
+				574F532B1AC2733B00E243A1 /* MessageInputTransition.swift in Sources */,
 				8B93379C1AB787EE00E59686 /* FadeTransition.swift in Sources */,
 				CD0C23611AB4CAF000B6EC13 /* BackViewController.swift in Sources */,
 				CD089CDD1AB4CE980050760F /* BackAddressViewController.swift in Sources */,
@@ -422,6 +505,7 @@
 		};
 		CD12CA291AAEA5250039B27D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 330BE825E346522E0873A75D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -436,6 +520,7 @@
 		};
 		CD12CA2A1AAEA5250039B27D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40DFC55B4B2792DF351724D1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
