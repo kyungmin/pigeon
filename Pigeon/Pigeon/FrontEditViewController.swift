@@ -23,7 +23,8 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
     var currentSelection: AnyObject!
     var imageTransition: ImageTransition!
     var textField: UITextField!
-    
+    var newSticker: UIImageView!
+    var stickerNames: [String]!
     var segues: [String!] = []
     
     //create a variable to catch the image passing from the previous view controller
@@ -33,7 +34,7 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         super.viewDidLoad()
 
         //assign selected image to imageView
-//        imageView.image = photoImage
+        imageView.image = photoImage
         imageView.contentMode = UIViewContentMode.ScaleAspectFill
         
         originalImageFrame = imageView.frame
@@ -41,6 +42,8 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         scrollView.contentSize = imageView.frame.size
         
         segues = ["fontSegue", "stickerSegue", "templateSegue"]
+        stickerNames = ["sticker_heart_highlighted", "sticker_plane_highlighted", "sticker_lips_highlighted"]
+        
         buttonGroup.center.y = buttonGroup.center.y + buttonGroup.frame.height
     }
     
@@ -169,17 +172,16 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         scrollView.addSubview(newLabel)
     }
 
-    func addStickers(selectedStickers: [UIImageView!]) {
+    func addStickers(selectedStickers: [NSDictionary!]) {
         imageView.userInteractionEnabled = false
 
         for sticker in selectedStickers {
-            currentSelection = sticker
-            sticker.userInteractionEnabled = true
-            addTapGestureRecognizer(sticker)
-            addPanGestureRecognizer(sticker)
-            addPinchGestureRecognizer(sticker)
-            
-            scrollView.addSubview(sticker)
+            var imageName = stickerNames[sticker["tag"] as Int]
+            var image = UIImage(named: imageName)
+            newSticker = UIImageView(image: image)
+            newSticker.center = CGPoint(x: sticker["x"] as CGFloat, y: sticker["y"] as CGFloat)
+            scrollView.addSubview(newSticker)
+            newSticker.userInteractionEnabled = true
         }
     }
 

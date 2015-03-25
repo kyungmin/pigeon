@@ -11,7 +11,8 @@ import UIKit
 class StickerViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var tray: UIButton!
-    var selectedStickers: [UIImageView!] = []
+    var stickerInfo: NSDictionary!
+    var selectedStickers: [NSDictionary!] = []
     var newStickerView: UIImageView!
     
     override func viewDidLoad() {
@@ -27,8 +28,8 @@ class StickerViewController: UIViewController, UIGestureRecognizerDelegate {
             newStickerView = UIImageView(image: imageView.image)
             newStickerView.center = imageView.center
             newStickerView.userInteractionEnabled = true
-
-            selectedStickers.append(newStickerView)
+            stickerInfo = ["x": newStickerView.center.x, "y": newStickerView.center.y, "tag": imageView.tag]
+            selectedStickers.append(stickerInfo)
             view.addSubview(newStickerView)
             
             newStickerView.transform = CGAffineTransformMakeScale(1.2, 1.2)
