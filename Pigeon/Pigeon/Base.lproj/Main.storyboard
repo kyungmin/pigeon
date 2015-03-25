@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="6oS-an-ZWl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="CPp-2M-D2b">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="AmaticSC-Bold.ttf">
+            <string>AmaticSC-Bold</string>
+        </mutableArray>
+        <mutableArray key="Delius-Regular.ttf">
+            <string>Delius-Regular</string>
+        </mutableArray>
         <mutableArray key="Montserrat-Regular.ttf">
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
-            <string>Montserrat-Regular</string>
-            <string>Montserrat-Regular</string>
-            <string>Montserrat-Regular</string>
-            <string>Montserrat-Regular</string>
-            <string>Montserrat-Regular</string>
-            <string>Montserrat-Regular</string>
-            <string>Montserrat-Regular</string>
+        </mutableArray>
+        <mutableArray key="Pacifico.ttf">
+            <string>Pacifico-Regular</string>
+            <string>Pacifico-Regular</string>
+            <string>Pacifico-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -30,7 +34,7 @@
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hamburger_menu" id="whQ-Bs-Ylf">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -53,12 +57,12 @@
                         <subviews>
                             <view contentMode="scaleToFill" id="XcN-Pc-H4i" userLabel="Menu View">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="Rfw-yA-M6s" userLabel="Front View">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -80,7 +84,7 @@
                     </connections>
                 </screenEdgePanGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="379" y="383"/>
+            <point key="canvasLocation" x="171" y="343"/>
         </scene>
         <!--Front View Controller-->
         <scene sceneID="HUN-Ws-4CN">
@@ -92,15 +96,15 @@
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front_background" id="oeH-hG-bt4">
                                 <rect key="frame" x="0.0" y="55" width="320" height="513"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="empty_front" id="lM2-oA-nN5">
                                 <rect key="frame" x="35" y="203" width="251" height="161"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav_bar_menu_pigeon" id="q4b-tg-D67">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CjI-0F-ewz" userLabel="Photo Button">
                                 <rect key="frame" x="35" y="203" width="251" height="161"/>
@@ -141,11 +145,11 @@
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front_background" id="D0l-ck-8jD">
                                 <rect key="frame" x="0.0" y="55" width="320" height="513"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="swipe_icon" id="dyT-j0-A7F">
                                 <rect key="frame" x="122" y="428" width="67" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4PD-YV-beQ">
                                 <rect key="frame" x="35" y="203" width="251" height="161"/>
@@ -153,7 +157,7 @@
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav_bar_back_pigeon_next" id="sJ0-im-jI6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uyi-JB-VCs">
                                 <rect key="frame" x="0.0" y="20" width="47" height="30"/>
@@ -177,32 +181,6 @@
             </objects>
             <point key="canvasLocation" x="990" y="1017"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="8H7-NL-pRW">
-            <objects>
-                <viewController id="AyR-rw-icg" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="INh-dQ-Ivh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front edit (photo)" id="SCH-iP-BJV">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="aQy-Fl-Rhb" appends="YES" id="7Co-zj-XI4"/>
-                                </connections>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUk-cR-eiL" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="aQy-Fl-Rhb"/>
-            </objects>
-            <point key="canvasLocation" x="2603" y="1017"/>
-        </scene>
         <!--Launch View Controller-->
         <scene sceneID="ohg-ky-f6Z">
             <objects>
@@ -213,24 +191,20 @@
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="launch screen 1" id="QOV-qb-xLa">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="pigeon_image" id="Bu6-If-feH">
                                 <rect key="frame" x="-50" y="43" width="49" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" image="pigeon_text" id="oGf-9V-5MU">
                                 <rect key="frame" x="121" y="480" width="79" height="14"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="postcard_image" id="LbF-sW-JvY">
                                 <rect key="frame" x="132" y="410" width="57" height="44"/>
-<<<<<<< HEAD
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="tintColor" red="0.40425772459999998" green="0.78946789679999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-=======
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> b4d8f9b701115b943f05d32480ff005af918aabb
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -246,7 +220,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RyJ-e8-5dp" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="HxY-Cw-qFp"/>
             </objects>
-            <point key="canvasLocation" x="-19" y="383"/>
+            <point key="canvasLocation" x="-227" y="343"/>
         </scene>
         <!--Front Edit View Controller-->
         <scene sceneID="qoq-uO-6fx">
@@ -258,7 +232,7 @@
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front_background" id="oqY-Eh-xWP">
                                 <rect key="frame" x="0.0" y="55" width="320" height="513"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SbJ-I4-iPW">
                                 <rect key="frame" x="0.0" y="469" width="106" height="99"/>
@@ -268,24 +242,30 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didPressFontButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="0zP-KS-Zfr"/>
+                                    <action selector="didPressButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="sxK-o6-nZ2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zc9-Ye-Wlv">
+                            <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zc9-Ye-Wlv">
                                 <rect key="frame" x="107" y="469" width="106" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="sticker_icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="kCH-C8-Kda"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PTY-JN-9We">
+                            <button opaque="NO" tag="2" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PTY-JN-9We">
                                 <rect key="frame" x="214" y="469" width="106" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="template_icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="eFp-FD-OdS"/>
+                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="uL0-DU-cxh">
                                 <rect key="frame" x="35" y="203" width="251" height="161"/>
@@ -293,7 +273,7 @@
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sample_image" id="2Z0-8I-hcW">
                                         <rect key="frame" x="0.0" y="0.0" width="251" height="161"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                         <color key="backgroundColor" red="0.94117653369999998" green="0.95294123890000004" blue="0.96078437569999997" alpha="1" colorSpace="deviceRGB"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -305,7 +285,7 @@
                             </scrollView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav_bar_back_pigeon_next" id="M9W-vO-bhU">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3mH-wm-DP0" userLabel="Back Button">
                                 <rect key="frame" x="0.0" y="17" width="53" height="30"/>
@@ -325,6 +305,8 @@
                         <outlet property="imageView" destination="2Z0-8I-hcW" id="kTg-VK-gMr"/>
                         <outlet property="scrollView" destination="uL0-DU-cxh" id="uuf-bZ-qt3"/>
                         <segue destination="xS0-2d-7Fz" kind="modal" identifier="fontSegue" id="RZq-ou-hNq"/>
+                        <segue destination="3g0-F7-XzJ" kind="modal" identifier="stickerSegue" id="jRf-ks-VRu"/>
+                        <segue destination="zwL-JE-pHb" kind="modal" identifier="templateSegue" id="95X-NV-T0g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTl-KT-fOR" sceneMemberID="firstResponder"/>
@@ -339,159 +321,182 @@
                     </connections>
                 </pinchGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="614" y="1749"/>
+            <point key="canvasLocation" x="583" y="1902"/>
         </scene>
         <!--Template View Controller-->
         <scene sceneID="dU2-hh-iya">
             <objects>
-                <viewController id="zwL-JE-pHb" customClass="TemplateViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Template View Controller" id="zwL-JE-pHb" customClass="TemplateViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sLt-zu-Rm9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front edit (template)" id="nAW-vS-Lav">
+                            <view contentMode="scaleToFill" id="D40-Or-LXV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="p8a-KQ-edT" appends="YES" id="Suc-aF-6q2"/>
+                                    <outletCollection property="gestureRecognizers" destination="0g9-hB-O8i" appends="YES" id="8c4-XO-LnK"/>
                                 </connections>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5aR-7G-fA8" userLabel="shape">
-                                <rect key="frame" x="110" y="468" width="100" height="100"/>
+                            </view>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rzh-OZ-j2l">
+                                <rect key="frame" x="214" y="469" width="106" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
+                                <color key="backgroundColor" red="0.30588235289999999" green="0.62745098040000002" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="template_icon_hightlighted">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3g0-F7-XzJ" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="HpV-1X-0Gw"/>
+                                    <action selector="didPressFontButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="Eo4-gh-4wM"/>
+                                    <action selector="didTapBackground:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="AEZ-vT-nqC"/>
+                                    <action selector="didTapBackground:" destination="zwL-JE-pHb" eventType="touchUpInside" id="kcw-eI-0UU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="c4y-e5-USM" userLabel="text">
-                                <rect key="frame" x="5" y="468" width="100" height="100"/>
+                            <button opaque="NO" tag="3" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lsK-UP-vHA">
+                                <rect key="frame" x="0.0" y="400" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.30588235289999999" green="0.62745098040000002" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="18"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xS0-2d-7Fz" kind="modal" modalTransitionStyle="crossDissolve" id="WOY-aY-e1K"/>
+                                    <action selector="didPressFontButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="eRY-Tu-Qv4"/>
+                                    <action selector="didSelectFont:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="GZ7-bM-W5a"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cDH-Fi-IQf">
+                                <rect key="frame" x="41" y="417" width="52" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="template_left_highlighted">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ssl-f4-fDi">
+                                <rect key="frame" x="225" y="417" width="52" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="template_full">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4LY-h8-G7J">
+                                <rect key="frame" x="134" y="417" width="52" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="template_center">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="og9-BT-mE8" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="p8a-KQ-edT">
+                <tapGestureRecognizer id="0g9-hB-O8i">
                     <connections>
-                        <segue destination="CPp-2M-D2b" kind="modal" modalTransitionStyle="crossDissolve" id="zP4-aI-1Ez"/>
+                        <action selector="didTapBackground:" destination="zwL-JE-pHb" id="9Q6-hC-hgo"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1437" y="1643"/>
+            <point key="canvasLocation" x="1979" y="1902"/>
         </scene>
         <!--Sticker View Controller-->
         <scene sceneID="M7u-hK-BBI">
             <objects>
-                <viewController id="3g0-F7-XzJ" customClass="StickerViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Sticker View Controller" id="3g0-F7-XzJ" customClass="StickerViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cUB-7A-9yA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front edit (shape)" id="WMn-Rk-v7S">
+                            <view contentMode="scaleToFill" id="hLj-Xg-7s1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Efy-yi-Jdx" appends="YES" id="PjD-mF-2nC"/>
+                                    <outletCollection property="gestureRecognizers" destination="GMO-2K-AzD" appends="YES" id="Kg8-g2-ksU"/>
                                 </connections>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oqq-Cy-APz" userLabel="text">
-                                <rect key="frame" x="0.0" y="468" width="100" height="100"/>
+                            </view>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xwg-Er-XUK">
+                                <rect key="frame" x="107" y="469" width="106" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
+                                <color key="backgroundColor" red="0.30588235289999999" green="0.62745098040000002" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="sticker_icon_highlighted">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xS0-2d-7Fz" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="U2S-CB-oT3"/>
+                                    <action selector="didPressFontButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="XxT-Vp-Nmv"/>
+                                    <action selector="didTapBackground:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="izH-b1-b5O"/>
+                                    <action selector="didTapBackground:" destination="3g0-F7-XzJ" eventType="touchUpInside" id="ytZ-db-4LA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vy8-2X-adc" userLabel="template">
-                                <rect key="frame" x="221" y="468" width="100" height="100"/>
+                            <button opaque="NO" tag="3" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qix-Sh-oFK">
+                                <rect key="frame" x="0.0" y="399" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.30588235289999999" green="0.62745098040000002" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="18"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zwL-JE-pHb" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="nzg-oM-K2a"/>
+                                    <action selector="didPressFontButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="ZD8-hI-nbq"/>
+                                    <action selector="didSelectFont:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="NyO-nb-gfq"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6no-N4-SNW">
+                                <rect key="frame" x="30" y="416" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sticker_heart_highlighted">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="B0z-0Y-hdZ">
+                                <rect key="frame" x="100" y="416" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="sticker_plane_highlighted">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fho-Hu-NBC">
+                                <rect key="frame" x="170" y="416" width="52" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sticker_lips_highlighted">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJc-cM-BwG" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Efy-yi-Jdx">
+                <tapGestureRecognizer id="GMO-2K-AzD">
                     <connections>
-                        <segue destination="Wm5-uR-dmq" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="odK-YF-vn0"/>
+                        <action selector="didTapBackground:" destination="3g0-F7-XzJ" id="R9i-la-2yC"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1019" y="2437"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="f9p-ZT-Amx">
-            <objects>
-                <viewController id="Wm5-uR-dmq" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jql-0b-ecv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front edit (shape color)" id="uRN-YV-IM7">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="BXx-zU-RUv" appends="YES" id="Nn2-DR-xQI"/>
-                                </connections>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aVu-6q-PLd" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="BXx-zU-RUv">
-                    <connections>
-                        <segue destination="CPp-2M-D2b" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="f37-7d-Bx6"/>
-                    </connections>
-                </tapGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="1498" y="2477"/>
+            <point key="canvasLocation" x="1518" y="1902"/>
         </scene>
         <!--Font View Controller-->
         <scene sceneID="fHe-HO-nv8">
             <objects>
-                <viewController id="xS0-2d-7Fz" customClass="FontViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Font View Controller" id="xS0-2d-7Fz" customClass="FontViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wyW-Tl-Vry">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front_background" id="IZR-OD-u0s">
-                                <rect key="frame" x="0.0" y="55" width="320" height="513"/>
+                            <view contentMode="scaleToFill" id="jrQ-iT-DdF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="yNg-rK-pEw" appends="YES" id="gUp-4j-Pnp"/>
+                                    <outletCollection property="gestureRecognizers" destination="sdy-ss-rZI" appends="YES" id="dBb-YB-b5D"/>
                                 </connections>
-                            </imageView>
+                            </view>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bxq-QM-A2p">
                                 <rect key="frame" x="0.0" y="469" width="106" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="font_icon">
+                                <color key="backgroundColor" red="0.30588235289999999" green="0.62745098040000002" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="font_icon_highlighted">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -499,11 +504,12 @@
                                     <action selector="didTapBackground:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="j0y-Ki-Tf4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WVm-eI-hGv">
-                                <rect key="frame" x="0.0" y="383" width="320" height="42"/>
+                            <button opaque="NO" tag="2" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WVm-eI-hGv">
+                                <rect key="frame" x="0.0" y="391" width="320" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="font_icon">
+                                <color key="backgroundColor" red="0.30588235289999999" green="0.62745098040000002" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AmaticSC-Bold" family="Amatic SC" pointSize="22"/>
+                                <state key="normal" title="AmaticSC">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -511,38 +517,12 @@
                                     <action selector="didSelectFont:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="451-EY-Ug8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ilW-57-xWS">
-                                <rect key="frame" x="107" y="469" width="106" height="99"/>
+                            <button opaque="NO" tag="3" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6fQ-rf-ifU">
+                                <rect key="frame" x="0.0" y="429" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="sticker_icon">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EyY-5K-v5p">
-                                <rect key="frame" x="214" y="469" width="106" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="template_icon">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="qKI-pJ-OUX">
-                                <rect key="frame" x="35" y="203" width="251" height="161"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6oG-ab-MAq">
-                                        <rect key="frame" x="0.0" y="0.0" width="251" height="161"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                    </imageView>
-                                </subviews>
-                            </scrollView>
-                            <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6fQ-rf-ifU">
-                                <rect key="frame" x="0.0" y="426" width="320" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="font_icon">
+                                <color key="backgroundColor" red="0.30588235289999999" green="0.62745098040000002" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="18"/>
+                                <state key="normal" title="Pacifico">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -550,171 +530,236 @@
                                     <action selector="didSelectFont:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="3RC-38-ksF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Is-9d-mbV">
+                                <rect key="frame" x="0.0" y="353" width="320" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.30588235289999999" green="0.62745098040000002" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="18"/>
+                                <state key="normal" title="Delius">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressFontButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="ZPt-jy-Btn"/>
+                                    <action selector="didSelectFont:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="PlN-rG-e7F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EZ2-qc-Ohp">
+                                <rect key="frame" x="0.0" y="315" width="320" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.30588235289999999" green="0.62745098040000002" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <state key="normal" title="MONTSERRAT">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressFontButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="433-2m-JPv"/>
+                                    <action selector="didSelectFont:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="S85-3N-6Sh"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <connections>
-                        <outlet property="imageView" destination="6oG-ab-MAq" id="3KO-Ox-cA3"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thj-az-JkW" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="yNg-rK-pEw">
+                <tapGestureRecognizer id="sdy-ss-rZI">
                     <connections>
-                        <action selector="didTapBackground:" destination="xS0-2d-7Fz" id="9jg-Bh-aU0"/>
+                        <action selector="didTapBackground:" destination="xS0-2d-7Fz" id="fjN-8n-QFT"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="614" y="2656"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="uc4-Jv-nb5">
-            <objects>
-                <viewController id="bBU-Vt-xMx" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="w8m-Yq-HYw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front edit (text color)" id="hcF-oC-j4c">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="g3J-fS-tJg" appends="YES" id="rTR-Ee-sfY"/>
-                                </connections>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FX8-7c-JJi" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="g3J-fS-tJg">
-                    <connections>
-                        <segue destination="UCg-FT-W4N" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="yxz-pv-Pv9"/>
-                    </connections>
-                </tapGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="1498" y="3203"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="g6W-CE-g7X">
-            <objects>
-                <viewController id="UCg-FT-W4N" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="T9u-BE-8U3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front edit (text edit)" id="sAs-SW-y11">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="sF1-IY-hpn" appends="YES" id="bL1-no-qyE"/>
-                                </connections>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H48-hY-gkv" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="sF1-IY-hpn">
-                    <connections>
-                        <segue destination="CPp-2M-D2b" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="bJF-wz-fhc"/>
-                    </connections>
-                </tapGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="1961" y="3203"/>
+            <point key="canvasLocation" x="1038" y="1902"/>
         </scene>
         <!--Back View Controller-->
-        <scene sceneID="xSk-SC-MzC">
+        <scene sceneID="dgP-xN-FWW">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="idh-xi-1ot" customClass="BackViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AQe-WI-XNA">
-                        <rect key="frame" x="0.0" y="44" width="320" height="568"/>
+                <viewController id="4Rz-gP-yFb" customClass="BackViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cgW-Iw-2fh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="cya-Xz-Ncv" userLabel="containerView">
+                            <view contentMode="scaleToFill" id="gKr-KI-Boz" userLabel="original">
+                                <rect key="frame" x="-20" y="-20" width="360" height="608"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="back" id="qBE-An-YCA">
+                                        <rect key="frame" x="20" y="20" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MMu-WD-Okv" userLabel="message">
+                                        <rect key="frame" x="60" y="256" width="104" height="103"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=" ">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="QFq-qs-U5y" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="zsc-Nu-xz2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oGa-Sm-6TP" userLabel="stamp">
+                                        <rect key="frame" x="278" y="219" width="30" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=" ">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="WNR-Pe-OI1" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="5Wm-rW-H83"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wbf-bD-OS6" userLabel="address">
+                                        <rect key="frame" x="189" y="256" width="121" height="103"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=" ">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="tzK-Lf-sqx" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="ZMC-gW-yV2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UbZ-em-N0r" userLabel="back to last photo edit">
+                                        <rect key="frame" x="22" y="40" width="67" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=" ">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="CPp-2M-D2b" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="Uzb-69-h7N"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="3ho-9v-fWA" userLabel="NA_v1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="back" id="juU-Ix-5Rh">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="back" id="Ewo-R1-f4V">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front_background" id="eHS-xb-sOF">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="2X0-5y-bQp" appends="YES" id="aBe-GL-NK2"/>
-                                        </connections>
-                                    </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TAP FIELD TO EDIT" minimumFontSize="17" id="Aij-JD-JUN">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TAP FIELD TO EDIT" minimumFontSize="17" id="BbA-sg-xab">
                                         <rect key="frame" x="75" y="128" width="251" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="TAP-bH-hEp" userLabel="signature">
-                                        <rect key="frame" x="47" y="343" width="90" height="16"/>
+                                    <view contentMode="scaleToFill" id="dAx-Zd-59h" userLabel="messageView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="247" width="100" height="87"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" id="Qea-aA-qeG" userLabel="signatureView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Message" id="0sh-Mq-uVX" userLabel="message">
+                                        <rect key="frame" x="43" y="250" width="99" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" id="MSG-Wa-2I2" userLabel="signatureView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
                                         <rect key="frame" x="42" y="342" width="100" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="ppI-ji-FZ0" appends="YES" id="chn-bV-1pQ"/>
-                                        </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" id="Wcd-IB-qpp" userLabel="dividerLine">
+                                    <view contentMode="scaleToFill" id="g33-mr-WEK" userLabel="dividerLine">
                                         <rect key="frame" x="159" y="205" width="2" height="160"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="TAN-BG-feM" userLabel="stampView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
-                                        <rect key="frame" x="262" y="205" width="24" height="28"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Address" id="VuB-Bz-SH1" userLabel="address">
+                                        <rect key="frame" x="185" y="252" width="99" height="82"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </view>
-                                    <imageView alpha="0.69999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xhi-Xy-5zR" userLabel="stamp">
-                                        <rect key="frame" x="263" y="206" width="22" height="26"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="EtP-wH-6HG" appends="YES" id="eLR-lm-82G"/>
-                                        </connections>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" id="LXQ-fo-1KG" userLabel="addressView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
+                                        <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" id="Nhv-OE-1yL" userLabel="addressView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
                                         <rect key="frame" x="177" y="247" width="108" height="87"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="zrw-3E-u5k" userLabel="addressLines">
+                                    <view contentMode="scaleToFill" id="WG7-3y-XyB" userLabel="stampView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
+                                        <rect key="frame" x="262" y="205" width="24" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="Vf7-es-5uo" userLabel="NA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="back" id="PPm-O0-Hk0">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front_background" id="bgm-oo-Da4">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TAP FIELD TO EDIT" minimumFontSize="17" id="Dbm-wR-f0g">
+                                        <rect key="frame" x="75" y="128" width="251" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" id="EUX-4N-a9m" userLabel="messageView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="247" width="100" height="87"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="hJ9-5M-9gT" userLabel="signatureView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="342" width="100" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="RPV-30-hDA" userLabel="addressView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
+                                        <rect key="frame" x="177" y="247" width="108" height="87"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="X7h-aU-BTF" userLabel="stampView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
+                                        <rect key="frame" x="262" y="205" width="24" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="93H-rP-sul" userLabel="dividerLine">
+                                        <rect key="frame" x="159" y="205" width="2" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="Agc-bc-4DV" userLabel="addressLines">
                                         <rect key="frame" x="180" y="248" width="104" height="84"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="dFF-zd-egY" userLabel="addressLine1">
+                                            <view contentMode="scaleToFill" id="kVP-I5-GkM" userLabel="addressLine1">
                                                 <rect key="frame" x="10" y="24" width="83" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
-                                            <view contentMode="scaleToFill" id="tyV-gk-Fn3" userLabel="addressLine2">
+                                            <view contentMode="scaleToFill" id="tj5-Za-2Ni" userLabel="addressLine2">
                                                 <rect key="frame" x="10" y="44" width="83" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
-                                            <view contentMode="scaleToFill" id="4vs-p3-P54" userLabel="addressLine3">
+                                            <view contentMode="scaleToFill" id="o9M-qI-4Ix" userLabel="addressLine3">
                                                 <rect key="frame" x="10" y="64" width="83" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Address" id="5yK-jL-JHE" userLabel="address">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Message" id="CHL-70-oSP" userLabel="message">
+                                        <rect key="frame" x="43" y="250" width="99" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="KDL-Bb-yDU" appends="YES" id="VxX-Wx-HTt"/>
+                                        </connections>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Address" id="cfs-sA-RYV" userLabel="address">
                                         <rect key="frame" x="185" y="250" width="99" height="82"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -724,146 +769,67 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
                                         <dataDetectorType key="dataDetectorTypes" address="YES"/>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="u7g-S0-6yZ" appends="YES" id="G0P-wO-ZxS"/>
+                                            <outletCollection property="gestureRecognizers" destination="Qrk-5v-kr2" appends="YES" id="HA1-K1-dOE"/>
                                         </connections>
                                     </textView>
-                                    <view contentMode="scaleToFill" id="mPH-MY-mDF" userLabel="messageView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
-                                        <rect key="frame" x="42" y="247" width="100" height="87"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Message" id="cpz-LT-qd8" userLabel="message">
-                                        <rect key="frame" x="43" y="250" width="99" height="82"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <gestureRecognizers/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="10"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="5Ky-WO-X7U" appends="YES" id="9ef-4e-ZpN"/>
-                                        </connections>
-                                    </textView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="swipe_icon" id="zgv-l5-fa6">
-                                        <rect key="frame" x="127" y="403" width="67" height="43"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav_bar_back_pigeon_next" id="XFS-fr-zVX">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sz6-U8-WvA" userLabel="nextButton">
-                                        <rect key="frame" x="242" y="14" width="80" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                        <state key="normal" title=" ">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="Npb-tw-DhG" appends="YES" id="YX3-fp-zSp"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Mvv-ba-2k4"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="addressTextView" destination="5yK-jL-JHE" id="qY2-Wo-wgZ"/>
-                        <outlet property="addressView" destination="LXQ-fo-1KG" id="8fZ-eC-iWN"/>
-                        <outlet property="messageTextView" destination="cpz-LT-qd8" id="9sL-sJ-Mxe"/>
-                        <outlet property="messageView" destination="mPH-MY-mDF" id="V6e-vh-dVS"/>
-                        <outlet property="signatureImage" destination="TAP-bH-hEp" id="ni4-sB-pSc"/>
-                        <outlet property="stampImage" destination="xhi-Xy-5zR" id="MlA-Qo-4Of"/>
-                        <segue destination="iAX-6y-C6C" kind="modal" identifier="editMessageSegue" modalPresentationStyle="pageSheet" modalTransitionStyle="crossDissolve" id="nla-NC-hMZ"/>
-                        <segue destination="R7e-I0-myJ" kind="modal" identifier="editAddressSegue" id="CN3-mX-zcP"/>
-                        <segue destination="4fS-gR-259" kind="modal" identifier="toPaymentSegue" modalTransitionStyle="coverVertical" animates="NO" id="bEu-8D-3gt"/>
+                        <outlet property="addressTextView" destination="cfs-sA-RYV" id="0sf-cb-qsN"/>
+                        <outlet property="messageTextView" destination="CHL-70-oSP" id="xHQ-6F-gcg"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gxL-mH-Eh5" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="5Ky-WO-X7U" userLabel="message Tap Gesture Recognizer">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9H1-VW-lsV" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KDL-Bb-yDU" userLabel="message Tap Gesture Recognizer">
                     <connections>
-                        <action selector="onMessageTap:" destination="idh-xi-1ot" id="tcd-wM-4rC"/>
+                        <segue destination="QFq-qs-U5y" kind="modal" identifier="editMessageSeque" id="zaT-Pt-hB3"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="u7g-S0-6yZ" userLabel="address Tap Gesture Recognizer">
+                <tapGestureRecognizer id="Qrk-5v-kr2" userLabel="address Tap Gesture Recognizer">
                     <connections>
-                        <action selector="onAddressTap:" destination="idh-xi-1ot" id="oMw-3w-q1U"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="ppI-ji-FZ0" userLabel="signature Tap Gesture Recognizer">
-                    <connections>
-                        <action selector="onSignatureTap:" destination="idh-xi-1ot" id="CTv-zN-CoR"/>
-                        <segue destination="AfF-Oj-11w" kind="modal" identifier="editSignatureSegue" id="pWH-4V-k3a"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="EtP-wH-6HG" userLabel="stamp Tap Gesture Recognizer">
-                    <connections>
-                        <action selector="stampTap:" destination="idh-xi-1ot" id="SjK-NV-KZL"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="2X0-5y-bQp" userLabel="swipe background Gesture Recognizer">
-                    <connections>
-                        <action selector="onSwipeToFlip:" destination="idh-xi-1ot" id="gTO-Xz-Qzz"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <tapGestureRecognizer id="Npb-tw-DhG" userLabel="next Tap Gesture Recognizer">
-                    <connections>
-                        <action selector="onTapNext:" destination="idh-xi-1ot" id="cIo-kg-v9V"/>
+                        <segue destination="tzK-Lf-sqx" kind="modal" identifier="editAddressSeque" id="24U-d5-f95"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="613" y="4621"/>
+            <point key="canvasLocation" x="583" y="2945"/>
         </scene>
         <!--Back Message View Controller-->
-        <scene sceneID="b6O-9c-fhj">
+        <scene sceneID="GKx-0K-sYT">
             <objects>
-                <viewController id="iAX-6y-C6C" customClass="BackMessageViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="u79-JB-yjV">
+                <viewController id="QFq-qs-U5y" customClass="BackMessageViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zud-Bh-Knc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" image="back edit (message)" id="qXo-XA-WqV">
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" image="back edit (message)" id="O8b-tO-Jyy">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <view clipsSubviews="YES" contentMode="scaleAspectFit" id="ZcQ-R1-jkm" userLabel="containerView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="messageZoom" id="p9L-fl-eac">
+                                <rect key="frame" x="20" y="70" width="300" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="5GD-JX-f4b" userLabel="message">
+                                <rect key="frame" x="48" y="104" width="224" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="messageZoom" id="P1P-Rr-BuP">
-                                        <rect key="frame" x="20" y="70" width="300" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <gestureRecognizers/>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="i2p-mx-adi" userLabel="message">
-                                        <rect key="frame" x="48" y="104" width="224" height="157"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="tintColor" red="0.43529411759999997" green="0.73725490199999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <gestureRecognizers/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" enablesReturnKeyAutomatically="YES"/>
-                                    </textView>
-                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" id="hK2-tx-kdI" userLabel="keyboardArea">
-                                <rect key="frame" x="0.0" y="317" width="320" height="500"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="twV-Uy-GTh">
+                                <color key="tintColor" red="0.43529411764705883" green="0.73725490196078436" blue="0.7686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="i0X-HP-c7p">
                                 <rect key="frame" x="0.0" y="275" width="320" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.73725490199999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
@@ -872,72 +838,64 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Pet-xL-TwE" appends="YES" id="mRI-a3-7ti"/>
+                                    <segue destination="4Rz-gP-yFb" kind="modal" identifier="finishMessageEditSegue" id="qkb-h5-O5f"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ZuU-NA-ztn"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="containerView" destination="ZcQ-R1-jkm" id="lc6-cs-5kk"/>
-                        <outlet property="doneButton" destination="twV-Uy-GTh" id="HXO-Eq-ndg"/>
-                        <outlet property="messageEditTextView" destination="i2p-mx-adi" id="tNP-pZ-X4g"/>
+                        <outlet property="messageEditTextView" destination="5GD-JX-f4b" id="wul-gf-Qbs"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1d6-TB-imN" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Pet-xL-TwE">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m52-6P-vTm" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9Sj-qw-Hzh">
                     <connections>
-                        <action selector="onTapDone:" destination="iAX-6y-C6C" id="wPT-Ci-NIi"/>
+                        <action selector="onTapDone:" destination="QFq-qs-U5y" id="E5p-Hn-Krd"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-56" y="4423"/>
+            <point key="canvasLocation" x="1026" y="2945"/>
         </scene>
         <!--Back Address View Controller-->
-        <scene sceneID="flt-uK-Ykq">
+        <scene sceneID="ANc-Lt-nD7">
             <objects>
-                <viewController id="R7e-I0-myJ" customClass="BackAddressViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="gK0-KM-34u">
+                <viewController id="tzK-Lf-sqx" customClass="BackAddressViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pAg-MX-ic9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="back edit (address)" id="jfz-zG-wCd">
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="back edit (address)" id="fvN-0i-U3a">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mQI-PQ-N9v" appends="YES" id="q3f-Hp-lE4"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" image="addressZoom" id="F2O-ce-Agf">
+                                <rect key="frame" x="-10" y="50" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="tintColor" red="0.43529411759999997" green="0.73725490199999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" id="zD8-7A-Lof" userLabel="containerView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="279"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="R6C-Rq-lBZ" userLabel="address">
+                                <rect key="frame" x="50" y="81" width="230" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="top" image="addressZoom" id="ETc-vT-32z">
-                                        <rect key="frame" x="-10" y="53" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" red="0.43529411759999997" green="0.73725490199999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <gestureRecognizers/>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="6fT-tY-lVt" userLabel="address">
-                                        <rect key="frame" x="50" y="81" width="230" height="178"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="tintColor" red="0.43529411759999997" green="0.73725490199999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                        <gestureRecognizers/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" enablesReturnKeyAutomatically="YES"/>
-                                        <dataDetectorType key="dataDetectorTypes" address="YES"/>
-                                    </textView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EGL-UR-MSV">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.43529411759999997" green="0.73725490199999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <gestureRecognizers/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" enablesReturnKeyAutomatically="YES"/>
+                                <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yp4-ci-WMp">
                                 <rect key="frame" x="0.0" y="275" width="320" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.73725490199999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
@@ -946,277 +904,156 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="nAL-4H-lcG" appends="YES" id="PjZ-iX-08K"/>
+                                    <segue destination="4Rz-gP-yFb" kind="modal" identifier="finishAddressEditSegue" id="njk-WK-Xfp"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7PU-0G-cAN"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="addressEditTextView" destination="6fT-tY-lVt" id="dnr-Xu-3PG"/>
-                        <outlet property="containerView" destination="zD8-7A-Lof" id="w7g-AV-fut"/>
-                        <outlet property="doneButton" destination="EGL-UR-MSV" id="nPq-OQ-3Hc"/>
+                        <outlet property="addressEditTextView" destination="R6C-Rq-lBZ" id="qIc-aO-Eyi"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fis-6S-8eE" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="nAL-4H-lcG">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lbv-jT-0ex" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mQI-PQ-N9v">
                     <connections>
-                        <action selector="onTapDone:" destination="R7e-I0-myJ" id="3nS-gx-OjO"/>
+                        <action selector="onTapDone:" destination="tzK-Lf-sqx" id="gVR-Wo-tsT"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-56" y="5164"/>
+            <point key="canvasLocation" x="1463" y="2945"/>
         </scene>
-        <!--Signature View Controller-->
-        <scene sceneID="JJq-RW-bPI">
+        <!--View Controller-->
+        <scene sceneID="oLy-hw-5s3">
             <objects>
-                <viewController id="AfF-Oj-11w" customClass="SignatureViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="usg-au-sq1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" id="Q1z-oH-mCR" userLabel="containerView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" id="CST-zH-7Aa" userLabel="Draw Signature Border" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="150" width="300" height="200"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="BoY-gb-jaY" customClass="DrawSignatureView" customModule="Pigeon" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="160" width="280" height="180"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <view alpha="0.20000000298023224" contentMode="scaleToFill" id="m1X-h2-gnd" userLabel="Line">
-                                        <rect key="frame" x="33" y="283" width="254" height="1"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BHQ-Vy-Dc5">
-                                        <rect key="frame" x="4" y="63" width="300" height="74"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
-                                        <state key="normal" title="clear">
-                                            <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="clearSignature:" destination="AfF-Oj-11w" eventType="touchUpInside" id="qgR-Hj-KK4"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="P4m-4U-NB5">
-                                <rect key="frame" x="0.0" y="358" width="320" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.73725490199999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
-                                <state key="normal" title="DONE">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onTapDone:" destination="AfF-Oj-11w" eventType="touchUpInside" id="tRy-UU-bFU"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="clearButton" destination="BHQ-Vy-Dc5" id="3vn-Vk-03F"/>
-                        <outlet property="containerView" destination="Q1z-oH-mCR" id="1hk-cw-7Dk"/>
-                        <outlet property="doneButton" destination="P4m-4U-NB5" id="YKw-Wz-ViE"/>
-                        <outlet property="line" destination="m1X-h2-gnd" id="kcN-7O-rv3"/>
-                        <outlet property="signatureView" destination="BoY-gb-jaY" id="aCg-B1-A26"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6h3-1f-l7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="613" y="5332"/>
-        </scene>
-        <!--Payment View Controller-->
-        <scene sceneID="ork-rZ-MIQ">
-            <objects>
-                <viewController id="4fS-gR-259" customClass="PaymentViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Y5R-nf-9ho">
+                <viewController id="WNR-Pe-OI1" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OhA-Fv-pwm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.30000001192092896" contentMode="center" image="payment" id="KlW-iX-fzM">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="back edit (stamp)" id="qDB-Eg-DVl">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DTw-Qg-gCb" appends="YES" id="Flr-Al-Kyc"/>
+                                </connections>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav_bar_pigeon_back" id="dyi-TD-KDo">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iVf-VN-w5b" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="DTw-Qg-gCb">
+                    <connections>
+                        <segue destination="qjW-Bs-rQU" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="B6d-vp-s6u"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1910" y="2945"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SUA-g7-bkh">
+            <objects>
+                <viewController id="qjW-Bs-rQU" customClass="ViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xIT-oa-Xgi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="preview" id="3sj-2K-S94">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yHh-2Z-o5X" userLabel="back">
+                                <rect key="frame" x="3" y="20" width="67" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YZG-VU-7wg" userLabel="backButton">
-                                <rect key="frame" x="0.0" y="14" width="80" height="44"/>
+                                <state key="normal" title=" ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wST-6d-ftL" userLabel="next">
+                                <rect key="frame" x="260" y="20" width="57" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title=" ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onTapBack:" destination="4fS-gR-259" eventType="touchUpInside" id="3mT-Pp-2px"/>
+                                    <segue destination="SsW-gL-MBA" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="bFx-xr-iyU"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" id="yuT-BQ-OB3" userLabel="scancardView">
-                                <rect key="frame" x="10" y="60" width="300" height="498"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dHu-vs-ApW" userLabel="flip">
+                                <rect key="frame" x="0.0" y="110" width="320" height="368"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view alpha="0.10999999940395355" contentMode="scaleToFill" id="g92-HC-VmA" userLabel="Line">
-                                        <rect key="frame" x="80" y="88" width="140" height="2"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TAP TO SCAN YOUR CREDIT CARD" textAlignment="center" minimumFontSize="17" id="cP1-XQ-C59">
-                                        <rect key="frame" x="19" y="240" width="263" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="YOUR TOTAL IS" textAlignment="center" minimumFontSize="17" id="74a-Rd-2MZ">
-                                        <rect key="frame" x="102" y="95" width="99" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="0.43529411759999997" green="0.73725490199999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$1.29" textAlignment="center" minimumFontSize="17" id="MeB-eb-eFj">
-                                        <rect key="frame" x="99" y="107" width="103" height="59"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="0.43529411759999997" green="0.73725490199999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="40"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="POSTMARK IS INCLUDED" textAlignment="center" minimumFontSize="17" id="J4i-XC-fho">
-                                        <rect key="frame" x="93" y="152" width="119" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="0.43529411759999997" green="0.73725490199999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="8"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <view alpha="0.12999999523162842" contentMode="scaleToFill" id="JCf-8y-9ef" userLabel="Line">
-                                        <rect key="frame" x="80" y="184" width="140" height="2"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="J4f-Sr-ysg" appends="YES" id="llG-vA-eqc"/>
-                                </connections>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="33q-rR-lA6" userLabel="result">
-                                <rect key="frame" x="30" y="89" width="263" height="141"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.43529411759999997" green="0.73725490199999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fdy-oP-Iel" userLabel="editButton">
-                                <rect key="frame" x="16" y="63" width="288" height="223"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title=" ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="clearSignature:" destination="AfF-Oj-11w" eventType="touchUpInside" id="Vpt-1y-J1c"/>
-                                    <action selector="onTapScancard:" destination="4fS-gR-259" eventType="touchUpInside" id="zlM-Fx-Fkm"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xlq-dt-YCh" userLabel="placeorderButton">
-                                <rect key="frame" x="0.0" y="241" width="320" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="gbe-zD-ol2" kind="modal" modalTransitionStyle="partialCurl" id="wQ8-5Z-GJd"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="0.43529411759999997" green="0.73725490199999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <connections>
-                        <outlet property="editButton" destination="fdy-oP-Iel" id="T5M-aM-Wfb"/>
-                        <outlet property="paymentImageView" destination="KlW-iX-fzM" id="viI-cv-8wf"/>
-                        <outlet property="placeorderButton" destination="Xlq-dt-YCh" id="CbM-nW-M2o"/>
-                        <outlet property="resultLabel" destination="33q-rR-lA6" id="bat-pz-vBh"/>
-                        <outlet property="scancardView" destination="yuT-BQ-OB3" id="mpU-Mx-kny"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Djf-ig-4x1" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="J4f-Sr-ysg" userLabel="scancard Tap Gesture Recognizer">
-                    <connections>
-                        <action selector="onTapScancard:" destination="4fS-gR-259" id="XI5-iD-Hfd"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEy-fc-zr7" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="4621"/>
+            <point key="canvasLocation" x="583" y="3687"/>
         </scene>
-        <!--Confirmation View Controller-->
-        <scene sceneID="ZM4-g3-Jlt">
+        <!--Payment View Controller-->
+        <scene sceneID="9oY-98-LP9">
             <objects>
-                <viewController id="gbe-zD-ol2" customClass="ConfirmationViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="waN-GM-ZTY">
+                <viewController id="SsW-gL-MBA" customClass="PaymentViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NtZ-Sp-HvQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="finish" id="Okb-l7-ENC">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="payment" id="Hx1-OU-CPa">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <gestureRecognizers/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav_bar_menu_pigeon" id="Qfv-Ki-PTK">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7pq-3i-nzK" appends="YES" id="ZFJ-Ez-rjw"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0fM-OI-COA" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1883" y="4621"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ovJ-V2-Uhy">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="6oS-an-ZWl" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w7o-Ql-gKg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33V-RF-v0Y" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7pq-3i-nzK">
                     <connections>
-                        <segue destination="idh-xi-1ot" kind="relationship" relationship="rootViewController" id="hvY-M1-AAW"/>
+                        <segue destination="sia-YU-Pmh" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="Bbh-Lg-Ply"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uAk-Jn-mfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="613" y="3841"/>
+            <point key="canvasLocation" x="1026" y="3687"/>
+        </scene>
+        <!--Confirmation View Controller-->
+        <scene sceneID="J70-Wn-Kqw">
+            <objects>
+                <viewController id="sia-YU-Pmh" customClass="ConfirmationViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M4s-uv-Eh3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="finish" id="Qdj-Px-l4o">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="IGS-6v-FFe" appends="YES" id="2Yd-Y2-zko"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tkH-TQ-36L" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="IGS-6v-FFe"/>
+            </objects>
+            <point key="canvasLocation" x="1463" y="3687"/>
         </scene>
     </scenes>
     <resources>
@@ -1224,30 +1061,34 @@
         <image name="back" width="320" height="568"/>
         <image name="back edit (address)" width="320" height="568"/>
         <image name="back edit (message)" width="320" height="568"/>
+        <image name="back edit (stamp)" width="320" height="568"/>
         <image name="empty_front" width="251" height="161"/>
         <image name="finish" width="320" height="568"/>
         <image name="font_icon" width="41" height="26"/>
-        <image name="front edit (photo)" width="320" height="568"/>
-        <image name="front edit (shape color)" width="320" height="568"/>
-        <image name="front edit (shape)" width="320" height="568"/>
-        <image name="front edit (template)" width="320" height="568"/>
-        <image name="front edit (text color)" width="320" height="568"/>
-        <image name="front edit (text edit)" width="320" height="568"/>
+        <image name="font_icon_highlighted" width="41" height="26"/>
         <image name="front_background" width="320" height="513"/>
         <image name="hamburger_menu" width="320" height="568"/>
         <image name="launch screen 1" width="320" height="568"/>
         <image name="messageZoom" width="301" height="362"/>
         <image name="nav_bar_back_pigeon_next" width="320" height="55"/>
         <image name="nav_bar_menu_pigeon" width="320" height="55"/>
-        <image name="nav_bar_pigeon_back" width="320" height="55"/>
         <image name="payment" width="320" height="568"/>
         <image name="pigeon_image" width="49" height="36"/>
         <image name="pigeon_text" width="79" height="14"/>
         <image name="postcard_image" width="57" height="44"/>
+        <image name="preview" width="320" height="568"/>
         <image name="sample_image" width="251" height="161"/>
+        <image name="sticker_heart_highlighted" width="36" height="36"/>
         <image name="sticker_icon" width="35" height="37"/>
+        <image name="sticker_icon_highlighted" width="35" height="37"/>
+        <image name="sticker_lips_highlighted" width="80" height="72"/>
+        <image name="sticker_plane_highlighted" width="36" height="36"/>
         <image name="swipe_icon" width="67" height="43"/>
+        <image name="template_center" width="46" height="34"/>
+        <image name="template_full" width="46" height="34"/>
         <image name="template_icon" width="46" height="34"/>
+        <image name="template_icon_hightlighted" width="46" height="34"/>
+        <image name="template_left_highlighted" width="93" height="68"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -1255,7 +1096,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="zP4-aI-1Ez"/>
-        <segue reference="RZq-ou-hNq"/>
+        <segue reference="zsc-Nu-xz2"/>
+        <segue reference="njk-WK-Xfp"/>
+        <segue reference="ZMC-gW-yV2"/>
+        <segue reference="Uzb-69-h7N"/>
     </inferredMetricsTieBreakers>
 </document>

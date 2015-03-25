@@ -12,15 +12,14 @@ class FontViewController: UIViewController {
 
     var selectedFont: String!
     var fonts: [String]! = []
-    var onDataAvailable : ((data: String) -> ())?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fonts = ["Monstserrat-Regular", "Delius-Regular", "AmaticSC-Bold", "Pacifico"]
     }
 
     @IBAction func didSelectFont(sender: AnyObject) {
-        println(sender.tag)
-        selectedFont = "Monstserrat.ttf"
+        selectedFont = fonts[sender.tag]
         dismissViewControllerAnimated(true, completion: nil)
     }
     

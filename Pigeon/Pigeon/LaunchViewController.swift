@@ -60,7 +60,7 @@ class LaunchViewController: UIViewController {
                 
         })
         
-        UIView.animateWithDuration(0.5, delay: 3.5, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(0.5, delay: 2.5, options: nil, animations: { () -> Void in
             self.pigeonText.alpha = 0.99
         }) { finished in
             

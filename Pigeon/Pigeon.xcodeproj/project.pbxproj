@@ -38,6 +38,9 @@
 		CD12CA161AAEA5250039B27D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD12CA151AAEA5250039B27D /* Images.xcassets */; };
 		CD12CA251AAEA5250039B27D /* PigeonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12CA241AAEA5250039B27D /* PigeonTests.swift */; };
 		CD18578D1AB9301700D2D11E /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18578C1AB9301700D2D11E /* ImageTransition.swift */; };
+		CD5B9CC41AC32ABF00C646B9 /* AmaticSC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD5B9CC01AC31F7C00C646B9 /* AmaticSC-Bold.ttf */; };
+		CD5B9CC51AC32ABF00C646B9 /* Delius-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD5B9CC11AC31F7C00C646B9 /* Delius-Regular.ttf */; };
+		CD5B9CC61AC32ABF00C646B9 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD5B9CC21AC31F7C00C646B9 /* Pacifico.ttf */; };
 		CD8BB0771AB8D3080086B524 /* FrontEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8BB0761AB8D3080086B524 /* FrontEditViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +94,9 @@
 		CD12CA231AAEA5250039B27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD12CA241AAEA5250039B27D /* PigeonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PigeonTests.swift; sourceTree = "<group>"; };
 		CD18578C1AB9301700D2D11E /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
+		CD5B9CC01AC31F7C00C646B9 /* AmaticSC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmaticSC-Bold.ttf"; sourceTree = "<group>"; };
+		CD5B9CC11AC31F7C00C646B9 /* Delius-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delius-Regular.ttf"; sourceTree = "<group>"; };
+		CD5B9CC21AC31F7C00C646B9 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
 		CD8BB0761AB8D3080086B524 /* FrontEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,8 +180,7 @@
 				CD12CA0B1AAEA5250039B27D /* Pigeon */,
 				CD12CA211AAEA5250039B27D /* PigeonTests */,
 				CD12CA0A1AAEA5250039B27D /* Products */,
-				8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */,
-				8B73364C1AB7677400A78923 /* Raleway-Light.ttf */,
+				CD5B9CC31AC31F8800C646B9 /* Fonts */,
 				90580BDC6442415BB7F816C2 /* Pods */,
 				9A3068CB4AA4E4272AFA7BD2 /* Frameworks */,
 			);
@@ -229,6 +234,18 @@
 				CD12CA231AAEA5250039B27D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD5B9CC31AC31F8800C646B9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B9CC01AC31F7C00C646B9 /* AmaticSC-Bold.ttf */,
+				CD5B9CC11AC31F7C00C646B9 /* Delius-Regular.ttf */,
+				CD5B9CC21AC31F7C00C646B9 /* Pacifico.ttf */,
+				8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */,
+				8B73364C1AB7677400A78923 /* Raleway-Light.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +330,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5B9CC41AC32ABF00C646B9 /* AmaticSC-Bold.ttf in Resources */,
+				CD5B9CC51AC32ABF00C646B9 /* Delius-Regular.ttf in Resources */,
+				CD5B9CC61AC32ABF00C646B9 /* Pacifico.ttf in Resources */,
 				8B73364B1AB7671000A78923 /* Montserrat-Regular.ttf in Resources */,
 				CD12CA141AAEA5250039B27D /* Main.storyboard in Resources */,
 				CD12CA161AAEA5250039B27D /* Images.xcassets in Resources */,

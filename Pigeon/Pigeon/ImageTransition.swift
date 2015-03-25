@@ -21,11 +21,27 @@ class ImageTransition: BaseTransition {
     }
     
     override func dismissTransition(containerView: UIView, fromViewController: UIViewController, toViewController: UIViewController) {
-        var fromVC = fromViewController as FontViewController
+
         var toVC = toViewController as FrontEditViewController
 
-        if fromVC.selectedFont != nil {
-            toVC.addFont(fromVC.selectedFont)
+        if fromViewController.title == "Font View Controller" {
+            var fromVC = fromViewController as FontViewController
+
+            if fromVC.selectedFont != nil {
+                toVC.addFont(fromVC.selectedFont)
+            }
+        } else if fromViewController.title == "Sticker View Controller" {
+            var fromVC = fromViewController as StickerViewController
+            
+            if fromVC.selectedSticker != nil {
+                toVC.addSticker(fromVC.selectedSticker)
+            }
+        } else if fromViewController.title == "Template View Controller" {
+            var fromVC = fromViewController as TemplateViewController
+            
+            if fromVC.selectedWidth != nil {
+                toVC.setTemplate(fromVC.selectedWidth)
+            }
         }
         
         fromViewController.view.alpha = 1

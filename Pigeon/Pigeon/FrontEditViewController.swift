@@ -13,17 +13,17 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    var scale: CGFloat! = 1
+    var photoScale: CGFloat! = 1
+    var labelScale: CGFloat! = 1
     var translation: CGPoint! = CGPoint(x: 0.0, y: 0.0)
     var location: CGPoint! = CGPoint(x: 0.0, y: 0.0)
     var originalImageFrame: CGRect!
     var originalImageCenter: CGPoint!
     var currentSelection: AnyObject!
-//    var imageTransition: ImageTransition!
+    var imageTransition: ImageTransition!
     var textField: UITextField!
     
-    /*var tabs: [UIViewController!]
-    var segues: [String!]*/
+    var segues: [String!] = []
     
     //create a variable to catch the image passing from the previous view controller
     var photoImage:UIImage!
@@ -32,23 +32,22 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         super.viewDidLoad()
 
         //assign selected image to imageView
-        imageView.image = photoImage
+//        imageView.image = photoImage
         imageView.contentMode = UIViewContentMode.ScaleAspectFill
         
         originalImageFrame = imageView.frame
         originalImageCenter = imageView.center
         scrollView.contentSize = imageView.frame.size
         
-        /*tabs = [FontViewController, StickerViewController, TemplateViewController]
-        segues = ["fontSegue", "stickerSegue", "templateSegue"]*/
+        segues = ["fontSegue", "stickerSegue", "templateSegue"]
     }
 
     @IBAction func didPinchImage(sender: UIPinchGestureRecognizer) {
-        scale = sender.scale
+        photoScale = sender.scale
         var target = sender.view!
         
         if (sender.state == UIGestureRecognizerState.Changed) {
-            target.transform = CGAffineTransformScale(target.transform, scale, scale)
+            target.transform = CGAffineTransformScale(target.transform, photoScale, photoScale)
         } else if (sender.state == UIGestureRecognizerState.Ended) {
             if (target.frame.size.width < originalImageFrame.size.width) {
                 target.transform = CGAffineTransformMakeScale(1, 1)
@@ -62,17 +61,22 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
     @IBAction func didPinchLabel(sender: UIPinchGestureRecognizer) {
         imageView.userInteractionEnabled = false
         
-        scale = sender.scale
-        //TODO: better handle scaling back
-        
+        if sender.scale >= 1 {
+            labelScale = 1
+        } else {
+            labelScale = -1
+        }
+
         var label = sender.view as UILabel
         
         if (sender.state == UIGestureRecognizerState.Changed) {
-            label.font = label.font.fontWithSize(label.font.pointSize + scale)
+
+            label.frame.size = CGSize(width: label.frame.width + labelScale, height: label.frame.height + labelScale)
+            label.font = label.font.fontWithSize(label.font.pointSize + labelScale)
         } else if (sender.state == UIGestureRecognizerState.Ended) {
             imageView.userInteractionEnabled = true
         }
-        
+        sender.scale = 1
     }
     
     @IBAction func didPanImage(sender: UIPanGestureRecognizer) {
@@ -84,7 +88,7 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         if (sender.state == UIGestureRecognizerState.Began) {
             originalImageCenter = imageView.center
         } else if (sender.state == UIGestureRecognizerState.Changed) {
-            imageView.transform = CGAffineTransformScale(sender.view!.transform, scale, scale)
+            imageView.transform = CGAffineTransformScale(sender.view!.transform, photoScale, photoScale)
             imageView.center = CGPoint(x: originalImageCenter.x + translation.x, y: originalImageCenter.y + translation.y)
             
             
@@ -102,8 +106,8 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         if (sender.state == UIGestureRecognizerState.Began) {
             originalImageCenter = sender.view!.center
         } else if (sender.state == UIGestureRecognizerState.Changed) {
-            label.textColor = UIColor.blueColor()
-            label.transform = CGAffineTransformScale(sender.view!.transform, scale, scale)
+            label.textColor = UIColor.grayColor()
+            label.transform = CGAffineTransformScale(sender.view!.transform, labelScale, labelScale)
             label.center = CGPoint(x: originalImageCenter.x + translation.x, y: originalImageCenter.y + translation.y)
         } else if (sender.state == UIGestureRecognizerState.Ended) {
             label.textColor = UIColor.whiteColor()
@@ -117,23 +121,26 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         var label = sender.view as UILabel
         currentSelection = label
         
-        textField = UITextField(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
+        textField = UITextField(frame: CGRect(x: 0, y: 0, width: label.frame.width, height: label.frame.height))
         label.alpha = 0
         textField.center = label.center
         textField.textAlignment = .Center
         textField.text = label.text
+        textField.font = label.font
         textField.textColor = UIColor.whiteColor()
         scrollView.addSubview(textField)
-        // TODO: enable editing
-        // TODO: select all text
+        textField.becomeFirstResponder()
+        textField.selectedTextRange = textField.textRangeFromPosition(textField.beginningOfDocument, toPosition: textField.endOfDocument)
     }
     
-    @IBAction func didTapBackground(sender: AnyObject) {
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         view.endEditing(true)
         var label = currentSelection as UILabel
         label.text = textField.text
         label.alpha = 1
         textField.removeFromSuperview()
+        
+        super.touchesBegan(touches, withEvent: event)
     }
     
     @IBAction func didPressBackButton(sender: AnyObject) {
@@ -141,8 +148,8 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
     }
     
     func addFont(selectedFont: String) {
-        var newLabel = UILabel(frame: CGRectMake(0, 0, 100, 50))
-        newLabel.font = UIFont(name: selectedFont, size: CGFloat(50))
+        var newLabel = UILabel(frame: CGRectMake(0, 0, 200, 50))
+        newLabel.font = UIFont(name: selectedFont, size: CGFloat(20))
         newLabel.text = "Your text"
         newLabel.textColor = UIColor.whiteColor()
         newLabel.textAlignment = .Center
@@ -156,6 +163,23 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         addPinchGestureRecognizer(newLabel)
         
         scrollView.addSubview(newLabel)
+    }
+
+    func addSticker(selectedSticker: String) {
+        var stickerView = UIImageView()
+        stickerView.image = UIImage(named: selectedSticker)
+        imageView.userInteractionEnabled = true
+        currentSelection = stickerView
+        
+        addTapGestureRecognizer(stickerView)
+        addPanGestureRecognizer(stickerView)
+        addPinchGestureRecognizer(stickerView)
+        
+        scrollView.addSubview(stickerView)
+    }
+
+    func setTemplate(selectedWidth: CGFloat) {
+        imageView.frame.size = CGSize(width: selectedWidth, height: imageView.frame.height)
     }
 
     // scaling text
@@ -198,30 +222,34 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
 
     }
     
+    @IBAction func didPressButton(sender: AnyObject) {
+        performSegueWithIdentifier(segues[sender.tag], sender: self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func didPressFontButton(sender: AnyObject) {
-        performSegueWithIdentifier("fontSegue", sender: self)
-    }
-    
-    @IBAction func didPressStickerButton(sender: AnyObject) {
-        performSegueWithIdentifier("stickerSegue", sender: self)
-    }
-    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var toViewController = segue.destinationViewController as FontViewController
-        toViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        imageTransition = ImageTransition()
+        imageTransition.duration = 0.3
 
-//        imageTransition = ImageTransition()
-//        imageTransition.duration = 0.3
-//        toViewController.transitioningDelegate = imageTransition
+        if segue.identifier == "fontSegue" {
+            var toViewController = segue.destinationViewController as FontViewController
+            toViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+            toViewController.transitioningDelegate = imageTransition
+        } else if segue.identifier == "stickerSegue" {
+            var toViewController = segue.destinationViewController as StickerViewController
+            toViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+            toViewController.transitioningDelegate = imageTransition
+        } else if segue.identifier == "templateSegue" {
+            var toViewController = segue.destinationViewController as TemplateViewController
+            toViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+            toViewController.transitioningDelegate = imageTransition
+        }
     }
-
-
 }
