@@ -19,7 +19,7 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
     var originalImageFrame: CGRect!
     var originalImageCenter: CGPoint!
     var currentSelection: AnyObject!
-    var imageTransition: ImageTransition!
+//    var imageTransition: ImageTransition!
     var textField: UITextField!
     
     /*var tabs: [UIViewController!]
@@ -218,9 +218,9 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         var toViewController = segue.destinationViewController as FontViewController
         toViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
 
-        imageTransition = ImageTransition()
-        imageTransition.duration = 0.3
-        toViewController.transitioningDelegate = imageTransition
+//        imageTransition = ImageTransition()
+//        imageTransition.duration = 0.3
+//        toViewController.transitioningDelegate = imageTransition
     }
 
 

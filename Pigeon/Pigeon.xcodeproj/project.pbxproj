@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10C66C3F43A4502A0E9A2B86 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 729B4CFAE564FF2C6C493E55 /* libPods.a */; };
 		4B6206631ABD664300938E13 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6206621ABD664300938E13 /* LaunchViewController.swift */; };
 		4B6377891ABD2DD5002D5AC1 /* FrontContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6377881ABD2DD5002D5AC1 /* FrontContainerViewController.swift */; };
 		4B63778B1ABD31DD002D5AC1 /* FakeFrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B63778A1ABD31DD002D5AC1 /* FakeFrontViewController.swift */; };
 		4BC3CE801AB4DEC9001C4477 /* Styleguide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */; };
+		571E9EA51AC25EEA0030BCEB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 571E9EA41AC25EEA0030BCEB /* Podfile */; };
+		571E9EAE1AC25F880030BCEB /* BackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E9EA71AC25F880030BCEB /* BackViewController.swift */; };
+		571E9EAF1AC25F880030BCEB /* BackMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E9EA81AC25F880030BCEB /* BackMessageViewController.swift */; };
+		571E9EB01AC25F880030BCEB /* BackAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E9EA91AC25F880030BCEB /* BackAddressViewController.swift */; };
+		571E9EB11AC25F880030BCEB /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E9EAA1AC25F880030BCEB /* PaymentViewController.swift */; };
+		571E9EB21AC25F880030BCEB /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E9EAB1AC25F880030BCEB /* ConfirmationViewController.swift */; };
+		571E9EB31AC25F880030BCEB /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E9EAC1AC25F880030BCEB /* SignatureViewController.swift */; };
+		571E9EB41AC25F880030BCEB /* DrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E9EAD1AC25F880030BCEB /* DrawSignatureView.swift */; };
+		571E9EBB1AC260120030BCEB /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E9EB51AC260120030BCEB /* Common.swift */; };
+		571E9EBC1AC260120030BCEB /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E9EB61AC260120030BCEB /* BaseTransition.swift */; };
+		571E9EBD1AC260120030BCEB /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E9EB71AC260120030BCEB /* FadeTransition.swift */; };
+		571E9EBE1AC260120030BCEB /* MessageInputTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E9EB81AC260120030BCEB /* MessageInputTransition.swift */; };
+		571E9EBF1AC260120030BCEB /* AddressInputTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E9EB91AC260120030BCEB /* AddressInputTransition.swift */; };
+		571E9EC01AC260120030BCEB /* SignatureInputTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E9EBA1AC260120030BCEB /* SignatureInputTransition.swift */; };
 		8B73364B1AB7671000A78923 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */; };
-		8B93379B1AB787EE00E59686 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9337991AB787EE00E59686 /* BaseTransition.swift */; };
-		8B93379C1AB787EE00E59686 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93379A1AB787EE00E59686 /* FadeTransition.swift */; };
 		CD089CD51AB4CDC80050760F /* FontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD41AB4CDC80050760F /* FontViewController.swift */; };
 		CD089CD71AB4CDE10050760F /* StickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD61AB4CDE10050760F /* StickerViewController.swift */; };
 		CD089CD91AB4CE260050760F /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CD81AB4CE260050760F /* TemplateViewController.swift */; };
-		CD089CDB1AB4CE870050760F /* BackMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CDA1AB4CE870050760F /* BackMessageViewController.swift */; };
-		CD089CDD1AB4CE980050760F /* BackAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CDC1AB4CE980050760F /* BackAddressViewController.swift */; };
-		CD089CDF1AB4CEDF0050760F /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CDE1AB4CEDF0050760F /* PaymentViewController.swift */; };
-		CD089CE11AB4CEF50050760F /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD089CE01AB4CEF50050760F /* ConfirmationViewController.swift */; };
 		CD0C235F1AB4CAB000B6EC13 /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C235E1AB4CAB000B6EC13 /* FrontViewController.swift */; };
-		CD0C23611AB4CAF000B6EC13 /* BackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C23601AB4CAF000B6EC13 /* BackViewController.swift */; };
 		CD0C23631AB4CB2800B6EC13 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C23621AB4CB2800B6EC13 /* MenuViewController.swift */; };
 		CD0C23651AB4CB4E00B6EC13 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C23641AB4CB4E00B6EC13 /* IntroViewController.swift */; };
 		CD12CA0F1AAEA5250039B27D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12CA0E1AAEA5250039B27D /* AppDelegate.swift */; };
@@ -30,7 +38,6 @@
 		CD12CA141AAEA5250039B27D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD12CA121AAEA5250039B27D /* Main.storyboard */; };
 		CD12CA161AAEA5250039B27D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD12CA151AAEA5250039B27D /* Images.xcassets */; };
 		CD12CA251AAEA5250039B27D /* PigeonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12CA241AAEA5250039B27D /* PigeonTests.swift */; };
-		CD18578D1AB9301700D2D11E /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD18578C1AB9301700D2D11E /* ImageTransition.swift */; };
 		CD8BB0771AB8D3080086B524 /* FrontEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8BB0761AB8D3080086B524 /* FrontEditViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,19 +56,30 @@
 		4B6377881ABD2DD5002D5AC1 /* FrontContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontContainerViewController.swift; sourceTree = "<group>"; };
 		4B63778A1ABD31DD002D5AC1 /* FakeFrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeFrontViewController.swift; sourceTree = "<group>"; };
 		4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styleguide.swift; sourceTree = "<group>"; };
+		571E9EA41AC25EEA0030BCEB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		571E9EA71AC25F880030BCEB /* BackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackViewController.swift; sourceTree = "<group>"; };
+		571E9EA81AC25F880030BCEB /* BackMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackMessageViewController.swift; sourceTree = "<group>"; };
+		571E9EA91AC25F880030BCEB /* BackAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackAddressViewController.swift; sourceTree = "<group>"; };
+		571E9EAA1AC25F880030BCEB /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		571E9EAB1AC25F880030BCEB /* ConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		571E9EAC1AC25F880030BCEB /* SignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
+		571E9EAD1AC25F880030BCEB /* DrawSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawSignatureView.swift; sourceTree = "<group>"; };
+		571E9EB51AC260120030BCEB /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		571E9EB61AC260120030BCEB /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		571E9EB71AC260120030BCEB /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		571E9EB81AC260120030BCEB /* MessageInputTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageInputTransition.swift; sourceTree = "<group>"; };
+		571E9EB91AC260120030BCEB /* AddressInputTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressInputTransition.swift; sourceTree = "<group>"; };
+		571E9EBA1AC260120030BCEB /* SignatureInputTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureInputTransition.swift; sourceTree = "<group>"; };
+		574F53201AC2654300E243A1 /* Pigeon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pigeon-Bridging-Header.h"; sourceTree = "<group>"; };
+		6290B859C14578BD7D7421AB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		729B4CFAE564FF2C6C493E55 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		8B73364C1AB7677400A78923 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
-		8B9337991AB787EE00E59686 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
-		8B93379A1AB787EE00E59686 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		C0B8FCC316E4A2C5E68128AD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CD089CD41AB4CDC80050760F /* FontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontViewController.swift; sourceTree = "<group>"; };
 		CD089CD61AB4CDE10050760F /* StickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerViewController.swift; sourceTree = "<group>"; };
 		CD089CD81AB4CE260050760F /* TemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
-		CD089CDA1AB4CE870050760F /* BackMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackMessageViewController.swift; sourceTree = "<group>"; };
-		CD089CDC1AB4CE980050760F /* BackAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackAddressViewController.swift; sourceTree = "<group>"; };
-		CD089CDE1AB4CEDF0050760F /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
-		CD089CE01AB4CEF50050760F /* ConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		CD0C235E1AB4CAB000B6EC13 /* FrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
-		CD0C23601AB4CAF000B6EC13 /* BackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackViewController.swift; sourceTree = "<group>"; };
 		CD0C23621AB4CB2800B6EC13 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CD0C23641AB4CB4E00B6EC13 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		CD12CA091AAEA5250039B27D /* Pigeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pigeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +91,6 @@
 		CD12CA1E1AAEA5250039B27D /* PigeonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PigeonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD12CA231AAEA5250039B27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD12CA241AAEA5250039B27D /* PigeonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PigeonTests.swift; sourceTree = "<group>"; };
-		CD18578C1AB9301700D2D11E /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
 		CD8BB0761AB8D3080086B524 /* FrontEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10C66C3F43A4502A0E9A2B86 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,12 +113,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13EE52D2005E6DD4F4EDC26F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				729B4CFAE564FF2C6C493E55 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5761E5CDE75BD92DF98A1AFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0B8FCC316E4A2C5E68128AD /* Pods.debug.xcconfig */,
+				6290B859C14578BD7D7421AB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8B9337981AB787D400E59686 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
-				8B9337991AB787EE00E59686 /* BaseTransition.swift */,
-				8B93379A1AB787EE00E59686 /* FadeTransition.swift */,
-				CD18578C1AB9301700D2D11E /* ImageTransition.swift */,
+				571E9EB51AC260120030BCEB /* Common.swift */,
+				571E9EB61AC260120030BCEB /* BaseTransition.swift */,
+				571E9EB71AC260120030BCEB /* FadeTransition.swift */,
+				571E9EB81AC260120030BCEB /* MessageInputTransition.swift */,
+				571E9EB91AC260120030BCEB /* AddressInputTransition.swift */,
+				571E9EBA1AC260120030BCEB /* SignatureInputTransition.swift */,
 			);
 			name = Transitions;
 			sourceTree = "<group>";
@@ -114,15 +152,17 @@
 				CD089CD41AB4CDC80050760F /* FontViewController.swift */,
 				CD089CD61AB4CDE10050760F /* StickerViewController.swift */,
 				CD089CD81AB4CE260050760F /* TemplateViewController.swift */,
-				CD0C23601AB4CAF000B6EC13 /* BackViewController.swift */,
-				CD089CDA1AB4CE870050760F /* BackMessageViewController.swift */,
-				CD089CDC1AB4CE980050760F /* BackAddressViewController.swift */,
-				CD089CDE1AB4CEDF0050760F /* PaymentViewController.swift */,
-				CD089CE01AB4CEF50050760F /* ConfirmationViewController.swift */,
 				CD8BB0761AB8D3080086B524 /* FrontEditViewController.swift */,
 				4B63778A1ABD31DD002D5AC1 /* FakeFrontViewController.swift */,
 				4B6377881ABD2DD5002D5AC1 /* FrontContainerViewController.swift */,
 				4B6206621ABD664300938E13 /* LaunchViewController.swift */,
+				571E9EA71AC25F880030BCEB /* BackViewController.swift */,
+				571E9EA81AC25F880030BCEB /* BackMessageViewController.swift */,
+				571E9EA91AC25F880030BCEB /* BackAddressViewController.swift */,
+				571E9EAA1AC25F880030BCEB /* PaymentViewController.swift */,
+				571E9EAB1AC25F880030BCEB /* ConfirmationViewController.swift */,
+				571E9EAC1AC25F880030BCEB /* SignatureViewController.swift */,
+				571E9EAD1AC25F880030BCEB /* DrawSignatureView.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -130,11 +170,14 @@
 		CD12CA001AAEA5250039B27D = {
 			isa = PBXGroup;
 			children = (
+				571E9EA41AC25EEA0030BCEB /* Podfile */,
 				CD12CA0B1AAEA5250039B27D /* Pigeon */,
 				CD12CA211AAEA5250039B27D /* PigeonTests */,
 				CD12CA0A1AAEA5250039B27D /* Products */,
 				8B73364A1AB7671000A78923 /* Montserrat-Regular.ttf */,
 				8B73364C1AB7677400A78923 /* Raleway-Light.ttf */,
+				5761E5CDE75BD92DF98A1AFC /* Pods */,
+				13EE52D2005E6DD4F4EDC26F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,10 +193,11 @@
 		CD12CA0B1AAEA5250039B27D /* Pigeon */ = {
 			isa = PBXGroup;
 			children = (
-				CD0C235D1AB4CA7800B6EC13 /* ViewControllers */,
+				CD12CA121AAEA5250039B27D /* Main.storyboard */,
 				CD12CA0E1AAEA5250039B27D /* AppDelegate.swift */,
 				CD12CA101AAEA5250039B27D /* ViewController.swift */,
-				CD12CA121AAEA5250039B27D /* Main.storyboard */,
+				574F53201AC2654300E243A1 /* Pigeon-Bridging-Header.h */,
+				CD0C235D1AB4CA7800B6EC13 /* ViewControllers */,
 				4BC3CE7F1AB4DEC9001C4477 /* Styleguide.swift */,
 				8B9337981AB787D400E59686 /* Transitions */,
 				CD12CA151AAEA5250039B27D /* Images.xcassets */,
@@ -194,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD12CA281AAEA5250039B27D /* Build configuration list for PBXNativeTarget "Pigeon" */;
 			buildPhases = (
+				E05C1324BAF293124B43B245 /* Check Pods Manifest.lock */,
 				CD12CA051AAEA5250039B27D /* Sources */,
 				CD12CA061AAEA5250039B27D /* Frameworks */,
 				CD12CA071AAEA5250039B27D /* Resources */,
+				2FEFB89FEB7F85D42CC7E096 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +315,7 @@
 			files = (
 				8B73364B1AB7671000A78923 /* Montserrat-Regular.ttf in Resources */,
 				CD12CA141AAEA5250039B27D /* Main.storyboard in Resources */,
+				571E9EA51AC25EEA0030BCEB /* Podfile in Resources */,
 				CD12CA161AAEA5250039B27D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,32 +329,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FEFB89FEB7F85D42CC7E096 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E05C1324BAF293124B43B245 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD12CA051AAEA5250039B27D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				571E9EC01AC260120030BCEB /* SignatureInputTransition.swift in Sources */,
+				571E9EB21AC25F880030BCEB /* ConfirmationViewController.swift in Sources */,
 				4B6377891ABD2DD5002D5AC1 /* FrontContainerViewController.swift in Sources */,
 				CD0C235F1AB4CAB000B6EC13 /* FrontViewController.swift in Sources */,
-				8B93379B1AB787EE00E59686 /* BaseTransition.swift in Sources */,
-				CD089CDB1AB4CE870050760F /* BackMessageViewController.swift in Sources */,
 				CD089CD51AB4CDC80050760F /* FontViewController.swift in Sources */,
+				571E9EB31AC25F880030BCEB /* SignatureViewController.swift in Sources */,
 				CD089CD71AB4CDE10050760F /* StickerViewController.swift in Sources */,
 				CD0C23631AB4CB2800B6EC13 /* MenuViewController.swift in Sources */,
 				CD12CA111AAEA5250039B27D /* ViewController.swift in Sources */,
+				571E9EB11AC25F880030BCEB /* PaymentViewController.swift in Sources */,
+				571E9EAF1AC25F880030BCEB /* BackMessageViewController.swift in Sources */,
 				CD0C23651AB4CB4E00B6EC13 /* IntroViewController.swift in Sources */,
-				CD089CDF1AB4CEDF0050760F /* PaymentViewController.swift in Sources */,
+				571E9EB41AC25F880030BCEB /* DrawSignatureView.swift in Sources */,
+				571E9EAE1AC25F880030BCEB /* BackViewController.swift in Sources */,
+				571E9EBB1AC260120030BCEB /* Common.swift in Sources */,
+				571E9EBD1AC260120030BCEB /* FadeTransition.swift in Sources */,
+				571E9EBE1AC260120030BCEB /* MessageInputTransition.swift in Sources */,
 				CD12CA0F1AAEA5250039B27D /* AppDelegate.swift in Sources */,
 				4B63778B1ABD31DD002D5AC1 /* FakeFrontViewController.swift in Sources */,
-				CD18578D1AB9301700D2D11E /* ImageTransition.swift in Sources */,
-				8B93379C1AB787EE00E59686 /* FadeTransition.swift in Sources */,
-				CD0C23611AB4CAF000B6EC13 /* BackViewController.swift in Sources */,
-				CD089CDD1AB4CE980050760F /* BackAddressViewController.swift in Sources */,
-				CD089CE11AB4CEF50050760F /* ConfirmationViewController.swift in Sources */,
 				CD089CD91AB4CE260050760F /* TemplateViewController.swift in Sources */,
 				CD8BB0771AB8D3080086B524 /* FrontEditViewController.swift in Sources */,
 				4B6206631ABD664300938E13 /* LaunchViewController.swift in Sources */,
+				571E9EBC1AC260120030BCEB /* BaseTransition.swift in Sources */,
 				4BC3CE801AB4DEC9001C4477 /* Styleguide.swift in Sources */,
+				571E9EB01AC25F880030BCEB /* BackAddressViewController.swift in Sources */,
+				571E9EBF1AC260120030BCEB /* AddressInputTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,23 +505,38 @@
 		};
 		CD12CA291AAEA5250039B27D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B8FCC316E4A2C5E68128AD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Pigeon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pigeon/CardIO",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pigeon/Pigeon-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		CD12CA2A1AAEA5250039B27D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6290B859C14578BD7D7421AB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Pigeon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pigeon/CardIO",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pigeon/Pigeon-Bridging-Header.h";
 			};
 			name = Release;
 		};
