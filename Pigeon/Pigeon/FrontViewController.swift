@@ -31,14 +31,13 @@ class FrontViewController: UIViewController,UIAlertViewDelegate,UIImagePickerCon
     override func viewWillAppear(animated: Bool) {
         //
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-        
-        
+    
     @IBAction func photoButtonDidPress(sender: AnyObject) {
         var alert:UIAlertController=UIAlertController(title: "Choose Image", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
         

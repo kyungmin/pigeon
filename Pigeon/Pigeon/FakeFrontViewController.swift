@@ -9,21 +9,28 @@
 import UIKit
 
 class FakeFrontViewController: UIViewController {
-
     
-    @IBOutlet weak var photoImageHolder: UIImageView!
-    var photoImage:UIImage!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        photoImageHolder.image = photoImage
-
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func didTapImage(sender: AnyObject) {
+        performSegueWithIdentifier("backToFrontEditSegue", sender: self)
+    }
+    
+    @IBAction func didPanView(sender: UIPanGestureRecognizer) {
+        var velocity = sender.velocityInView(view)
+        
+        if (sender.state == UIGestureRecognizerState.Began) {
+            performSegueWithIdentifier("swipeBackSegue", sender: self)
+        }
     }
     
     @IBAction func backButtonDidPress(sender: AnyObject) {

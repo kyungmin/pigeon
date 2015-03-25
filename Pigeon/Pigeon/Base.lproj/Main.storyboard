@@ -45,7 +45,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gl-Ig-Czt" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="wbn-jO-EVl"/>
             </objects>
-            <point key="canvasLocation" x="171" y="1017"/>
+            <point key="canvasLocation" x="105" y="1017"/>
         </scene>
         <!--Front Container View Controller-->
         <scene sceneID="c27-dg-CCy">
@@ -138,27 +138,30 @@
         <!--Fake Front View Controller-->
         <scene sceneID="YVL-hJ-EGL">
             <objects>
-                <viewController id="aEP-sb-48L" customClass="FakeFrontViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Fake Front View Controller" id="aEP-sb-48L" customClass="FakeFrontViewController" customModule="Pigeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aQc-rb-Mtb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="front_background" id="D0l-ck-8jD">
-                                <rect key="frame" x="0.0" y="55" width="320" height="513"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="swipe_icon" id="dyT-j0-A7F">
-                                <rect key="frame" x="122" y="428" width="67" height="43"/>
+                                <rect key="frame" x="113" y="405" width="67" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4PD-YV-beQ">
-                                <rect key="frame" x="35" y="203" width="251" height="161"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav_bar_back_pigeon_next" id="sJ0-im-jI6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="naw-1Z-1bQ" userLabel="ImageView">
+                                <rect key="frame" x="34" y="204" width="251" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapImage:" destination="aEP-sb-48L" eventType="touchUpInside" id="cQV-46-G0M"/>
+                                    <action selector="photoButtonDidPress:" destination="LAk-IY-Nnz" eventType="touchUpInside" id="okE-pd-l4N"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uyi-JB-VCs">
                                 <rect key="frame" x="0.0" y="20" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -170,16 +173,25 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Eyf-Sy-fbL" appends="YES" id="CLi-vg-uv9"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="7Rc-k7-QXX"/>
                     <connections>
-                        <outlet property="photoImageHolder" destination="4PD-YV-beQ" id="ff0-Nc-SbN"/>
+                        <segue destination="4Rz-gP-yFb" kind="modal" identifier="swipeBackSegue" modalTransitionStyle="flipHorizontal" id="80c-VB-bLa"/>
+                        <segue destination="CPp-2M-D2b" kind="modal" identifier="backToFrontEditSegue" animates="NO" id="wzn-1t-qEw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KfM-sI-QUt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Eyf-Sy-fbL">
+                    <connections>
+                        <action selector="didPanView:" destination="aEP-sb-48L" id="gb4-1h-C7b"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="990" y="1017"/>
+            <point key="canvasLocation" x="-31" y="2450"/>
         </scene>
         <!--Launch View Controller-->
         <scene sceneID="ohg-ky-f6Z">
@@ -234,39 +246,6 @@
                                 <rect key="frame" x="0.0" y="55" width="320" height="513"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SbJ-I4-iPW">
-                                <rect key="frame" x="0.0" y="469" width="106" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.59240166002726025" green="0.85701461382665056" blue="0.88590590533088243" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="font_icon">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didPressButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="sxK-o6-nZ2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zc9-Ye-Wlv">
-                                <rect key="frame" x="107" y="469" width="106" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="sticker_icon">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didPressButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="kCH-C8-Kda"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PTY-JN-9We">
-                                <rect key="frame" x="214" y="469" width="106" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="template_icon">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didPressButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="eFp-FD-OdS"/>
-                                </connections>
-                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="uL0-DU-cxh">
                                 <rect key="frame" x="35" y="203" width="251" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -294,19 +273,71 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didPressBackButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="UTM-DZ-hFQ"/>
+                                    <action selector="didPressBackButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="Lco-ua-pO8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mg7-cS-30a" userLabel="Next Button">
+                                <rect key="frame" x="267" y="17" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressNextButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="sxp-4z-b67"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="l0C-Yo-zHF" userLabel="buttonGroup">
+                                <rect key="frame" x="-20" y="449" width="360" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SbJ-I4-iPW">
+                                        <rect key="frame" x="20" y="20" width="106" height="104"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.59240166002726025" green="0.85701461382665056" blue="0.88590590533088243" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="font_icon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressMenu:" destination="CPp-2M-D2b" eventType="touchUpInside" id="aXW-f2-ByR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zc9-Ye-Wlv">
+                                        <rect key="frame" x="127" y="20" width="106" height="104"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="sticker_icon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressMenu:" destination="CPp-2M-D2b" eventType="touchUpInside" id="NGD-vo-kzF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PTY-JN-9We">
+                                        <rect key="frame" x="234" y="20" width="106" height="104"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.59240166000000005" green="0.85701461379999999" blue="0.88590590530000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="template_icon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressMenu:" destination="CPp-2M-D2b" eventType="touchUpInside" id="oa3-Vh-Mkj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="buttonGroup" destination="l0C-Yo-zHF" id="MIT-DU-YTR"/>
                         <outlet property="imageView" destination="2Z0-8I-hcW" id="kTg-VK-gMr"/>
                         <outlet property="scrollView" destination="uL0-DU-cxh" id="uuf-bZ-qt3"/>
                         <segue destination="xS0-2d-7Fz" kind="modal" identifier="fontSegue" id="RZq-ou-hNq"/>
                         <segue destination="3g0-F7-XzJ" kind="modal" identifier="stickerSegue" id="jRf-ks-VRu"/>
                         <segue destination="zwL-JE-pHb" kind="modal" identifier="templateSegue" id="95X-NV-T0g"/>
+                        <segue destination="aEP-sb-48L" kind="modal" identifier="saveFontSegue" id="zgs-v1-fbL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTl-KT-fOR" sceneMemberID="firstResponder"/>
@@ -331,7 +362,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="D40-Or-LXV">
+                            <view contentMode="scaleToFill" id="D40-Or-LXV" userLabel="Background View">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -365,26 +396,25 @@
                                     <action selector="didSelectFont:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="GZ7-bM-W5a"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cDH-Fi-IQf">
-                                <rect key="frame" x="41" y="417" width="52" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="template_left_highlighted">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ssl-f4-fDi">
-                                <rect key="frame" x="225" y="417" width="52" height="36"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ssl-f4-fDi">
+                                <rect key="frame" x="196" y="417" width="52" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="template_full">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didSelectTemplate:" destination="zwL-JE-pHb" eventType="touchUpInside" id="29p-xX-Ofc"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4LY-h8-G7J">
-                                <rect key="frame" x="134" y="417" width="52" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cDH-Fi-IQf">
+                                <rect key="frame" x="70" y="417" width="52" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="template_center">
+                                <state key="normal" image="template_left_highlighted">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didSelectTemplate:" destination="zwL-JE-pHb" eventType="touchUpInside" id="f5p-Jx-Dvo"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
@@ -397,7 +427,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1979" y="1902"/>
+            <point key="canvasLocation" x="1988" y="1917"/>
         </scene>
         <!--Sticker View Controller-->
         <scene sceneID="M7u-hK-BBI">
@@ -407,7 +437,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="hLj-Xg-7s1">
+                            <view contentMode="scaleToFill" id="hLj-Xg-7s1" userLabel="Background View">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -428,7 +458,31 @@
                                     <action selector="didTapBackground:" destination="3g0-F7-XzJ" eventType="touchUpInside" id="ytZ-db-4LA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qix-Sh-oFK">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0TP-ir-x3v">
+                                <rect key="frame" x="214" y="469" width="106" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressFontButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="ZBD-00-XDi"/>
+                                    <action selector="didTapBackground:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="cB4-bH-Yep"/>
+                                    <action selector="didTapBackground:" destination="3g0-F7-XzJ" eventType="touchUpInside" id="dcx-Qj-DSh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="60c-vo-FcE">
+                                <rect key="frame" x="0.0" y="469" width="106" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressFontButton:" destination="CPp-2M-D2b" eventType="touchUpInside" id="ZIn-eZ-QvF"/>
+                                    <action selector="didTapBackground:" destination="3g0-F7-XzJ" eventType="touchUpInside" id="Bxc-du-pzZ"/>
+                                    <action selector="didTapBackground:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="eJK-we-ZnB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qix-Sh-oFK" userLabel="tray">
                                 <rect key="frame" x="0.0" y="399" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.30588235289999999" green="0.62745098040000002" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
@@ -441,31 +495,36 @@
                                     <action selector="didSelectFont:" destination="xS0-2d-7Fz" eventType="touchUpInside" id="NyO-nb-gfq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6no-N4-SNW">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticker_heart_highlighted" id="SyC-eX-8PW">
                                 <rect key="frame" x="30" y="416" width="36" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="sticker_heart_highlighted">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="B0z-0Y-hdZ">
-                                <rect key="frame" x="100" y="416" width="36" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="sticker_plane_highlighted">
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fho-Hu-NBC">
-                                <rect key="frame" x="170" y="416" width="52" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="sticker_lips_highlighted">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="IDl-du-rRx" appends="YES" id="fuf-th-jDU"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticker_plane_highlighted" id="t5J-Wq-PLI">
+                                <rect key="frame" x="102" y="416" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jUK-Kd-m7b" appends="YES" id="CWe-Q7-kFL"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticker_lips_highlighted" id="ci2-At-q5b">
+                                <rect key="frame" x="177" y="416" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="MO9-kG-wo1" appends="YES" id="Sju-L8-ppL"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tray" destination="Qix-Sh-oFK" id="F3e-Fo-L34"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJc-cM-BwG" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="GMO-2K-AzD">
@@ -473,6 +532,21 @@
                         <action selector="didTapBackground:" destination="3g0-F7-XzJ" id="R9i-la-2yC"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="IDl-du-rRx">
+                    <connections>
+                        <action selector="didPanSticker:" destination="3g0-F7-XzJ" id="ZDr-it-pid"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="jUK-Kd-m7b">
+                    <connections>
+                        <action selector="didPanSticker:" destination="3g0-F7-XzJ" id="Jlw-7d-eee"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="MO9-kG-wo1">
+                    <connections>
+                        <action selector="didPanSticker:" destination="3g0-F7-XzJ" id="6b4-OL-dq9"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1518" y="1902"/>
         </scene>
@@ -696,6 +770,10 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="m4f-aC-6si" appends="YES" id="7xG-Af-3RV"/>
+                                        </connections>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TAP FIELD TO EDIT" minimumFontSize="17" id="Dbm-wR-f0g">
                                         <rect key="frame" x="75" y="128" width="251" height="32"/>
@@ -772,6 +850,10 @@
                                             <outletCollection property="gestureRecognizers" destination="Qrk-5v-kr2" appends="YES" id="HA1-K1-dOE"/>
                                         </connections>
                                     </textView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="swipe_icon" id="SDi-h1-Pss">
+                                        <rect key="frame" x="113" y="405" width="67" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -795,6 +877,11 @@
                         <segue destination="tzK-Lf-sqx" kind="modal" identifier="editAddressSeque" id="24U-d5-f95"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="m4f-aC-6si" userLabel="swipe Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="didPanView:" destination="4Rz-gP-yFb" id="fIf-Dw-Dei"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="583" y="2945"/>
         </scene>
@@ -1084,7 +1171,6 @@
         <image name="sticker_lips_highlighted" width="80" height="72"/>
         <image name="sticker_plane_highlighted" width="36" height="36"/>
         <image name="swipe_icon" width="67" height="43"/>
-        <image name="template_center" width="46" height="34"/>
         <image name="template_full" width="46" height="34"/>
         <image name="template_icon" width="46" height="34"/>
         <image name="template_icon_hightlighted" width="46" height="34"/>
@@ -1096,9 +1182,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="zsc-Nu-xz2"/>
-        <segue reference="njk-WK-Xfp"/>
+        <segue reference="80c-VB-bLa"/>
+        <segue reference="wzn-1t-qEw"/>
         <segue reference="ZMC-gW-yV2"/>
-        <segue reference="Uzb-69-h7N"/>
+        <segue reference="zsc-Nu-xz2"/>
     </inferredMetricsTieBreakers>
 </document>

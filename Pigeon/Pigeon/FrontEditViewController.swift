@@ -12,6 +12,7 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var buttonGroup: UIView!
     
     var photoScale: CGFloat! = 1
     var labelScale: CGFloat! = 1
@@ -40,6 +41,11 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         scrollView.contentSize = imageView.frame.size
         
         segues = ["fontSegue", "stickerSegue", "templateSegue"]
+        buttonGroup.center.y = buttonGroup.center.y + buttonGroup.frame.height
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        showMenu()
     }
 
     @IBAction func didPinchImage(sender: UIPinchGestureRecognizer) {
@@ -134,17 +140,15 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        view.endEditing(true)
-        var label = currentSelection as UILabel
-        label.text = textField.text
-        label.alpha = 1
-        textField.removeFromSuperview()
+        if textField != nil {
+            view.endEditing(true)
+            var label = currentSelection as UILabel
+            label.text = textField.text
+            label.alpha = 1
+            textField.removeFromSuperview()
+        }
         
         super.touchesBegan(touches, withEvent: event)
-    }
-    
-    @IBAction func didPressBackButton(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
     }
     
     func addFont(selectedFont: String) {
@@ -165,21 +169,24 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         scrollView.addSubview(newLabel)
     }
 
-    func addSticker(selectedSticker: String) {
-        var stickerView = UIImageView()
-        stickerView.image = UIImage(named: selectedSticker)
-        imageView.userInteractionEnabled = true
-        currentSelection = stickerView
-        
-        addTapGestureRecognizer(stickerView)
-        addPanGestureRecognizer(stickerView)
-        addPinchGestureRecognizer(stickerView)
-        
-        scrollView.addSubview(stickerView)
+    func addStickers(selectedStickers: [UIImageView!]) {
+        imageView.userInteractionEnabled = false
+
+        for sticker in selectedStickers {
+            currentSelection = sticker
+            sticker.userInteractionEnabled = true
+            addTapGestureRecognizer(sticker)
+            addPanGestureRecognizer(sticker)
+            addPinchGestureRecognizer(sticker)
+            
+            scrollView.addSubview(sticker)
+        }
     }
 
     func setTemplate(selectedWidth: CGFloat) {
-        imageView.frame.size = CGSize(width: selectedWidth, height: imageView.frame.height)
+        UIView.animateKeyframesWithDuration(0.3, delay: 0, options: nil, animations: { () -> Void in
+            self.scrollView.frame.size = CGSize(width: selectedWidth, height: self.scrollView.frame.height)
+        }, completion: nil)
     }
 
     // scaling text
@@ -222,8 +229,29 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
 
     }
     
-    @IBAction func didPressButton(sender: AnyObject) {
+    @IBAction func didPressMenu(sender: AnyObject) {
         performSegueWithIdentifier(segues[sender.tag], sender: self)
+    }
+    
+    
+    @IBAction func didPressBackButton(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func didPressNextButton(sender: AnyObject) {
+        performSegueWithIdentifier("saveFontSegue", sender: self)
+    }
+
+    func showMenu() {
+        UIView.animateWithDuration(0.4, delay: 0.4, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.4, options: nil, animations: { () -> Void in
+            self.buttonGroup.center = CGPoint(x:self.buttonGroup.center.x, y: self.buttonGroup.center.y - self.buttonGroup.frame.height)
+            }, completion: nil)
+    }
+    
+    func hideMenu() {
+        UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.4, options: nil, animations: { () -> Void in
+            self.buttonGroup.center = CGPoint(x:self.buttonGroup.center.x, y: self.buttonGroup.center.y + self.buttonGroup.frame.height)
+            }, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -237,6 +265,8 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         imageTransition = ImageTransition()
         imageTransition.duration = 0.3
+        
+        var fromViewController = segue.sourceViewController as FrontEditViewController
 
         if segue.identifier == "fontSegue" {
             var toViewController = segue.destinationViewController as FontViewController
@@ -248,6 +278,11 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
             toViewController.transitioningDelegate = imageTransition
         } else if segue.identifier == "templateSegue" {
             var toViewController = segue.destinationViewController as TemplateViewController
+            toViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+            toViewController.transitioningDelegate = imageTransition
+        } else if segue.identifier == "saveFontSegue" {
+            hideMenu()
+            var toViewController = segue.destinationViewController as FakeFrontViewController
             toViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
             toViewController.transitioningDelegate = imageTransition
         }

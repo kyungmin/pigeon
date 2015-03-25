@@ -33,8 +33,8 @@ class ImageTransition: BaseTransition {
         } else if fromViewController.title == "Sticker View Controller" {
             var fromVC = fromViewController as StickerViewController
             
-            if fromVC.selectedSticker != nil {
-                toVC.addSticker(fromVC.selectedSticker)
+            if !fromVC.selectedStickers.isEmpty {
+                toVC.addStickers(fromVC.selectedStickers)
             }
         } else if fromViewController.title == "Template View Controller" {
             var fromVC = fromViewController as TemplateViewController
@@ -42,6 +42,8 @@ class ImageTransition: BaseTransition {
             if fromVC.selectedWidth != nil {
                 toVC.setTemplate(fromVC.selectedWidth)
             }
+        } else if fromViewController.title == "Fake Front View Controller" {
+            toVC.showMenu()
         }
         
         fromViewController.view.alpha = 1

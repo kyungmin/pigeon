@@ -18,6 +18,16 @@ class TemplateViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func didSelectTemplate(sender: AnyObject) {
+        if sender.tag == 0 {
+            selectedWidth = 161
+        } else {
+            selectedWidth = 251
+        }
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     @IBAction func didTapBackground(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
