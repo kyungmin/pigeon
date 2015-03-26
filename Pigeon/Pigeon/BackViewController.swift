@@ -117,6 +117,12 @@ class BackViewController: UIViewController, InputMessageDelegate, InputAddressDe
         
         
     }
+    //Swipe
+    @IBAction func toFront(sender: UIPanGestureRecognizer) {
+        if (sender.state == UIGestureRecognizerState.Began) {
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
 
     //next
     @IBAction func onTapNext(sender: AnyObject) {
@@ -199,12 +205,161 @@ class BackViewController: UIViewController, InputMessageDelegate, InputAddressDe
         println("picker cancel.")
         picker .dismissViewControllerAnimated(true, completion: nil)
     }
+
     
-    @IBAction func didPanView(sender: UIPanGestureRecognizer) {
-        var velocity = sender.velocityInView(view)
-        
-        if (sender.state == UIGestureRecognizerState.Began) {
-            dismissViewControllerAnimated(true, completion: nil)
-        }
-    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+/*---------------IGNORE BELOW-------------------*/
+    
+//    //CUSTOM TRANSITION
+//    //CUSTOM View Controller Transitions
+//    //1. Prepare for Seque (see above)
+//    //2. Add delegates on top
+//    //3. Add func: forPresented, forDissmissed
+//    func animationControllerForPresentedController(presented: UIViewController!, presentingController presenting: UIViewController!, sourceController source: UIViewController!) -> UIViewControllerAnimatedTransitioning! {
+//        isPresenting = true
+//        return self
+//    }
+//    func animationControllerForDismissedController(dismissed: UIViewController!) -> UIViewControllerAnimatedTransitioning! {
+//        isPresenting = false
+//        return self
+//    }
+//    //4. Add func to actually controls transitionDuration (with global var, viewDidload assign), animateTransition
+//    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+//        // Set same value here and in animateTransition below
+//        return duration
+//    }
+//    
+//    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+//        println("animating transition")
+//        var containerView = transitionContext.containerView()
+//        var toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
+//        var fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
+//        
+//        var inputMessage = toViewController as BackMessageViewController
+//        inputMessage.doneButton.hidden = true
+//        
+//        var mainBackController = fromViewController as BackViewController
+//        var movingView = inputMessage.containerView
+//        
+//        movingView.frame = inputMessage.containerView.frame
+//        
+//        if (isPresenting) {
+//            containerView.addSubview(toViewController.view)
+//            toViewController.view.alpha = 0
+//            
+//            UIView.animateWithDuration(0.4, animations: { () -> Void in
+//                toViewController.view.alpha = 1
+//                }) { (finished: Bool) -> Void in
+//                    transitionContext.completeTransition(true)
+//            }
+//            
+//            
+//        } else {
+//            UIView.animateWithDuration(0.4, animations: { () -> Void in
+//                fromViewController.view.alpha = 0
+//                }) { (finished: Bool) -> Void in
+//                    transitionContext.completeTransition(true)
+//                    fromViewController.view.removeFromSuperview()
+//            }
+//        }
+//    }
+    
+//    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+////        println("animating transition")
+////        
+////        var containerView = transitionContext.containerView() //create a main container view
+////        var toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
+////        var fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
+////        
+////        if (isPresenting) {
+//            
+////            /* Additional I: temp UIImageView, add to window, create a view animation */
+////            newImageRect = CGRectMake(selectedImageViewPt.x, selectedImageViewPt.y + scrollView.frame.origin.y, selectedImageViewSize.width, selectedImageViewSize.height);
+////            newImgView = UIImageView(frame: newImageRect)
+////            newImgView.contentMode = .ScaleAspectFill
+////            newImgView.clipsToBounds = true
+////            newImgView.image = selectedImage
+////            
+////            containerView.addSubview(newImgView)
+////            newImgView.alpha = 0 //Twin
+////            
+////            containerView.addSubview(toViewController.view) //ADD this to/subview to main container view
+////            toViewController.view.alpha = 0 //TO
+////            
+////            UIView.animateWithDuration(1, animations: { () -> Void in //SET visible ALPHA, SIZE
+////                
+////                self.newImgView.alpha = 1 //Twin
+////                
+////                self.newImgView.center = CGPoint(x: 160.0, y: 284.0)
+////                self.newImgView.frame = CGRect(x: 0, y: 44, width: 320, height: 480)
+////                
+////                delay(0.5, { () -> () in
+////                    UIView.animateWithDuration(0.7, animations: { () -> Void in
+////                        toViewController.view.alpha = 1 //TO
+////                    })
+////                })
+////                
+////                }) { (finished: Bool) -> Void in
+////                    transitionContext.completeTransition(true) //mark trans as done
+////                }
+//            
+//            var inputMessage = fromViewController as BackMessageViewController
+//            inputMessage.doneButton.hidden = true
+//            
+//            var mainBackController = toViewController as BackViewController
+//            
+//            var movingView = inputMessage.containerView
+//            movingView.frame = inputMessage.containerView.frame
+//            containerView.addSubview(movingView)
+//            
+//            
+//            toViewController.view.alpha = 0
+//            UIView.animateWithDuration(duration, animations: {
+//                toViewController.view.alpha = 1
+//                
+//                movingView.center = mainBackController.messageView.center
+//                movingView.transform = CGAffineTransformMakeScale(0.45, 0.45)
+//                
+//                }) { (finished: Bool) -> Void in
+//                   // self.finish()
+//                    movingView.removeFromSuperview()
+//            }
+//            
+//        }
+//        
+//        //Dismissing
+//        else {
+//            
+////            fromViewController.view.alpha = 1 //FROM
+////            UIView.animateWithDuration(1, animations: { () -> Void in //SET invisible ALPHA, SIZE, once done: remove from main
+////                fromViewController.view.alpha = 0 //FROM
+////                
+////                self.newImgView.alpha = 0 //invisible
+////                
+////                self.newImgView.center = CGPoint(x: self.selectedImageViewPt.x, y: self.selectedImageViewPt.y)
+////                self.newImgView.frame = self.newImageRect
+////                
+////                }) { (finished: Bool) -> Void in
+////                    transitionContext.completeTransition(true) //mark trans as done
+////                    fromViewController.view.removeFromSuperview() //REMOVE 2nd/from view from super/main container view
+////                    
+////                    self.newImgView.removeFromSuperview()
+////            }
+//        }
+//    }
+    
 }

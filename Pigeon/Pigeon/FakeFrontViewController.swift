@@ -25,6 +25,10 @@ class FakeFrontViewController: UIViewController {
         performSegueWithIdentifier("backToFrontEditSegue", sender: self)
     }
     
+    @IBAction func didPressNext(sender: AnyObject) {
+        performSegueWithIdentifier("swipeBackSegue", sender: self)
+    }
+    
     @IBAction func didPanView(sender: UIPanGestureRecognizer) {
         var velocity = sender.velocityInView(view)
         
