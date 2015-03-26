@@ -118,6 +118,10 @@ class BackViewController: UIViewController, InputMessageDelegate, InputAddressDe
         
     }
     //Swipe
+    @IBAction func didPressBack(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     @IBAction func toFront(sender: UIPanGestureRecognizer) {
         if (sender.state == UIGestureRecognizerState.Began) {
             dismissViewControllerAnimated(true, completion: nil)

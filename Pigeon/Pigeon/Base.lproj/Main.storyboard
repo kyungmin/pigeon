@@ -350,6 +350,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="buttonGroup" destination="l0C-Yo-zHF" id="MIT-DU-YTR"/>
+                        <outlet property="frontBackground" destination="oqY-Eh-xWP" id="24N-EK-b5h"/>
                         <outlet property="imageView" destination="2Z0-8I-hcW" id="kTg-VK-gMr"/>
                         <outlet property="scrollView" destination="uL0-DU-cxh" id="uuf-bZ-qt3"/>
                         <segue destination="xS0-2d-7Fz" kind="modal" identifier="fontSegue" id="RZq-ou-hNq"/>
@@ -795,6 +796,17 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="jh5-oo-0tn" appends="YES" id="gNY-qY-25N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h08-XR-JhD" userLabel="backButton">
+                                        <rect key="frame" x="0.0" y="14" width="80" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <state key="normal" title=" ">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressBack:" destination="8Xx-Q5-bxA" eventType="touchUpInside" id="860-FW-PIS"/>
                                         </connections>
                                     </button>
                                 </subviews>

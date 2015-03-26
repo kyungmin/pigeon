@@ -10,6 +10,7 @@ import UIKit
 
 class FrontEditViewController: UIViewController, UIViewControllerTransitioningDelegate, UIGestureRecognizerDelegate {
 
+    @IBOutlet weak var frontBackground: UIImageView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var buttonGroup: UIView!
@@ -26,13 +27,15 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
     var newSticker: UIImageView!
     var stickerNames: [String]!
     var segues: [String!] = []
+    var originalImageY: CGFloat!
     
     //create a variable to catch the image passing from the previous view controller
     var photoImage:UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        originalImageY = scrollView.center.y
+        
         //assign selected image to imageView
         imageView.image = photoImage
         imageView.contentMode = UIViewContentMode.ScaleAspectFill
@@ -45,10 +48,48 @@ class FrontEditViewController: UIViewController, UIViewControllerTransitioningDe
         stickerNames = ["sticker_heart_highlighted", "sticker_plane_highlighted", "sticker_lips_highlighted"]
         
         buttonGroup.center.y = buttonGroup.center.y + buttonGroup.frame.height
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+
     }
     
     override func viewDidAppear(animated: Bool) {
         showMenu()
+    }
+
+    func keyboardWillShow(notification: NSNotification!) {
+        var userInfo = notification.userInfo!
+        
+        var kbSize = (userInfo[UIKeyboardFrameEndUserInfoKey] as NSValue).CGRectValue().size
+        var durationValue = userInfo[UIKeyboardAnimationDurationUserInfoKey] as NSNumber
+        var animationDuration = durationValue.doubleValue
+        var curveValue = userInfo[UIKeyboardAnimationCurveUserInfoKey] as NSNumber
+        var animationCurve = curveValue.integerValue
+        
+        UIView.animateWithDuration(animationDuration, delay: 0.0, options: UIViewAnimationOptions(UInt(animationCurve << 16)), animations: {
+            
+            self.scrollView.center.y = 200
+            self.frontBackground.center.y -= (self.originalImageY - 200)
+            }, completion: nil)
+    }
+    
+    func keyboardWillHide(notification: NSNotification!) {
+        var userInfo = notification.userInfo!
+        
+        // Get the keyboard height and width from the notification
+        // Size varies depending on OS, language, orientation
+        var kbSize = (userInfo[UIKeyboardFrameEndUserInfoKey] as NSValue).CGRectValue().size
+        var durationValue = userInfo[UIKeyboardAnimationDurationUserInfoKey] as NSNumber
+        var animationDuration = durationValue.doubleValue
+        var curveValue = userInfo[UIKeyboardAnimationCurveUserInfoKey] as NSNumber
+        var animationCurve = curveValue.integerValue
+        
+        UIView.animateWithDuration(animationDuration, delay: 0.0, options: UIViewAnimationOptions(UInt(animationCurve << 16)), animations: {
+            self.scrollView.center.y = self.originalImageY
+            self.frontBackground.center.y += (self.originalImageY - 200)
+            }, completion: nil)
     }
 
     @IBAction func didPinchImage(sender: UIPinchGestureRecognizer) {
