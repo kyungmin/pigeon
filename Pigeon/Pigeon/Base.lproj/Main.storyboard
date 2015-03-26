@@ -15,7 +15,6 @@
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
-            <string>Montserrat-Regular</string>
         </mutableArray>
         <mutableArray key="Pacifico.ttf">
             <string>Pacifico-Regular</string>
@@ -651,113 +650,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="gKr-KI-Boz" userLabel="original">
-                                <rect key="frame" x="-20" y="-20" width="360" height="608"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="back" id="qBE-An-YCA">
-                                        <rect key="frame" x="20" y="20" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MMu-WD-Okv" userLabel="message">
-                                        <rect key="frame" x="60" y="256" width="104" height="103"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title=" ">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="QFq-qs-U5y" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="zsc-Nu-xz2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oGa-Sm-6TP" userLabel="stamp">
-                                        <rect key="frame" x="278" y="219" width="30" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title=" ">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="WNR-Pe-OI1" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="5Wm-rW-H83"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wbf-bD-OS6" userLabel="address">
-                                        <rect key="frame" x="189" y="256" width="121" height="103"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title=" ">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="tzK-Lf-sqx" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="ZMC-gW-yV2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UbZ-em-N0r" userLabel="back to last photo edit">
-                                        <rect key="frame" x="22" y="40" width="67" height="33"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title=" ">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="CPp-2M-D2b" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="Uzb-69-h7N"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" id="3ho-9v-fWA" userLabel="NA_v1">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="back" id="Ewo-R1-f4V">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TAP FIELD TO EDIT" minimumFontSize="17" id="BbA-sg-xab">
-                                        <rect key="frame" x="75" y="128" width="251" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <view contentMode="scaleToFill" id="dAx-Zd-59h" userLabel="messageView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
-                                        <rect key="frame" x="42" y="247" width="100" height="87"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Message" id="0sh-Mq-uVX" userLabel="message">
-                                        <rect key="frame" x="43" y="250" width="99" height="82"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="10"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
-                                    </textView>
-                                    <view contentMode="scaleToFill" id="MSG-Wa-2I2" userLabel="signatureView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
-                                        <rect key="frame" x="42" y="342" width="100" height="19"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="g33-mr-WEK" userLabel="dividerLine">
-                                        <rect key="frame" x="159" y="205" width="2" height="160"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Address" id="VuB-Bz-SH1" userLabel="address">
-                                        <rect key="frame" x="185" y="252" width="99" height="82"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="10"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
-                                        <dataDetectorType key="dataDetectorTypes" address="YES"/>
-                                    </textView>
-                                    <view contentMode="scaleToFill" id="Nhv-OE-1yL" userLabel="addressView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
-                                        <rect key="frame" x="177" y="247" width="108" height="87"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="WG7-3y-XyB" userLabel="stampView" customClass="DashedBorderView" customModule="Pigeon" customModuleProvider="target">
-                                        <rect key="frame" x="262" y="205" width="24" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
                             <view contentMode="scaleToFill" id="Vf7-es-5uo" userLabel="NA">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -854,6 +746,18 @@
                                         <rect key="frame" x="113" y="405" width="67" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ERh-DH-reb" userLabel="stamp">
+                                        <rect key="frame" x="262" y="206" width="22" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Qe3-C7-kRA" appends="YES" id="w7t-7P-Ape"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="tYH-wM-HWo" userLabel="signature">
+                                        <rect key="frame" x="42" y="341" width="100" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -863,7 +767,11 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="addressTextView" destination="cfs-sA-RYV" id="0sf-cb-qsN"/>
+                        <outlet property="addressView" destination="RPV-30-hDA" id="rWJ-qa-l47"/>
                         <outlet property="messageTextView" destination="CHL-70-oSP" id="xHQ-6F-gcg"/>
+                        <outlet property="messageView" destination="EUX-4N-a9m" id="7iU-qH-XQW"/>
+                        <outlet property="signatureImage" destination="tYH-wM-HWo" id="Q3n-Zr-lmv"/>
+                        <outlet property="stampImage" destination="ERh-DH-reb" id="c6j-Ey-Nzq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9H1-VW-lsV" sceneMemberID="firstResponder"/>
@@ -882,8 +790,13 @@
                         <action selector="didPanView:" destination="4Rz-gP-yFb" id="fIf-Dw-Dei"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="Qe3-C7-kRA" userLabel="stamp Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="stampTap:" destination="4Rz-gP-yFb" id="Flg-hR-jLQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="583" y="2945"/>
+            <point key="canvasLocation" x="502" y="3042"/>
         </scene>
         <!--Back Message View Controller-->
         <scene sceneID="GKx-0K-sYT">
@@ -1033,11 +946,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iVf-VN-w5b" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="DTw-Qg-gCb">
-                    <connections>
-                        <segue destination="qjW-Bs-rQU" kind="modal" modalTransitionStyle="crossDissolve" animates="NO" id="B6d-vp-s6u"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="DTw-Qg-gCb"/>
             </objects>
             <point key="canvasLocation" x="1910" y="2945"/>
         </scene>
@@ -1182,9 +1091,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="80c-VB-bLa"/>
         <segue reference="wzn-1t-qEw"/>
-        <segue reference="ZMC-gW-yV2"/>
-        <segue reference="zsc-Nu-xz2"/>
+        <segue reference="80c-VB-bLa"/>
     </inferredMetricsTieBreakers>
 </document>

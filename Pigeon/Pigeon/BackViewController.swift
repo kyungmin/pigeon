@@ -117,11 +117,7 @@ class BackViewController: UIViewController, InputMessageDelegate, InputAddressDe
         
         
     }
-    //Swipe
-    @IBAction func onSwipeToFlip(sender: UISwipeGestureRecognizer) {
-         performSegueWithIdentifier("toFrontSegue", sender: nil)
-        //testing, need to change the target
-    }
+
     //next
     @IBAction func onTapNext(sender: AnyObject) {
         performSegueWithIdentifier("toPaymentSegue", sender: nil)
